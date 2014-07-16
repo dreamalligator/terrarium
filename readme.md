@@ -28,5 +28,12 @@ The following are received bare-root, wrapped in sphagnum moss.
 * [Nepenthes 'Miranda'](https://en.wikipedia.org/wiki/Nepenthes_%27Miranda%27) ([N. maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima) x [N. northiana](https://en.wikipedia.org/wiki/Nepenthes_northiana))
 * [Sarracenia purpurea](https://en.wikipedia.org/wiki/Sarracenia_purpurea) purpurea - Northern Purple Pitcher Plant
 
+##Download and contribute
+Please fork, contribute and comment!
+
+1. `git clone https://github.com/digitalvapor/terrarium.git`
+2. `cd terrarium`
+3. `ipython notebook`
+
 #License
 The default license is [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). All images in `images` folder are [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
