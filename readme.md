@@ -26,7 +26,15 @@ The following are received bare-root, wrapped in sphagnum moss.
 * [Drosera capensis](https://en.wikipedia.org/wiki/Drosera_capensis) - Cape Sundew, typical form
 * [Sarracenia leucophylla](https://en.wikipedia.org/wiki/Sarracenia_leucophylla) - White-topped Pitcher Plant
 * [Nepenthes 'Miranda'](https://en.wikipedia.org/wiki/Nepenthes_%27Miranda%27) ([N. maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima) x [N. northiana](https://en.wikipedia.org/wiki/Nepenthes_northiana))
-* [Sarracenia purpurea](https://en.wikipedia.org/wiki/Sarracenia_purpurea) purpurea - Northern Purple Pitcher Plant
+
+#Arduino
+Serial output.
+
+```
+luminosity,humidity,temperature,heatindex
+739.00,50.60,23.50,74.30,77.37
+738.00,50.60,23.60,74.48,77.43
+```
 
 #License
 The default license is [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). All images in `images` folder are [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
