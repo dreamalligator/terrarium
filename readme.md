@@ -34,15 +34,30 @@ The following are received bare-root, wrapped in sphagnum moss.
 * [CdS photoresistor](https://www.adafruit.com/products/161) ([datasheet 1](https://learn.adafruit.com/system/assets/assets/000/010/127/original/PDV-P8001.pdf), [datasheet 2](https://learn.adafruit.com/system/assets/assets/000/010/128/original/DTS_A9950_A7060_B9060.pdf)) - ~5-200KΩ
 * [Infragram Webcam](https://www.adafruit.com/products/1722) - visible and infrared
 
+#Etc
+* [YSD-439AB4B-35 7-Segment](https://www.sparkfun.com/products/9481) ([datasheet](http://www.sparkfun.com/datasheets/Components/LED/7-Segment/YSD-439AB4B-35.pdf))
 #Arduino
 Flash [sunduino.ino](https://github.com/digitalvapor/terrarium/blob/master/sunduino/sunduino.ino) to your Arduino. Unplug from the rPi while doing so.
 
 Serial output.
 
 ```
-luminosity,humidity,temperature,heatindex
-739.00,50.60,23.50,74.30,77.37
-738.00,50.60,23.60,74.48,77.43
+luminosity,ir,full,visible,lux,humidity,temperature,heatindex
+917.00,275,882,607.00,468.00,54.20,23.70,74.66,77.41
+917.00,275,883,608.00,469.00,53.90,23.80,74.84,77.50
+917.00,276,885,609.00,470.00,53.80,23.80,74.84,77.50
+918.00,276,885,609.00,470.00,53.70,23.80,74.84,77.50
+917.00,276,886,610.00,471.00,53.60,23.80,74.84,77.51
+912.00,94,266,172.00,124.00,53.50,23.80,74.84,77.51
+912.00,92,260,168.00,121.00,53.50,23.90,75.02,77.59
+912.00,93,263,170.00,122.00,53.50,23.90,75.02,77.59
+911.00,109,307,198.00,142.00,53.50,23.90,75.02,77.59
+910.00,128,377,249.00,184.00,53.60,23.90,75.02,77.59
+910.00,153,457,304.00,226.00,53.70,23.90,75.02,77.58
+910.00,161,483,322.00,240.00,53.60,24.00,75.20,77.67
+918.00,275,882,607.00,468.00,53.50,24.00,75.20,77.67
+917.00,272,873,601.00,464.00,53.40,24.00,75.20,77.67
+917.00,271,870,599.00,462.00,53.30,24.00,75.20,77.67
 ```
 
 #Raspberry Pi
