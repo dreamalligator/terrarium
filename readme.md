@@ -1,7 +1,7 @@
 #Terrarium Notebook
-Fonda and I are starting a new terrarium for carnivorous plants.
+A new terrarium for carnivorous plants.
 
-We'll be thoroughly documenting this project with a physical lab notebook, supplemented with [IPython Notebook](https://github.com/ipython/ipython)s, and light/humidity/temperature sensors attached to a Raspberry Pi.
+We'll be thoroughly documenting this project with a physical lab notebook, supplemented with IPython [Notebooks](http://nbviewer.ipython.org/github/digitalvapor/terrarium/tree/master/), and light/humidity/temperature sensors attached to a Raspberry Pi.
 
 ##Plants
 The following are the original set of plants that we will be using in this terraria.
@@ -77,4 +77,4 @@ Please fork, contribute and comment!
 3. `ipython notebook`
 
 #License
-The default license is [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). All images in `images` folder are [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+All images in `images` folder are [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). The license for everything else is [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
