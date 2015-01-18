@@ -1,1 +1,6 @@
 .ipynb_checkpoints
+node_modules
+backup
+*.log
+*_backup
+infragram
