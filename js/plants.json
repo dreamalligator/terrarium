@@ -1,7 +1,7 @@
-var plant_data = {
+{
     "0": {
-        "name": "general parameters",
-        "common_name": "",
+        "name": "",
+        "common_name": "general parameters",
         "t": [],
         "h": [50, 90],
         "l": [],
@@ -11,8 +11,8 @@ var plant_data = {
         "sources": [["Barry Rice, About Humidity, The Carnivorous Plant FAQ (2007)", "http://www.sarracenia.com/faq/faq3440.html"]]
     },
     "1": {
-        "name": "darlingtonia californica",
-        "common_name": "cobra lily",
+        "name": "Darlingtonia californica",
+        "common_name": "Cobra Lily",
         "t": [[null, 62.6], [null, 80]],
         "h": [],
         "l": [14, []],
