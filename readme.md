@@ -77,7 +77,7 @@ You can see a live version of this at [digitalvapor.github.io/terrarium](https:/
 Currently it only plots temperature, humidity and luminosity, but it will be extended to plot ir, full, visible, lux, and heatindex as well. It already serially logs this data.
 
 ##Dependencies
-You can install the app dependencies for a local server with `npm install`, then `node server.js`.
+You can install the app dependencies for a local server with `npm install`, then `node server.js`. You can also run `grunt` to compile the coffee-script and run the server.
 
 #Setup
 See [sunduino.fzz](https://github.com/digitalvapor/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)
