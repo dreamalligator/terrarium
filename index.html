@@ -13,8 +13,8 @@
         <div id="plot_container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
         <div class="page"></div>
 
-        <div id='plant_container' class='text-center'>
-            <button type="submit" id="load_plants" class="btn btn-primary">Load Default Plants</button>
+        <div id='plant_container'>
+            <button type="submit" id="load_plants" class="btn btn-primary">Load Plant Data</button>
         </div>
     </div>
 
@@ -31,16 +31,29 @@
             table += '<tr><th rowspan="2"></th><th rowspan="2">Name</th><th rowspan="2">Common Name</th><th colspan="3""><center>Limits<a href="#limit_note" name="plant_list_top">*</a></center></th><th rowspan="2">Sources</th></tr>';
             table += '<th>Temp</th><th>Hum</th><th>Lum</th>';
             $.each(plant_json, function(i, p){
+                // format sources
                 var sources = '';
                 $.each(p['sources'], function(i, src){
                     if(i) sources += ', ';
                     sources += '<a href="'+src[1]+'">'+src[0]+'</a>';
                 });
-                var $tr = $('<tr>').append(
+                // format temperatures
+                var temps = '';
+                $.each(p['t'], function(i, t){
+                    if(i) temps += ', ';
+                    $.each(t, function(j, t_pt){
+                        if(t_pt == null)
+                            t[j] = '<span style="color: #777;">'+t_pt+'</span>';
+                    });
+                    if(t) temps += t[0]+' to '+t[1];
+                });
+                // make table row
+                var $tr = $('<tr>').append( // small workaround
                     $('<td>').text(i),
                     $('<td>').html('<i>'+p['name']+'</i>'),
                     $('<td>').text(p['common_name']),
-                    $('<td>').text(p['t']),
+                    //$('<td>').text(p['t']),
+                    $('<td>').html(temps),
                     $('<td>').text(p['h']),
                     $('<td>').text(p['l']),
                     //$('<td>').text(p['sources'])
@@ -49,8 +62,50 @@
                 table += '<tr>' + $tr.html() + '</tr>';
             });
             table += '</table>';
-            table += '<a name="limit_note" href="#plant_list_top">*</a> Temp is lower/higher ambient temperature. Some plants such as <i>Darlingtonia californica</i> need a different soil temperature than ambient temperature. In these cases it is soil temp and then ambient temp. Humidity is lower/higher humidity. Luminosity is for the moment just the number of hours of light needed. When I find more literature for lower/upper bounds I will add this; as well as soil moisture, air flow, and pH.';
+            table += '<p><a name="limit_note" href="#plant_list_top">*</a> Temp is lower/higher ambient temperature. Some plants such as <i>Darlingtonia californica</i> need a different soil temperature than ambient temperature. In these cases it is soil temp and then ambient temp. Humidity is lower/higher humidity. Luminosity is for the moment just the number of hours of light needed. When I find more literature for lower/upper bounds I will add this; as well as soil moisture, air flow, and pH.</p>';
             $('#plant_container').html(table);
+        };
+
+        var get_limits = function(plant_json){
+            // ATM, not considering soil temperature for the limits.
+            // Returns lower and upper ambient temperature and humidity.
+            var t_max, t_min, h_max, h_min;
+            $.each(plant_json, function(i, p){
+                if(p['t']){
+                    t = p['t'].pop(); // get's last array in temp array, because ignoring soil temp
+                    if(t !== undefined){
+                        if($.isNumeric(t[0])){
+                            if(t_min === undefined)
+                                t_min = t[0]
+                            else
+                                t_min = Math.min(t_min, t[0]);
+                        }
+                        if($.isNumeric(t[1]))
+                            if(t_max === undefined)
+                                t_max = t[1]
+                            else
+                                t_max = Math.max(t_max, t[1]);
+                    }
+                }
+                if(p['h']){
+                    h = p['h'];
+                    if(h !== undefined){
+                        if($.isNumeric(h[0])){
+                            if(h_min === undefined)
+                                h_min = h[0]
+                            else
+                                h_min = Math.min(h_min, h[0]);
+                        }
+                        if($.isNumeric(h[1]))
+                            if(h_max === undefined)
+                                h_max = h[1]
+                            else
+                                h_max = Math.max(h_max, h[1]);
+                    }
+                }
+
+            });
+            return [[t_min, t_max], [h_min, h_max]];
         };
 
         $('#load_plants').click(function(){
@@ -69,6 +124,8 @@
             });
 
             display_plants(pd);
+            var limits = get_limits(pd);
+            console.log('Limits retrieved: '+limits);
         });
     </script>
 
