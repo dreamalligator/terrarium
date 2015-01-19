@@ -39,32 +39,41 @@
                 var sources = '';
                 $.each(p['sources'], function(i, src){
                     if(i) sources += ', ';
-                    sources += '<a href="'+src[1]+'">'+src[0]+'</a>';
+                    sources += '<a href="' + src[1] + '">' + src[0] + '</a>';
                 });
                 // format temperatures
                 var temps = '';
                 $.each(p['t'], function(i, t){
-                    if(i) temps += ', ';
                     if(t === undefined)
                         return;
+                    if(i) temps += ', ';
                     if($.isArray(t)){
                         $.each(t, function(j, t_pt){
                             if(t_pt == null)
-                                t[j] = '<span style="color: #777;">'+t_pt+'</span>';
+                                t[j] = '<span style="color: #777;">' + t_pt + '</span>';
                         });
-                        temps += t[0]+' to '+t[1];
+                        temps += t[0] + ' to ' + t[1];
                     }
                     else
                         temps += t;
                 });
+                // format humidity
+                // var hums = '';
+                // $.each(p['h'], function(i, h){
+                //     if(h === null || h === undefined)
+                //         return;
+                //     else
+                //         hums += h[0] + ' to ' + h[1];
+                // });
                 // make table row
                 var $tr = $('<tr>').append( // small workaround
                     $('<td>').text(i),
-                    $('<td>').html('<i>'+p['name']+'</i>'),
+                    $('<td>').html('<i>' + p['name'] + '</i>'),
                     $('<td>').text(p['common_name']),
                     //$('<td>').text(p['t']),
                     $('<td>').html(temps),
                     $('<td>').text(p['h']),
+                    //$('<td>').html(hums),
                     $('<td>').text(p['l']),
                     //$('<td>').text(p['sources'])
                     $('<td>').html(sources)
@@ -155,6 +164,15 @@
         });
     </script>
 
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-44642246-13', 'auto');
+    ga('send', 'pageview');
+
+    </script>
 </body>
 </html>

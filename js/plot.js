@@ -36,8 +36,6 @@ function retrieve_data(){
         cache: false
     });
 
-    // Don't really need to handle errors at the moment, just return sample data.
-    //return default_data();
     return data;
 }
 

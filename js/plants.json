@@ -57,13 +57,13 @@
     "5": {
         "name": "Proboscidea parviflora var. hohokamiania",
         "common_name": "Devil's Claw",
-        "t": [],
+        "t": ["heat tolerant"],
         "h": [],
         "l": [],
         "m": [],
         "f": [],
         "p": [],
-        "sources": []
+        "sources": [["<i>Growing Ibicella and Proboscidea</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Ibicella.php"]]
     },
     "6": {
         "name": "Drosera rotundifolia",
