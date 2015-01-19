@@ -58,24 +58,24 @@
                         temps += t;
                 });
                 // format humidity
-                // var hums = '';
-                // $.each(p['h'], function(i, h){
-                //     if(h === null || h === undefined)
-                //         return;
-                //     else
-                //         hums += h[0] + ' to ' + h[1];
-                // });
+                var hums = '';
+                $.each(p['h'], function(i, h){
+                    if(h === undefined)
+                        return
+                    if(i) hums += ' to ';
+                    if(h == null)
+                        hums += '<span style="color: #777";>' + h + '</span>';
+                    else
+                        hums += h;
+                });
                 // make table row
                 var $tr = $('<tr>').append( // small workaround
                     $('<td>').text(i),
                     $('<td>').html('<i>' + p['name'] + '</i>'),
                     $('<td>').text(p['common_name']),
-                    //$('<td>').text(p['t']),
                     $('<td>').html(temps),
-                    $('<td>').text(p['h']),
-                    //$('<td>').html(hums),
+                    $('<td>').html(hums),
                     $('<td>').text(p['l']),
-                    //$('<td>').text(p['sources'])
                     $('<td>').html(sources)
                 );
                 table += '<tr>' + $tr.html() + '</tr>';
@@ -88,6 +88,7 @@
         function get_limits(plant_json){
             // ATM, not considering soil temperature for the limits.
             // Returns lower and upper ambient temperature and humidity.
+            // If using the third temperature of extremes, then using that.
 
             var t_max, t_min, h_max, h_min;
             $.each(plant_json, function(i, p){
@@ -131,10 +132,13 @@
         };
 
         function chart_limits(lims){
-            // This function plots the limits obtained from the plant.json data.
+            // This function plots the limits obtained from the plant.json data
+            // as highchart bands.
             // Given limits, returns nothing.
 
             // TODO: LEFT OFF HERE
+            // http://www.highcharts.com/docs/chart-concepts/plot-bands-and-plot-lines
+
         };
 
         $('#load_plants').click(function(){

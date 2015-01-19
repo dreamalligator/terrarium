@@ -36,6 +36,7 @@ The following are received bare-root, wrapped in sphagnum moss.
 
 #Etc
 * [YSD-439AB4B-35 7-Segment](https://www.sparkfun.com/products/9481) ([datasheet](http://www.sparkfun.com/datasheets/Components/LED/7-Segment/YSD-439AB4B-35.pdf))
+
 #Arduino
 Flash [sunduino.ino](https://github.com/digitalvapor/terrarium/blob/master/sunduino/sunduino.ino) to your Arduino. Unplug from the rPi while doing so.
 
@@ -64,17 +65,9 @@ luminosity,ir,full,visible,lux,humidity,temperature,heatindex
 (coming soon)
 
 #The App
-The app is built using [Backbone.js](http://backbonejs.org/) and [Highcharts](http://www.highcharts.com/).
+When you load the plant data, an ajax call is made to the `plants.json` file. This data is then parsed to a table. The humidity and temperature parameters are then used to calculate the lower and upper bounds that would make it so that all the plants can live in harmony. There is one dummy plant for general parameters that may not belong to a single species.
 
-The flow is, if no data, then input as many plants and parameters as you wish. Edit them and delete as you wish. Press edit if you wish and modify the contents of your terrarium.
-
-There is one dummy plant for general parameters that may not belong to a single species.
-
-This was put together very fast and is still in the development stage. Please view with Chrome for the moment. I will massage any inconsistencies out soon. Feel free to report any bugs in the issue tracker.
-
-You can see a live version of this at [digitalvapor.github.io/terrarium](https://digitalvapor.github.io/terrarium).
-
-Currently it only plots temperature, humidity and luminosity, but it will be extended to plot ir, full, visible, lux, and heatindex as well. It already serially logs this data.
+Currently it only plots temperature, humidity and luminosity, but it will be extended to plot ir, full, visible, lux, and heatindex as well. It already serially logs this data. The app utilizes [Highcharts](http://www.highcharts.com/). You can see a live version of this at [digitalvapor.github.io/terrarium](https://digitalvapor.github.io/terrarium). This was put together very fast and is still in the development stage. Please view with Chrome for the moment. I will massage any inconsistencies out soon. Feel free to report any bugs in the [issue tracker](https://github.com/digitalvapor/terrarium/issues).
 
 ##Dependencies
 You can install the app dependencies for a local server with `npm install`, then `node server.js`. You can also run `grunt` to compile the coffee-script and run the server.
@@ -91,7 +84,8 @@ Please fork, contribute and comment!
 
 1. `git clone https://github.com/digitalvapor/terrarium.git`
 2. `cd terrarium`
-3. open `index.html` in your favorite browser and `cd notebook` and then `ipython notebook`.
+3. `grunt` will run an Express server on port `3000`.
+4. For terrarium notebooks, `cd notebook` and then `ipython notebook`.
 
 #License
 All images in `images` folder are [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). The license for everything else is [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
