@@ -1,0 +1,3 @@
+[submodule "arduino/libraries/Ethernet_Shield_W5200"]
+	path = arduino/libraries/Ethernet_Shield_W5200
+	url = https://github.com/Seeed-Studio/Ethernet_Shield_W5200.git

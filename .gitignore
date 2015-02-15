@@ -4,3 +4,4 @@ backup
 *.log
 *_backup
 infragram
+arduino/libraries

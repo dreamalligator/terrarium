@@ -30,11 +30,12 @@ The following are received bare-root, wrapped in sphagnum moss.
 
 #Sensors
 * [DHT22](http://www.adafruit.com/products/385) ([datasheet](https://www.adafruit.com/datasheets/DHT22.pdf)) - temperature and humidity, humidity 0-100%RH, temperature -40 - 125°C, **NOTE: avoid dew warning**
-* [TSL2561](https://www.adafruit.com/products/439) ([datasheet](https://www.adafruit.com/datasheets/TSL256x.pdf))- luminosity, 0.1 to 40,000 Lux
+* [TSL2561](https://www.adafruit.com/products/439) ([datasheet](https://www.adafruit.com/datasheets/TSL256x.pdf)) - luminosity, 0.1 to 40,000 Lux
 * [CdS photoresistor](https://www.adafruit.com/products/161) ([datasheet 1](https://learn.adafruit.com/system/assets/assets/000/010/127/original/PDV-P8001.pdf), [datasheet 2](https://learn.adafruit.com/system/assets/assets/000/010/128/original/DTS_A9950_A7060_B9060.pdf)) - ~5-200KΩ
 * [Infragram Webcam](https://www.adafruit.com/products/1722) - visible and infrared
 
 #Etc
+* [W5200 Ethernet Shield](http://www.seeedstudio.com/depot/W5200-Ethernet-Shield-p-1577.html) ([library](https://github.com/Seeed-Studio/Ethernet_Shield_W5200), [wiki](http://www.seeedstudio.com/wiki/Ethernet_Shield_V2.4)) - v2.2 02/28/2014 10A14 by Seeed Studio
 * [YSD-439AB4B-35 7-Segment](https://www.sparkfun.com/products/9481) ([datasheet](http://www.sparkfun.com/datasheets/Components/LED/7-Segment/YSD-439AB4B-35.pdf))
 
 #Arduino
@@ -82,7 +83,9 @@ Be sure to use a level converter or the above voltage divider between the Arduin
 ##Download and contribute
 Please fork, contribute and comment!
 
-1. `git clone https://github.com/digitalvapor/terrarium.git`
+If you want the Arduino libraries I use in this project, be sure to add the `--recursive` flag to recursively clone these submodules.
+
+1. `git clone --recursive https://github.com/digitalvapor/terrarium.git`
 2. `cd terrarium`
 3. `grunt` will run an Express server on port `3000`.
 4. For terrarium notebooks, `cd notebook` and then `ipython notebook`.
