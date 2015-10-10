@@ -4,6 +4,9 @@
   "description": "my terrarium of carnivorous plants",
   "author": "Tom Spalding (https://github.com/digitalvapor)",
   "contributors": [{
+    "name": "Thomas Spalding",
+    "email": "antivapor@gmail.com"
+  }, {
     "name": "Fonda Tong",
     "email": "fondatong@gmail.com"
   }],
