@@ -16,7 +16,7 @@ We'll be thoroughly documenting this project with a physical lab notebook, suppl
 
 ###Second Batch (2015-10-16)
 
-* [Drosera adelae](https://en.wikipedia.org/wiki/Drosera_adelae)
+* [Drosera adelae](https://en.wikipedia.org/wiki/Drosera_adelae) (x2)
 * [Drosophyllum](https://en.wikipedia.org/wiki/Drosophyllum)
 * [Sarracenia psittacina](https://en.wikipedia.org/wiki/Sarracenia_psittacina)
 * [Dionaea muscipula 'Royal Red'](https://en.wikipedia.org/wiki/List_of_Venus_flytrap_cultivars)
