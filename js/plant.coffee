@@ -176,15 +176,16 @@ parametersAndSources = [
     "tank": null
   }, {
     "taxon": "Sarracenia psittacina",
-    "common_name": "",
-    "t": [],
+    "common_name": "parrot pitcher plant",
+    "t": ["is not freeze tolerant"],
     "h": [],
-    "l": [],
+    "l": ["full sun"],
     "m": [],
     "f": [],
     "p": [],
-    "sources": null,
-    "tank": null
+    "sources": [["Growing Sarracenia psittacina, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/S_psittacina.php"]],
+    "tank": null,
+    "notes": "top-water regularly to maintain oxygen levels for teh roots and to keep salt levels down in the soil"
   }, {
     "taxon": "Dionaea muscipula 'Royal Red'",
     "common_name": "",
@@ -199,24 +200,24 @@ parametersAndSources = [
   }, {
     "taxon": "Pinguicula primuliflora",
     "common_name": "",
-    "t": [],
-    "h": [],
-    "l": [],
-    "m": [],
+    "t": [[50, 86], [null, null], [32, 95]],
+    "h": ["high humidity"],
+    "l": ["indirect light or filtered, avoid direct sun exposure"],
+    "m": ["moist, can tolerate flooded conditions for a short period of time. a good aeration is especially necessary to avoid the prone rotting of the plants."],
     "f": [],
     "p": [],
-    "sources": null,
+    "sources": [["<i>Pinguicula primuliflora</i>, A World of Pinguicula", "http://www.pinguicula.org/A_world_of_Pinguicula_2/Pages/pinguicula_primuliflora.htm"]],
     "tank": null
   }, {
     "taxon": "Pinguicula cyclosecta",
     "common_name": "",
-    "t": ["cool"],
-    "h": [],
-    "l": [],
-    "m": [],
+    "t": [[68, 95], [null, null], [39.2, null] "warm humid in summer, cooler and drier in winter"],
+    "h": [[20, null], "high humidity when carnivorous leaves, less when not."],
+    "l": ["need seasonal light cues"],
+    "m": ["not boggy. water according to leaf type, not season. when the plants have carnivorous leaves, they need to be kept moist and enjoy high humidity although they do fine at 20% RH. Succulent leaves means they need less water, keep soild lightly damp. Can be totally dry if air is very humid."],
     "f": ["windy"],
-    "p": [],
-    "sources": [["Johan van Marm, <i>'Here at last: Pinguicula cyclosecta</i>'  The International Pinguicula Study Group, Newsletter No. 6, April 1995", "http://www.carnivorousplants.org/IPSG/IPSG_06.PDF"]],
+    "p": ["alkaline"],
+    "sources": [["Johan van Marm, <i>'Here at last: Pinguicula cyclosecta</i>' The International Pinguicula Study Group, Newsletter No. 6, April 1995", "http://www.carnivorousplants.org/IPSG/IPSG_06.PDF"], ["John Brittnacher, <i>Growing Mexican Pinguicula</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Pings_Mexican.php"], ["<i>Pinguicula cyclosecta</i>, A World of Pinguicula", "http://www.pinguicula.org/pages/plantes/pinguicula_cyclosecta.htm"]],
     "tank": null
   }, {
     "taxon": "Nepenthes x maxima",
