@@ -2,15 +2,14 @@ parametersAndSources = [
   {
     "taxon": "",
     "common_name": "general parameters",
-    "t": [],
-    "h": [50, 90],
-    "l": [],
-    "m": [],
-    "f": [],
-    "p": [],
+    "t": [], # temperature (ambient, soil, extremes)
+    "h": [50, 90], # humidity
+    "l": [], # luminosity
+    "m": [], # moisture
+    "f": [], # air flow
+    "p": [], # ph
     "sources": [["Barry Rice, <i>About Humidity</i>, The Carnivorous Plant FAQ (2007)", "http://www.sarracenia.com/faq/faq3440.html"]]
-  },
-  {
+  }, {
     "taxon": "Byblis liniflora",
     "common_name": "Rainbow Plant",
     "t": [[null, null], [60, 85], [38, 100]],
@@ -20,8 +19,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["Brian Barnes, <i>Growing Byblis successfully</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Byblis.php"]]
-  },
-  {
+  }, {
     "taxon": "Darlingtonia californica",
     "common_name": "Cobra Lily",
     "t": [[null, 62.6], [null, 80]],
@@ -31,8 +29,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["John Brittnacher, <i>Growing Darlingtonia californica</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Darlingtonia.php"], ["Jennifer Brownfield, <i>Rearing Cobras</i>, Carnivorous Plant Newsletter 14(3):78-80 (1985)", "http://www.carnivorousplants.org/cpn/articles/CPNv14n3p78_80.pdf"]]
-  },
-  {
+  }, {
     "taxon": "Utricularia subulata",
     "common_name": "Zigzag Bladderwort",
     "t": [[68, 86]],
@@ -42,8 +39,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["Barry Rice, <i>About terrestrial Utricularia</i>, The Carnivorous Plant FAQ (2007)", "http://www.sarracenia.com/faq/faq5583.html"]]
-  },
-  {
+  }, {
     "taxon": "Pinguicula lusitanica",
     "common_name": "Pale Butterwort",
     "t": [[60, null]],
@@ -53,8 +49,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["<i>Growing warm temperate Pinguicula</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Pings_WarmTemp.php"]]
-  },
-  "5": {
+  }, {
     "taxon": "Proboscidea parviflora var. hohokamiania",
     "common_name": "Devil's Claw",
     "t": ["heat tolerant"],
@@ -64,8 +59,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["<i>Growing Ibicella and Proboscidea</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Ibicella.php"]]
-  },
-  "6": {
+  }, {
     "taxon": "Drosera rotundifolia",
     "common_name": "Round-Leafed Sundew",
     "t": [[60, 90], "goes dormant below 60"],
@@ -75,8 +69,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["Aaron May, <i>Drosera rotundifolia 'Charles Darwin'</i>, The Sundew Grow Guides", "http://www.growsundews.com/sundews/rotundifolia_charles_darwin.html"]]
-  },
-  "7": {
+  }, {
     "taxon": "Drosera filiformis tracyi",
     "common_name": "Thread-Leafed Sundew, white form",
     "t": ["USDA zone 6-9, with winter protection. Most likely need a wintering to germinate seeds."],
@@ -86,8 +79,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["John Brittnacher, <i>Growing Drosera filiformis and Drosera tracyi</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/D_filiformis.php"], ["Barry Rice, <The Thread-leaf Sundews Drosera Filiformis and Drosera Tracyi</i>, International Carnivorous Plant Society", "http://www.sarracenia.com/pubs/cpn40-4-16.pdf"]]
-  },
-  "8": {
+  }, {
     "taxon": "Drosera capensis",
     "common_name": "Cape Sundew, typical form",
     "t": [[45, 90]],
@@ -97,8 +89,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["Aaron May, <i>Drosera capensis varieties</i>, The Sundew Grow Guides", "http://www.growsundews.com/sundews/Drosera_capensis.html"]]
-  },
-  "9": {
+  }, {
     "taxon": "Sarracenia leucophylla",
     "common_name": "White-topped Pitcher Plant",
     "t": ["needs seasons, summer - mid 90's, winter - can tolerate freezing"],
@@ -108,8 +99,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["<i>Growing Sarracenia leucophylla</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/S_leucophylla.php"]]
-  },
-  "10": {
+  }, {
     "taxon": "Nepenthes (N. maxima x N. northiana)",
     "common_name": "Miranda",
     "t": [[68,95], "fairly wide temperature range. It does best with warm to hot days and cool nights, but avoid longer periods of cold night time temperatures"],
@@ -119,8 +109,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["David P. Evans, <i>Nepenthes maxima ‘Lake Poso’</i>, Carnivorous Plant Newsletter 38(1):12-22 (2009)", "http://www.carnivorousplants.org/cpn/Species/v38n1p12_22.html"], ["Jeff Shafer, <i>Cultivation of Nepenthes Northiana</i>, Carnivorous Plant Newsletter 32(2):49-51 (2003)", "http://www.carnivorousplants.org/cpn/articles/CPNv32n2p49_51.pdf"]]
-  },
-  "11": {
+  }, {
     "taxon": "Sarracenia purpurea purpurea",
     "common_name": "Northern Purple Pitcher Plant",
     "t": [[-20,null], "most cold hardy of the <i>Sarracenia</i>, can survive USDA zone 5 and colder"],
@@ -130,57 +119,7 @@ parametersAndSources = [
     "f": [],
     "p": [],
     "sources": [["John Brittnacher, <i>Growing Sarracenia purpurea and S. rosea</i>, International Carnivorous Plant Society","http://www.carnivorousplants.org/howto/GrowingGuides/S_purpurea.php"], ["John Brittnacher, <i>Growing Sarracenia</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Sarracenia.php"]]
-  },
-  "12": {
-    "taxon": "Drosera capensis",
-    "common_name": ["narrow leaf"],
-    "t": [],
-    "h": [],
-    "l": [],
-    "m": [],
-    "f": [],
-    "p": [],
-    "sources": null,
-    "tank": 0
-
-  },
-  "12": {
-    "taxon": "Drosera capensis",
-    "common_name": "alba narrow leaf",
-    "t": [],
-    "h": [],
-    "l": [],
-    "m": [],
-    "f": [],
-    "p": [],
-    "sources": null,
-    "tank": 0
-  },
-  "12": {
-    "taxon": "Drosera capensis",
-    "common_name": "narrow red leaf",
-    "t": [],
-    "h": [],
-    "l": [],
-    "m": [],
-    "f": [],
-    "p": [],
-    "sources": null,
-    "tank": 0
-  },
-  "12": {
-    "taxon": "Drosera tracyi",
-    "common_name": "",
-    "t": [],
-    "h": [],
-    "l": [],
-    "m": [],
-    "f": [],
-    "p": [],
-    "sources": null,
-    "tank": 0
-  },
-  "12": {
+  }, {
     "taxon": "Drosera binata",
     "common_name": "t-form",
     "t": [],
@@ -191,8 +130,7 @@ parametersAndSources = [
     "p": [],
     "sources": null,
     "tank": 0
-  },
-  "12": {
+  }, {
     "taxon": "Sarracenia rubra ssp. gulfensis",
     "common_name": "ancestral x giant",
     "t": [],
@@ -203,29 +141,118 @@ parametersAndSources = [
     "p": [],
     "sources": null,
     "tank": 0
+  }, {
+    "taxon": "Nepenthes ventricosa x (singalana x aristolochioides)",
+    "common_name": "",
+    "t": [],
+    "h": [],
+    "l": [],
+    "m": [],
+    "f": [],
+    "p": [],
+    "sources": null,
+    "tank": null
+  }, {
+    "taxon": "Drosera adelae",
+    "common_name": "",
+    "t": [],
+    "h": [],
+    "l": [],
+    "m": [],
+    "f": [],
+    "p": [],
+    "sources": null,
+    "tank": null
+  }, {
+    "taxon": "Drosophyllum",
+    "common_name": "",
+    "t": [],
+    "h": [],
+    "l": [],
+    "m": [],
+    "f": [],
+    "p": [],
+    "sources": null,
+    "tank": null
+  }, {
+    "taxon": "Sarracenia psittacina",
+    "common_name": "",
+    "t": [],
+    "h": [],
+    "l": [],
+    "m": [],
+    "f": [],
+    "p": [],
+    "sources": null,
+    "tank": null
+  }, {
+    "taxon": "Dionaea muscipula 'Royal Red'",
+    "common_name": "",
+    "t": [[10.4, null], "cool"],
+    "h": ["humid"],
+    "l": ["full sun"],
+    "m": ["wet, but not soggy. water level should be more than 5cm (2 in) below surface of soil."],
+    "f": [],
+    "p": [],
+    "sources": [["John Brittnacher, <i>Growing Dionaea muscipula</i>", "http://www.carnivorousplants.org/howto/GrowingGuides/Dionaea.php"]],
+    "tank": null
+  }, {
+    "taxon": "Pinguicula primuliflora",
+    "common_name": "",
+    "t": [],
+    "h": [],
+    "l": [],
+    "m": [],
+    "f": [],
+    "p": [],
+    "sources": null,
+    "tank": null
+  }, {
+    "taxon": "Pinguicula cyclosecta",
+    "common_name": "",
+    "t": ["cool"],
+    "h": [],
+    "l": [],
+    "m": [],
+    "f": ["windy"],
+    "p": [],
+    "sources": [["Johan van Marm, <i>'Here at last: Pinguicula cyclosecta</i>'  The International Pinguicula Study Group, Newsletter No. 6, April 1995", "http://www.carnivorousplants.org/IPSG/IPSG_06.PDF"]],
+    "tank": null
+  }, {
+    "taxon": "Nepenthes x maxima",
+    "common_name": "",
+    "t": [],
+    "h": [],
+    "l": [],
+    "m": [],
+    "f": [],
+    "p": [],
+    "sources": null,
+    "tank": null
+  }, {
+    "taxon": "Sarracenia 'Dana\'s Delight'",
+    "common_name": "",
+    "t": [],
+    "h": [],
+    "l": [],
+    "m": [],
+    "f": [],
+    "p": [],
+    "sources": null,
+    "tank": null
+  }, {
+    "taxon": "Nepenthes singalana 'Tujuh'",
+    "common_name": "",
+    "t": [],
+    "h": [],
+    "l": [],
+    "m": [],
+    "f": [],
+    "p": [],
+    "sources": null,
+    "tank": null
   }
 }
-
-taxonomyList = [
-  {
-    "taxon": "Drosera capensis",
-    "common_name": "narrow leaf"
-  },{
-    "taxon": "Drosera capensis",
-    "common_name": "alba narrow leaf"
-  },{
-    "taxon": "Drosera capensis",
-    "common_name": "narrow red leaf"
-  },{
-    "taxon": "Drosera binata",
-    "common_name": "t-form"
-  },{
-    "taxon": "Drosera tracyi",
-    "common_name": null
-  },{
-    "taxon": "Sarracenia rubra ssp. gulfensis"
-  },
-]
 
 synonymList =
   [
