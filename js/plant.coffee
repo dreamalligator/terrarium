@@ -155,13 +155,13 @@ parametersAndSources = [
   }, {
     "taxon": "Drosera adelae",
     "common_name": "",
-    "t": [],
-    "h": [],
-    "l": [],
+    "t": ["hot"],
+    "h": ["high humidity, but not necessarily as much as the other sisters"],
+    "l": ["cited as found in wild with low light intensity, but lots of light cited by growers - see citations"],
     "m": [],
     "f": [],
     "p": [],
-    "sources": null,
+    "sources": [["John Brittnacher, <i>Growing Drosera adelae and sisters</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/DroseraTropical.php"], ["Roger Hoelter, <i>On the Care and (Not) Feeding of D. Adelae, Prolifera and Schizandra</i>, Carnivorous Plant Newsletter 17(1):22-24 (1988)", "http://www.carnivorousplants.org/cpn/articles/CPNv17n1p22_24.pdf"], ["Dr. P. S. Lavarack, <i>Rainforest Drosera of North Queensland</i>, Carnivorous Plant Newsletter 8(2):61-64 (1979)", "http://www.carnivorousplants.org/cpn/articles/CPNv08n2p60_64.pdf"]],
     "tank": null
   }, {
     "taxon": "Drosophyllum lusitanicum",
@@ -172,7 +172,7 @@ parametersAndSources = [
     "m": ["moist but dont let get soggy"],
     "f": [],
     "p": [],
-    "sources": [["Tom Cahill, <i>Growing Drosophyllum lusitanicum</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Drosophyllum.php"]],
+    "sources": [["Tom Cahill, <i>Growing Drosophyllum lusitanicum</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Drosophyllum.php"], ["Adrian Slack, <i>On Growing Drosphyllum Lusitanicum, The Portuguese Dewy Pine</i>, Carnivorous Plant Newsletter 8(2):64-67 (1979)"]],
     "tank": null
   }, {
     "taxon": "Sarracenia psittacina",
