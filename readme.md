@@ -1,32 +1,57 @@
 #Terrarium Notebook
 A new terrarium for carnivorous plants.
 
-We'll be thoroughly documenting this project with a physical lab notebook, supplemented with IPython [Notebooks](http://nbviewer.ipython.org/github/digitalvapor/terrarium/tree/master/), and light/humidity/temperature sensors attached to a Raspberry Pi.
+We'll be thoroughly documenting this project with a physical lab notebook, supplemented with Jupyter [Notebooks](http://nbviewer.ipython.org/github/digitalvapor/terrarium/tree/master/), and light/humidity/temperature sensors attached to a Raspberry Pi.
 
-##Plants
+##Plants (second try at this)
+
+###First Batch (2015-10-05)
+
+* [Sarracenia rubra ssp. gulfensis "ancestral x giant"](https://en.wikipedia.org/wiki/Sarracenia_rubra)
+* [Drosera Binata](https://en.wikipedia.org/wiki/Drosera_binata)
+* [Drosera Tracyi](https://en.wikipedia.org/wiki/Drosera_filiformis)
+* [Drosera capensis](https://en.wikipedia.org/wiki/Drosera_capensis)
+* [Drosera capensis 'alba'](https://en.wikipedia.org/wiki/Drosera_capensis)
+* [Drosera capensis 'narrow red'](https://en.wikipedia.org/wiki/Drosera_capensis)
+
+###Second Batch (2015-10-16)
+
+* [Drosera adelae](https://en.wikipedia.org/wiki/Drosera_adelae)
+* [Drosophyllum](https://en.wikipedia.org/wiki/Drosophyllum)
+* [Sarracenia psittacina](https://en.wikipedia.org/wiki/Sarracenia_psittacina)
+* [Dionaea muscipula 'Royal Red'](https://en.wikipedia.org/wiki/List_of_Venus_flytrap_cultivars)
+* [Pinguicula primuliflora](https://en.wikipedia.org/wiki/Pinguicula_primuliflora)
+* [Pinguicula cyclosecta](https://de.wikipedia.org/wiki/Pinguicula_cyclosecta)
+* [Nepenthes singalana 'Tujuh'](https://en.wikipedia.org/wiki/Nepenthes_singalana)
+* [Nepenthes 'Miranda'](https://en.wikipedia.org/wiki/Nepenthes_%27Miranda%27)
+* Nepenthes [ventricosa](https://en.wikipedia.org/wiki/Nepenthes_ventricosa) x ([singalana](https://en.wikipedia.org/wiki/Nepenthes_singalana) x [aristolochioides](https://en.wikipedia.org/wiki/Nepenthes_aristolochioides))
+* Sarracenia 'Dana\'s Delight'
+* [Nepenthes x maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima)
+
+##Plants (first try at this)
 The following are the original set of plants that we will be using in this terraria.
 
 ###From seed
 We'll be trying to propagate the following from seed.
 
-* [Byblis liniflora](https://en.wikipedia.org/wiki/Byblis_liniflora) - Rainbow Plant
-* [Darlingtonia californica](https://en.wikipedia.org/wiki/Darlingtonia_californica) - Cobra Lily
-* [Utricularia subulata](https://en.wikipedia.org/wiki/Utricularia_subulata) - Zigzag Bladderwort
-* [Pinguicula lusitanica](https://en.wikipedia.org/wiki/Pinguicula_lusitanica) - Pale Butterwort
+* [Byblis liniflora](https://en.wikipedia.org/wiki/Byblis_liniflora) - Rainbow Plant (nope)
+* [Darlingtonia californica](https://en.wikipedia.org/wiki/Darlingtonia_californica) - Cobra Lily (nope)
+* [Utricularia subulata](https://en.wikipedia.org/wiki/Utricularia_subulata) - Zigzag Bladderwort (still alive!)
+* [Pinguicula lusitanica](https://en.wikipedia.org/wiki/Pinguicula_lusitanica) - Pale Butterwort (nope)
 
 We may document this species separately.
 
-* [Proboscidea parviflora](https://en.wikipedia.org/wiki/Proboscidea_parviflora) var. hohokamiania - Devil's Claw
+* [Proboscidea parviflora](https://en.wikipedia.org/wiki/Proboscidea_parviflora) var. hohokamiania - Devil's Claw (nope)
 
 ###From small plantlet
 The following are received bare-root, wrapped in sphagnum moss.
 
-* [Drosera rotundifolia](https://en.wikipedia.org/wiki/Drosera_rotundifolia) - Round-Leafed Sundew
-* [Drosera filiformis](https://en.wikipedia.org/wiki/Drosera_filiformis) tracyi - Thread-Leafed Sundew, white form
-* [Drosera capensis](https://en.wikipedia.org/wiki/Drosera_capensis) - Cape Sundew, typical form
-* [Sarracenia leucophylla](https://en.wikipedia.org/wiki/Sarracenia_leucophylla) - White-topped Pitcher Plant
-* [Nepenthes 'Miranda'](https://en.wikipedia.org/wiki/Nepenthes_%27Miranda%27) ([N. maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima) x [N. northiana](https://en.wikipedia.org/wiki/Nepenthes_northiana))
-* [Sarracenia purpurea](https://en.wikipedia.org/wiki/Sarracenia_purpurea) purpurea - Northern Purple Pitcher Plant
+* [Drosera rotundifolia](https://en.wikipedia.org/wiki/Drosera_rotundifolia) - Round-Leafed Sundew (nope)
+* [Drosera filiformis](https://en.wikipedia.org/wiki/Drosera_filiformis) tracyi - Thread-Leafed Sundew, white form (nope)
+* [Drosera capensis](https://en.wikipedia.org/wiki/Drosera_capensis) - Cape Sundew, typical form (still alive!)
+* [Sarracenia leucophylla](https://en.wikipedia.org/wiki/Sarracenia_leucophylla) - White-topped Pitcher Plant (nope)
+* [Nepenthes 'Miranda'](https://en.wikipedia.org/wiki/Nepenthes_%27Miranda%27) ([N. maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima) x [N. northiana](https://en.wikipedia.org/wiki/Nepenthes_northiana)) (still alive!)
+* [Sarracenia purpurea](https://en.wikipedia.org/wiki/Sarracenia_purpurea) purpurea - Northern Purple Pitcher Plant (still alive!)
 
 #Sensors
 * [DHT22](http://www.adafruit.com/products/385) ([datasheet](https://www.adafruit.com/datasheets/DHT22.pdf)) - temperature and humidity, humidity 0-100%RH, temperature -40 - 125°C, **NOTE: avoid dew warning**
@@ -71,7 +96,7 @@ When you load the plant data, an ajax call is made to the `plants.json` file. Th
 Currently it only plots temperature, humidity and luminosity, but it will be extended to plot ir, full, visible, lux, and heatindex as well. It already serially logs this data. The app utilizes [Highcharts](http://www.highcharts.com/). You can see a live version of this at [digitalvapor.github.io/terrarium](https://digitalvapor.github.io/terrarium). This was put together very fast and is still in the development stage. Please view with Chrome for the moment. I will massage any inconsistencies out soon. Feel free to report any bugs in the [issue tracker](https://github.com/digitalvapor/terrarium/issues).
 
 ##Dependencies
-You can install the app dependencies for a local server with `npm install`, then `node server.js`. You can also run `grunt` to compile the coffee-script and run the server.
+You can install the app dependencies for a local server with `npm install`, then `node server.js`. You can also run `grunt` to compile the coffee-script and run the server. `pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, running Python 3.5.0 and Ruby 2.2.3.
 
 #Setup
 See [sunduino.fzz](https://github.com/digitalvapor/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)
