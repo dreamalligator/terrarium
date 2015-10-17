@@ -124,11 +124,11 @@ parametersAndSources = [
     "common_name": "t-form",
     "t": [],
     "h": [],
-    "l": [],
-    "m": [],
+    "l": ["strong light"],
+    "m": ["medium wet to sodden during growth periods, and some moisture during dormancy"],
     "f": [],
-    "p": [],
-    "sources": null,
+    "p": ["acidic"],
+    "sources": [["I. Gilbert, <i>Drosera Binata</i>, Carnivorous Plant Newsletter 13(3):74-76 (1984)", "http://carnivorousplants.org/cpn/articles/CPNv13n3p74_76.pdf"]],
     "tank": 0
   }, {
     "taxon": "Sarracenia rubra ssp. gulfensis",
@@ -164,15 +164,15 @@ parametersAndSources = [
     "sources": null,
     "tank": null
   }, {
-    "taxon": "Drosophyllum",
-    "common_name": "",
+    "taxon": "Drosophyllum lusitanicum",
+    "common_name": "dewey pine",
     "t": [],
-    "h": [],
-    "l": [],
-    "m": [],
+    "h": ["not humid"],
+    "l": ["mostly sunny to full sun"],
+    "m": ["moist but dont let get soggy"],
     "f": [],
     "p": [],
-    "sources": null,
+    "sources": [["Tom Cahill, <i>Growing Drosophyllum lusitanicum</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Drosophyllum.php"]],
     "tank": null
   }, {
     "taxon": "Sarracenia psittacina",
