@@ -14,11 +14,11 @@ parametersAndSources = [
     "common_name": "Rainbow Plant",
     "t": [[null, null], [60, 85], [38, 100]],
     "h": [50, 80],
-    "l": [8, 10],
-    "m": [],
+    "l": [[8, 10], "full to partly  sunny"],
+    "m": ["damp, but not waterlogged"],
     "f": [],
     "p": [],
-    "sources": [["Brian Barnes, <i>Growing Byblis successfully</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Byblis.php"]]
+    "sources": [["Brian Barnes, <i>Growing Byblis successfully</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Byblis.php"], ["Peter D'Amato, <i>The Savage Garden: Cultivating Carnivorous Plants</i>, p184-185, 1998", "ISBN: 0-89815-915-6"]]
   }, {
     "taxon": "Darlingtonia californica",
     "common_name": "Cobra Lily",
