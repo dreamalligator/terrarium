@@ -8,6 +8,12 @@ parametersAndSources = [
     m: [] # moisture
     f: [] # air flow
     p: [] # ph
+    s: [] # soil
+    c: [] # container
+    d: { # databases
+      i: # ITIS taxonomic serial number
+      u: # USDA plants symbol
+    }
     sources: [
       ["Barry Rice, <i>About Humidity</i>, The Carnivorous Plant FAQ (2007)", "http://www.sarracenia.com/faq/faq3440.html"]
     ]
@@ -33,6 +39,10 @@ parametersAndSources = [
     m: []
     f: []
     p: []
+    d: {
+      i: 22004
+      u: "DACA5"
+    }
     sources: [
       ["John Brittnacher, <i>Growing Darlingtonia californica</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Darlingtonia.php"]
       ["Jennifer Brownfield, <i>Rearing Cobras</i>, Carnivorous Plant Newsletter 14(3):78-80 (1985)", "http://www.carnivorousplants.org/cpn/articles/CPNv14n3p78_80.pdf"]
@@ -46,6 +56,10 @@ parametersAndSources = [
     m: []
     f: []
     p: []
+    d: {
+      i: 34465
+      u: "UTSU"
+    }
     sources: [
       ["Barry Rice, <i>About terrestrial Utricularia</i>, The Carnivorous Plant FAQ (2007)", "http://www.sarracenia.com/faq/faq5583.html"]
     ]
@@ -70,6 +84,10 @@ parametersAndSources = [
     m: []
     f: []
     p: []
+    d: {
+      i: 833964
+      u: "PRPAH"
+    }
     sources: [
       ["<i>Growing Ibicella and Proboscidea</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Ibicella.php"]
     ]
@@ -94,6 +112,10 @@ parametersAndSources = [
     m: []
     f: []
     p: []
+    d: {
+      i: 527788
+      u: "DRTR4"
+    }
     sources: [
       ["John Brittnacher, <i>Growing Drosera filiformis and Drosera tracyi</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/D_filiformis.php"]
       ["Barry Rice, <The Thread-leaf Sundews Drosera Filiformis and Drosera Tracyi</i>, International Carnivorous Plant Society", "http://www.sarracenia.com/pubs/cpn40-4-16.pdf"]
@@ -212,11 +234,12 @@ parametersAndSources = [
     t: ["is not freeze tolerant"]
     h: []
     l: ["full sun"]
-    m: []
+    m: ["can handle submersion"]
     f: []
     p: []
     sources: [
       ["Growing Sarracenia psittacina, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/S_psittacina.php"]
+      ["Barry Rice, <i>About Sarracenia psittacina, the parrot pitcher plant</i>", "http://www.sarracenia.com/faq/faq5536.html"]
     ]
     notes: "top-water regularly to maintain oxygen levels for teh roots and to keep salt levels down in the soil"
   }, {
@@ -234,14 +257,19 @@ parametersAndSources = [
   }, {
     taxon: "Pinguicula primuliflora"
     common_name: ""
-    t: [[50, 86], [null, null], [32, 95]]
+    t: [[50, 86], [null, null], [32, 95], "doesn't have any special adaptations to survive freezing weather"]
     h: ["high humidity"]
     l: ["indirect light or filtered, avoid direct sun exposure"]
     m: ["moist, can tolerate flooded conditions for a short period of time. a good aeration is especially necessary to avoid the prone rotting of the plants."]
     f: []
     p: []
+    d: {
+      i: 34440
+      u: "PIPR"
+    }
     sources: [
       ["<i>Pinguicula primuliflora</i>, A World of Pinguicula", "http://www.pinguicula.org/A_world_of_Pinguicula_2/Pages/pinguicula_primuliflora.htm"]
+      ["<i>Growing warm temperate Pinguicula</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Pings_WarmTemp.php"]
     ]
   }, {
     taxon: "Pinguicula cyclosecta"
