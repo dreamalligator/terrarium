@@ -1,69 +1,69 @@
-#Terrarium Notebook
+# Terrarium Notebook
 A new terrarium for carnivorous plants.
 
 We'll be thoroughly documenting this project with a physical lab notebook, supplemented with Jupyter [Notebooks](http://nbviewer.ipython.org/github/digitalvapor/terrarium/tree/master/), and light/humidity/temperature sensors attached to a Raspberry Pi.
 
-##Plants (second try at this)
+## Plants (second try at this)
 
-###First Batch (2015-10-05)
+### First Batch (2015-10-05)
 
-* [Sarracenia rubra ssp. gulfensis "ancestral x giant"](https://en.wikipedia.org/wiki/Sarracenia_rubra)
-* [Drosera Binata](https://en.wikipedia.org/wiki/Drosera_binata)
-* [Drosera Tracyi](https://en.wikipedia.org/wiki/Drosera_filiformis)
-* [Drosera capensis](https://en.wikipedia.org/wiki/Drosera_capensis)
-* [Drosera capensis 'alba'](https://en.wikipedia.org/wiki/Drosera_capensis)
-* [Drosera capensis 'narrow red'](https://en.wikipedia.org/wiki/Drosera_capensis)
+* [Sarracenia rubra ssp. gulfensis "ancestral x giant"](https://en.wikipedia.org/wiki/Sarracenia_rubra) - red pitcher plant
+* [Drosera Binata](https://en.wikipedia.org/wiki/Drosera_binata) - fork-leaved sundew
+* [Drosera Tracyi](https://en.wikipedia.org/wiki/Drosera_filiformis) - thread-leaved sundew
+* [Drosera capensis](https://en.wikipedia.org/wiki/Drosera_capensis) - cape sundew, typical form
+* [Drosera capensis 'alba'](https://en.wikipedia.org/wiki/Drosera_capensis) - cape sundew, white form
+* [Drosera capensis 'narrow red'](https://en.wikipedia.org/wiki/Drosera_capensis) - cape sundew, red and thin form
 
-###Second Batch (2015-10-16)
+### Second Batch (2015-10-16)
 
-* [Drosera adelae](https://en.wikipedia.org/wiki/Drosera_adelae) (x2)
-* [Drosophyllum](https://en.wikipedia.org/wiki/Drosophyllum)
-* [Sarracenia psittacina](https://en.wikipedia.org/wiki/Sarracenia_psittacina)
-* [Dionaea muscipula 'Royal Red'](https://en.wikipedia.org/wiki/List_of_Venus_flytrap_cultivars)
-* [Pinguicula primuliflora](https://en.wikipedia.org/wiki/Pinguicula_primuliflora)
-* [Pinguicula cyclosecta](https://de.wikipedia.org/wiki/Pinguicula_cyclosecta)
-* [Nepenthes singalana 'Tujuh'](https://en.wikipedia.org/wiki/Nepenthes_singalana)
-* [Nepenthes 'Miranda'](https://en.wikipedia.org/wiki/Nepenthes_%27Miranda%27)
-* Nepenthes [ventricosa](https://en.wikipedia.org/wiki/Nepenthes_ventricosa) x ([singalana](https://en.wikipedia.org/wiki/Nepenthes_singalana) x [aristolochioides](https://en.wikipedia.org/wiki/Nepenthes_aristolochioides))
-* Sarracenia 'Dana\'s Delight'
-* [Nepenthes x maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima)
+* [Drosera adelae](https://en.wikipedia.org/wiki/Drosera_adelae) (x2) - lance-leaved sundew
+* [Drosophyllum](https://en.wikipedia.org/wiki/Drosophyllum) - Portuguese slobbering pine
+* [Sarracenia psittacina](https://en.wikipedia.org/wiki/Sarracenia_psittacina) - parrot pitcher plant
+* [Dionaea muscipula 'Royal Red'](https://en.wikipedia.org/wiki/List_of_Venus_flytrap_cultivars) - Venus flytrap, deep red form
+* [Pinguicula primuliflora](https://en.wikipedia.org/wiki/Pinguicula_primuliflora) - southern butterwort
+* [Pinguicula cyclosecta](https://de.wikipedia.org/wiki/Pinguicula_cyclosecta) - a mexican butterwort
+* [Nepenthes singalana 'Tujuh'](https://en.wikipedia.org/wiki/Nepenthes_singalana) - a Sumatran pitcher plant
+* Nepenthes '[Miranda](https://en.wikipedia.org/wiki/Nepenthes_%27Miranda%27)' ([N. maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima) x [N. northiana](https://en.wikipedia.org/wiki/Nepenthes_northiana))
+* Nepenthes [ventricosa](https://en.wikipedia.org/wiki/Nepenthes_ventricosa) x ([singalana](https://en.wikipedia.org/wiki/Nepenthes_singalana) x [aristolochioides](https://en.wikipedia.org/wiki/Nepenthes_aristolochioides)) - a deep purple hybrid
+* Sarracenia 'Dana's Delight' - a pink hybrid
+* [Nepenthes x maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima) - the Great Pitcher-Plant
 
-##Plants (first try at this)
+## Plants (first try at this)
 The following are the original set of plants that we will be using in this terraria.
 
-###From seed
+### From seed
 We'll be trying to propagate the following from seed.
 
-* [Byblis liniflora](https://en.wikipedia.org/wiki/Byblis_liniflora) - Rainbow Plant (nope)
-* [Darlingtonia californica](https://en.wikipedia.org/wiki/Darlingtonia_californica) - Cobra Lily (nope)
-* [Utricularia subulata](https://en.wikipedia.org/wiki/Utricularia_subulata) - Zigzag Bladderwort (still alive!)
-* [Pinguicula lusitanica](https://en.wikipedia.org/wiki/Pinguicula_lusitanica) - Pale Butterwort (nope)
+* [Byblis liniflora](https://en.wikipedia.org/wiki/Byblis_liniflora) - rainbow plant (nope)
+* [Darlingtonia californica](https://en.wikipedia.org/wiki/Darlingtonia_californica) - cobra lily (nope)
+* [Utricularia subulata](https://en.wikipedia.org/wiki/Utricularia_subulata) - zigzag bladderwort (still alive!)
+* [Pinguicula lusitanica](https://en.wikipedia.org/wiki/Pinguicula_lusitanica) - pale butterwort (nope)
 
 We may document this species separately.
 
 * [Proboscidea parviflora](https://en.wikipedia.org/wiki/Proboscidea_parviflora) var. hohokamiania - Devil's Claw (nope)
 
-###From small plantlet
+### From small plantlet
 The following are received bare-root, wrapped in sphagnum moss.
 
-* [Drosera rotundifolia](https://en.wikipedia.org/wiki/Drosera_rotundifolia) - Round-Leafed Sundew (nope)
-* [Drosera filiformis](https://en.wikipedia.org/wiki/Drosera_filiformis) tracyi - Thread-Leafed Sundew, white form (nope)
-* [Drosera capensis](https://en.wikipedia.org/wiki/Drosera_capensis) - Cape Sundew, typical form (still alive!)
-* [Sarracenia leucophylla](https://en.wikipedia.org/wiki/Sarracenia_leucophylla) - White-topped Pitcher Plant (nope)
+* [Drosera rotundifolia](https://en.wikipedia.org/wiki/Drosera_rotundifolia) - round-leafed sundew (nope)
+* [Drosera filiformis](https://en.wikipedia.org/wiki/Drosera_filiformis) tracyi - thread-leafed sundew, white form (nope)
+* [Drosera capensis](https://en.wikipedia.org/wiki/Drosera_capensis) - cape sundew, typical form (still alive!)
+* [Sarracenia leucophylla](https://en.wikipedia.org/wiki/Sarracenia_leucophylla) - white-topped pitcher plant (nope)
 * [Nepenthes 'Miranda'](https://en.wikipedia.org/wiki/Nepenthes_%27Miranda%27) ([N. maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima) x [N. northiana](https://en.wikipedia.org/wiki/Nepenthes_northiana)) (still alive!)
-* [Sarracenia purpurea](https://en.wikipedia.org/wiki/Sarracenia_purpurea) purpurea - Northern Purple Pitcher Plant (still alive!)
+* [Sarracenia purpurea](https://en.wikipedia.org/wiki/Sarracenia_purpurea) purpurea - northern purple pitcher plant (still alive!)
 
-#Sensors
+# Sensors
 * [DHT22](http://www.adafruit.com/products/385) ([datasheet](https://www.adafruit.com/datasheets/DHT22.pdf)) - temperature and humidity, humidity 0-100%RH, temperature -40 - 125°C, **NOTE: avoid dew warning**
 * [TSL2561](https://www.adafruit.com/products/439) ([datasheet](https://www.adafruit.com/datasheets/TSL256x.pdf)) - luminosity, 0.1 to 40,000 Lux
 * [CdS photoresistor](https://www.adafruit.com/products/161) ([datasheet 1](https://learn.adafruit.com/system/assets/assets/000/010/127/original/PDV-P8001.pdf), [datasheet 2](https://learn.adafruit.com/system/assets/assets/000/010/128/original/DTS_A9950_A7060_B9060.pdf)) - ~5-200KΩ
 * [Infragram Webcam](https://www.adafruit.com/products/1722) - visible and infrared
 
-#Etc
+# Etc
 * [W5200 Ethernet Shield](http://www.seeedstudio.com/depot/W5200-Ethernet-Shield-p-1577.html) ([library](https://github.com/Seeed-Studio/Ethernet_Shield_W5200), [wiki](http://www.seeedstudio.com/wiki/Ethernet_Shield_V2.4)) - v2.2 02/28/2014 10A14 by Seeed Studio
 * [YSD-439AB4B-35 7-Segment](https://www.sparkfun.com/products/9481) ([datasheet](http://www.sparkfun.com/datasheets/Components/LED/7-Segment/YSD-439AB4B-35.pdf))
 
-#Arduino
+# Arduino
 Flash [sunduino.ino](https://github.com/digitalvapor/terrarium/blob/master/sunduino/sunduino.ino) to your Arduino. Unplug from the rPi while doing so.
 
 Serial output.
@@ -87,25 +87,25 @@ luminosity,ir,full,visible,lux,humidity,temperature,heatindex
 917.00,271,870,599.00,462.00,53.30,24.00,75.20,77.67
 ```
 
-#Raspberry Pi
+# Raspberry Pi
 (coming soon)
 
-#The App
+# The App
 When you load the plant data, an ajax call is made to the `plants.json` file. This data is then parsed to a table. The humidity and temperature parameters are then used to calculate the lower and upper bounds that would make it so that all the plants can live in harmony. There is one dummy plant for general parameters that may not belong to a single species.
 
 Currently it only plots temperature, humidity and luminosity, but it will be extended to plot ir, full, visible, lux, and heatindex as well. It already serially logs this data. The app utilizes [Highcharts](http://www.highcharts.com/). You can see a live version of this at [digitalvapor.github.io/terrarium](https://digitalvapor.github.io/terrarium). This was put together very fast and is still in the development stage. Please view with Chrome for the moment. I will massage any inconsistencies out soon. Feel free to report any bugs in the [issue tracker](https://github.com/digitalvapor/terrarium/issues).
 
-##Dependencies
+## Dependencies
 You can install the app dependencies for a local server with `npm install`, then `node server.js`. You can also run `grunt` to compile the coffee-script and run the server. `pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, running Python 3.5.0 and Ruby 2.2.3.
 
-#Setup
+# Setup
 See [sunduino.fzz](https://github.com/digitalvapor/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)
 
 ![breadboard](https://github.com/digitalvapor/terrarium/blob/master/images/sunduino_breadboard.png "Sunduino connections")
 
 Be sure to use a level converter or the above voltage divider between the Arduino and the Raspberry Pi.
 
-##Download and contribute
+## Download and contribute
 Please fork, contribute and comment!
 
 If you want the Arduino libraries I use in this project, be sure to add the `--recursive` flag to recursively clone these submodules.
@@ -115,5 +115,5 @@ If you want the Arduino libraries I use in this project, be sure to add the `--r
 3. `grunt` will run an Express server on port `3000`.
 4. For terrarium notebooks, `cd notebook` and then `ipython notebook`.
 
-#License
+# License
 All images in `images` folder are [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). The license for everything else is [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
