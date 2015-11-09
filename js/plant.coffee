@@ -160,7 +160,7 @@ parametersAndSources = [
   }, {
     taxon: "Sarracenia purpurea purpurea"
     common_name: "Northern Purple Pitcher Plant"
-    t: [[-20,null], "most cold hardy of the <i>Sarracenia</i>, can survive USDA zone 5 and colder"]
+    t: [[-20, null], "most cold hardy of the <i>Sarracenia</i>, can survive USDA zone 5 and colder"]
     h: []
     l: ["bright, or full sun"]
     m: []
@@ -405,6 +405,15 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date: 20151108 17
+        size:
+        alive: true
+        notes: "slack potted in terra cotta clay pot, with mix made by Peter D'Amato. pot is approximately 6\" bottom diameter and 9.5\" on top. height is approx. 9\". some sphagnum over bottom hole to block losing soil. trimmed dead stalks away. thorougly wetted with distilled water. didn't have enough mix to fill to top, will have to add more soon."
+      }
+    ]
+    died: null
   }, {
     taxon: "Sarracenia psittacina"
     owner: "Tom"
