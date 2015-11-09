@@ -10,6 +10,7 @@ parametersAndSources = [
     p: [] # ph
     s: [] # soil
     c: [] # container
+    dp: # dormancy period
     d: { # databases
       i: # ITIS taxonomic serial number
       u: # USDA plants symbol
@@ -219,14 +220,23 @@ parametersAndSources = [
   }, {
     taxon: "Drosophyllum lusitanicum"
     common_name: "dewey pine"
-    t: []
+    t: [[40, 75], [], [null, 100], "will survive a light frost"]
     h: ["not humid"]
-    l: ["mostly sunny to full sun"]
-    m: ["moist but dont let get soggy"]
+    l: [["1500 foot candles", null], "mostly sunny to full sun"]
+    m: ["moist but dont let get soggy. well-drained."]
     f: []
-    p: []
+    dp: [true, "cease to grow during the hot, dry summers. planting medium must be drier during the dormant period."]
+    s: [
+      "sphagnum moss (living and nonliving)"
+      "sphagnum peat moss"
+      "1 part sphagnum peat moss to 1 part perlite or 1 part sand"
+      "1 part sphagnum peat moss to 3 parts sand or 3 parts perlite"
+      "some growers add powdered limestone or dolomite at a rate of 1 teaspoon (5ml) per quart (liter) of medium"
+    ]
     sources: [
-      ["Tom Cahill, <i>Growing Drosophyllum lusitanicum</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Drosophyllum.php"], ["Adrian Slack, <i>On Growing Drosphyllum Lusitanicum, The Portuguese Dewy Pine</i>, Carnivorous Plant Newsletter 8(2):64-67 (1979)"]
+      ["Tom Cahill, <i>Growing Drosophyllum lusitanicum</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Drosophyllum.php"]
+      ["Adrian Slack, <i>On Growing Drosphyllum Lusitanicum, The Portuguese Dewy Pine</i>, Carnivorous Plant Newsletter 8(2):64-67 (1979)"]
+      ["James and Patricia Pietropaolo, <i>Carnivorous Plants of the World</i>, pg 100-104 (1986)"]
     ]
   }, {
     taxon: "Sarracenia psittacina"
