@@ -401,12 +401,28 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date: 20151216 19:30:00
+        size: "+"
+        alive: true
+        notes: "the primary plant as well as the babies are flourishing. they have developed a beautiful red tinge, probably due to the long light I am giving every day. almost slobbering with dew."
+      }
+    ]
   }, {
     taxon: "Drosera adelae"
     owner: "Fonda"
     arrived: {
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
+    }
+    inBetween: {
+      {
+        date: 20151216 19:30:00
+        size: "+"
+        alive: true
+        notes: "the primary plant as well as the babies are flourishing. they have developed a beautiful red tinge, probably due to the long light I am giving every day. almost slobbering with dew."
+      }
     }
   }, {
     taxon: "Drosophyllum"
@@ -418,9 +434,15 @@ circleOfLifeList = [
     inBetween: [
       {
         date: 20151108 17
-        size:
+        size: 1
         alive: true
         notes: "slack potted in terra cotta clay pot, with mix made by Peter D'Amato. pot is approximately 6\" bottom diameter and 9.5\" on top. height is approx. 9\". some sphagnum over bottom hole to block losing soil. trimmed dead stalks away. thorougly wetted with distilled water. didn't have enough mix to fill to top, will have to add more soon."
+      }
+      {
+        date: 20151126 19:21:00
+        size: "-"
+        alive: true
+        notes: "been largely kept inside to shelter from the cold. put outside if the regular rains dont seem to be coming and sunny out. I think the lessened light has caused there to be less dew and shorter leaves. when bought, it was absolutely slobbering. now is looks less than the adelae, and maybe equivalent to the capensis dew-wise."
       }
     ]
     died: null
@@ -524,7 +546,7 @@ circleOfLifeList = [
       source: "Shipped from California Carnivores"
     }
   , {
-    taxon: "Tillandsia 'Silver Rose'"
+    taxon: "Tillandsia captita 'Silver Rose'"
     owner: "Tom"
     arrived: {
       date: 20151211 12
