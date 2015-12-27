@@ -466,6 +466,14 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date:
+        alive: true
+        notes: "went home with Fonda"
+      }
+    ]
+    died: null
   }, {
     taxon: "Sarracenia 'Dana\'s Delight'"
     owner: "Fonda"
@@ -479,6 +487,55 @@ circleOfLifeList = [
     arrived: {
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
+    }
+  }, {
+    taxon: "Tillandsia tenuifolia blue"
+    owner: "Tom"
+    arrived: {
+      date: 20151211 12
+      source: "Shipped from California Carnivores"
+    }
+  , {
+    taxon: "Tillandsia tricolor"
+    owner: "Tom"
+    arrived: {
+      date: 20151211 12
+      source: "Shipped from California Carnivores"
+    }
+  , {
+    taxon: "Tillandsia caliginosa"
+    owner: "Tom"
+    arrived: {
+      date: 20151211 12
+      source: "Shipped from California Carnivores"
+    }
+  , {
+    taxon: "Tillandsia xerographica x brachycaulos"
+    owner: "Tom"
+    arrived: {
+      date: 20151211 12
+      source: "Shipped from California Carnivores"
+    }
+  , {
+    taxon: "Tillandsia ehlersiana"
+    owner: "Tom"
+    arrived: {
+      date: 20151211 12
+      source: "Shipped from California Carnivores"
+    }
+  , {
+    taxon: "Tillandsia 'Silver Rose'"
+    owner: "Tom"
+    arrived: {
+      date: 20151211 12
+      source: "Shipped from California Carnivores"
+    }
+  , {
+    taxon: "Tillandsia paleacea x tectorum"
+    owner: "Tom"
+    arrived: {
+      date: 20151211 12
+      source: "Shipped from California Carnivores"
     }
   }
 ]
