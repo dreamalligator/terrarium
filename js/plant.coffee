@@ -444,6 +444,11 @@ circleOfLifeList = [
         alive: true
         notes: "been largely kept inside to shelter from the cold. put outside if the regular rains dont seem to be coming and sunny out. I think the lessened light has caused there to be less dew and shorter leaves. when bought, it was absolutely slobbering. now is looks less than the adelae, and maybe equivalent to the capensis dew-wise."
       }
+      {
+        date: 20160110 19:30
+        alive: true
+        notes: "was left outside in the rain and cold one night, maybe a week ago, seems to be slowly dying."
+      }
     ]
     died: null
   }, {
