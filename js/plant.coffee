@@ -424,6 +424,11 @@ circleOfLifeList = [
         alive: true
         notes: "the primary plant as well as the babies are flourishing. they have developed a beautiful red tinge, probably due to the long light I am giving every day. almost slobbering with dew."
       }
+      {
+        date: 20160308
+        alive: true
+        notes: "looking great, about to flower. I installed a timer for my lights and the deep red seems to have died down."
+      }
     ]
   }, {
     taxon: "Drosera adelae"
@@ -438,6 +443,11 @@ circleOfLifeList = [
         size: "+"
         alive: true
         notes: "the primary plant as well as the babies are flourishing. they have developed a beautiful red tinge, probably due to the long light I am giving every day. almost slobbering with dew."
+      }
+      {
+        date: 20160308
+        alive: true
+        notes: "same as the other Adela, both are shooting up stalks to flower, and a couple of the smaller plants as well."
       }
     }
   }, {
@@ -465,8 +475,13 @@ circleOfLifeList = [
         alive: true
         notes: "was left outside in the rain and cold one night, maybe a week ago, seems to be slowly dying."
       }
+      {
+        date: 20160308
+        alive: false
+        notes: "'Peter' the Drosophyllum passed away a good bit ago, but I was too depressed to log it."
+      }
     ]
-    died: null
+    died: true
   }, {
     taxon: "Sarracenia psittacina"
     owner: "Tom"
@@ -474,6 +489,13 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+        notes: "have not seen any great growth, but there are definitely small green pitcher-letts. Put up a greenhouse this week, planning on moving outside, as well as the other Sarracenia, if I can ensure the greenhouse is keeping within a good temperature and humidity range."
+      }
+    ]
   }, {
     taxon: "Dionaea muscipula 'Royal Red'"
     owner: "Tom"
@@ -481,6 +503,13 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+        notes: "Alive, and looks okay, but have not seen any notable growth. Flightless drosophila eggs and media arrived this week, they've since grown into many larvae, hoping they turn into fruit flies soon to try to coax this plant into more growth."
+      }
+    ]
   }, {
     taxon: "Pinguicula primuliflora"
     owner: "Tom"
@@ -488,6 +517,13 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+        notes: "Doing super well, there's a couple extra pups. The biggest two plants have flowered and are very pretty! I haven't looked up the polination yet, but tried to angle the flowers over the cyclosecta pot in case anything falls."
+      }
+    ]
   }, {
     taxon: "Pinguicula cyclosecta"
     owner: "Tom"
@@ -495,6 +531,13 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+        notes: "Still so tiny!!! Unsure if giving best environment."
+      }
+    ]
   }, {
     taxon: "Nepenthes 'Miranda'"
     owner: "Alex"
@@ -502,6 +545,13 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+        notes: "Doing a-okay, has made a couple more pitchers."
+      }
+    ]
   }, {
     taxon: "Nepenthes x maxima"
     owner: "Fonda"
@@ -517,6 +567,7 @@ circleOfLifeList = [
       }
     ]
     died: null
+    status: "unknown"
   }, {
     taxon: "Sarracenia 'Dana\'s Delight'"
     owner: "Fonda"
@@ -524,6 +575,13 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+        notes: "Made really nice big pitcher, seems to be doing a-okay."
+      }
+    ]
   }, {
     taxon: "Nepenthes singalana 'Tujuh'"
     owner: "Tom"
@@ -531,6 +589,13 @@ circleOfLifeList = [
       date: 20151016 18 # YYYYMMDD HR:MM:SS
       source: "Bought on site at California Carnivores."
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+        notes: "Alive, but pretty tiny still, unsure if giving best environment."
+      }
+    ]
   }, {
     taxon: "Tillandsia tenuifolia blue"
     owner: "Tom"
@@ -538,6 +603,12 @@ circleOfLifeList = [
       date: 20151211 12
       source: "Shipped from California Carnivores"
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+      }
+    ]
   , {
     taxon: "Tillandsia tricolor"
     owner: "Tom"
@@ -545,6 +616,12 @@ circleOfLifeList = [
       date: 20151211 12
       source: "Shipped from California Carnivores"
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+      }
+    ]
   , {
     taxon: "Tillandsia caliginosa"
     owner: "Tom"
@@ -552,6 +629,12 @@ circleOfLifeList = [
       date: 20151211 12
       source: "Shipped from California Carnivores"
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+      }
+    ]
   , {
     taxon: "Tillandsia xerographica x brachycaulos"
     owner: "Tom"
@@ -559,6 +642,12 @@ circleOfLifeList = [
       date: 20151211 12
       source: "Shipped from California Carnivores"
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+      }
+    ]
   , {
     taxon: "Tillandsia ehlersiana"
     owner: "Tom"
@@ -566,6 +655,12 @@ circleOfLifeList = [
       date: 20151211 12
       source: "Shipped from California Carnivores"
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+      }
+    ]
   , {
     taxon: "Tillandsia captita 'Silver Rose'"
     owner: "Tom"
@@ -573,6 +668,12 @@ circleOfLifeList = [
       date: 20151211 12
       source: "Shipped from California Carnivores"
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+      }
+    ]
   , {
     taxon: "Tillandsia paleacea x tectorum"
     owner: "Tom"
@@ -580,6 +681,12 @@ circleOfLifeList = [
       date: 20151211 12
       source: "Shipped from California Carnivores"
     }
+    inBetween: [
+      {
+        date: 20160308
+        alive: true
+      }
+    ]
   }, {
     taxon: "Nepenthes ventricosa x glandulifera"
     arrived: {
