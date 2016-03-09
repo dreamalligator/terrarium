@@ -325,6 +325,22 @@ parametersAndSources = [
     f: []
     p: []
     sources: null
+  }, {
+    taxon: "Nepenthes ventricosa x glandulifera"
+  }, {
+    taxon: "Sarracenia 'Abandoned Hope'"
+  }, {
+    taxon: "Sarracenia. flava v. cuprea BH x v. ornata Bullich(?) Co, GA"
+  }, {
+    taxon: "Drosera dichotoma 'T-Form'"
+  }, {
+    taxon: "Sarracenia x 'Judith Hindle'"
+  }, {
+    taxon: "Sarracenia flava 'orange flower' x purpurea ssp. purpurea"
+  }, {
+    taxon: "Drosera intermedia x capillaris"
+  }, {
+    taxon: "Drosera filiformis 'FL Giant'"
   }
 ]
 
@@ -562,6 +578,78 @@ circleOfLifeList = [
     owner: "Tom"
     arrived: {
       date: 20151211 12
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Nepenthes ventricosa x glandulifera"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Sarracenia 'Abandoned Hope'"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Sarracenia. flava v. cuprea BH x v. ornata Bullich(?) Co, GA"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Drosera dichotoma 'T-Form'"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Sarracenia x 'Judith Hindle'"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Sarracenia flava 'orange flower' x purpurea ssp. purpurea"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Drosera intermedia x capillaris"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Drosera filiformis 'FL Giant'"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Dionaea muscipula"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Dionaea muscipula"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Drosera binata"
+    arrived: {
+      date: 20160308
+      source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Darlingtonia californica"
+    arrived: {
+      date: 20160308
       source: "Shipped from California Carnivores"
     }
   }
