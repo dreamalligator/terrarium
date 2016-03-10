@@ -3,7 +3,7 @@ A new terrarium for carnivorous plants.
 
 We'll be thoroughly documenting this project with a physical lab notebook, supplemented with Jupyter [Notebooks](http://nbviewer.ipython.org/github/digitalvapor/terrarium/tree/master/), and light/humidity/temperature sensors attached to a Raspberry Pi.
 
-## Plants (second try at this)
+## Plants
 
 ### First Batch (2015-10-05)
 
@@ -28,7 +28,21 @@ We'll be thoroughly documenting this project with a physical lab notebook, suppl
 * Sarracenia 'Dana's Delight' - a pink hybrid
 * [Nepenthes x maxima](https://en.wikipedia.org/wiki/Nepenthes_maxima) - the Great Pitcher-Plant
 
-## Plants (first try at this)
+### Third Batch (2016-03-08)
+
+* [Darlingtonia californica](https://en.wikipedia.org/wiki/Darlingtonia_californica) - cobra lily
+* [Drosera binata](https://en.wikipedia.org/wiki/Drosera_binata) - forked sundew
+* [Drosera dichotoma](https://en.wikipedia.org/wiki/Drosera_binata#Taxonomy_and_botanical_history) 'T-Form' - forked sundew
+* [Dionaea muscipula](https://en.wikipedia.org/wiki/Venus_flytrap) (x2) - venus flytrap
+* [Drosera filiformis](https://en.wikipedia.org/wiki/Drosera_filiformis) 'FL Giant' - thread-leaved sundew
+* Drosera [intermedia](https://en.wikipedia.org/wiki/Drosera_intermedia) x [capillaris](https://en.wikipedia.org/wiki/Drosera_capillaris)
+* Sarracenia 'Abandoned Hope' (Sarracenia x catesbaei, which is S. purpurea subsp. venosa var. burkei with S. flava var. flava.)
+* Sarracenia [flava](https://en.wikipedia.org/wiki/Sarracenia_flava) 'orange flower' x [purpurea ssp. purpurea](https://en.wikipedia.org/wiki/Sarracenia_purpurea#Taxonomy)
+* Sarracenia 'Judith Hindle' (leucophylla x flava 'rugelli') x S. purpurea 'chipola')
+* Sarracenia [flava](https://en.wikipedia.org/wiki/Sarracenia_flava) v. cuprea BH x v. ornata Bullich(?) Co, GA
+* Nepenthes [ventricosa](https://en.wikipedia.org/wiki/Nepenthes_ventricosa) x [glandulifera](https://en.wikipedia.org/wiki/Nepenthes_glandulifera)
+
+## Plants (first try at this, deprecating section soon)
 The following are the original set of plants that we will be using in this terraria.
 
 ### From seed

@@ -2,15 +2,15 @@ parametersAndSources = [
   {
     taxon: ""
     common_name: "general parameters"
-    t: [] # temperature (ambient, soil, extremes)
-    h: [50, 90] # humidity
-    l: [] # luminosity
-    m: [] # moisture
-    f: [] # air flow
-    p: [] # ph
-    s: [] # soil
-    c: [] # container
-    dp: # dormancy period
+    t: [] # temperature (ambient, soil, extremes) [comments]
+    h: [50, 90] # humidity [comments]
+    l: [] # luminosity [comments]
+    m: [] # moisture [comments]
+    f: [] # air flow [comments]
+    p: [] # ph [comments]
+    s: [] # soil [comments]
+    c: [] # container [comments]
+    dp: # dormancy period [comments]
     d: { # databases
       i: # ITIS taxonomic serial number
       u: # USDA plants symbol
@@ -284,9 +284,9 @@ parametersAndSources = [
   }, {
     taxon: "Pinguicula cyclosecta"
     common_name: ""
-    t: [[68, 95], [null, null], [39.2, null], "warm humid in summer, cooler and drier in winter"]
-    h: [[20, null], "high humidity when carnivorous leaves, less when not."]
-    l: ["need seasonal light cues"]
+    t: [[68, 95], [null, null], [39.2, 100], "warm humid in summer, cooler and drier in winter. cool nights."]
+    h: [[40, 80], "high humidity when carnivorous leaves, less when not."]
+    l: ["medium light, need seasonal light cues"]
     m: ["not boggy. water according to leaf type, not season. when the plants have carnivorous leaves, they need to be kept moist and enjoy high humidity although they do fine at 20% RH. Succulent leaves means they need less water, keep soild lightly damp. Can be totally dry if air is very humid."]
     f: ["windy"]
     p: ["alkaline"]
@@ -294,6 +294,7 @@ parametersAndSources = [
       ["Johan van Marm, <i>'Here at last: Pinguicula cyclosecta</i>' The International Pinguicula Study Group, Newsletter No. 6, April 1995", "http://www.carnivorousplants.org/IPSG/IPSG_06.PDF"]
       ["John Brittnacher, <i>Growing Mexican Pinguicula</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Pings_Mexican.php"]
       ["<i>Pinguicula cyclosecta</i>, A World of Pinguicula", "http://www.pinguicula.org/pages/plantes/pinguicula_cyclosecta.htm"]
+      ["Charles L. Powell, <i>Mexican Pings.</i>, Carnivorous Plant Newsletter 16(4):106-110 (1987)", "http://www.carnivorousplants.org/cpn/articles/CPNv16n4p106_110.pdf"]
     ]
   }, {
     taxon: "Nepenthes x maxima"
@@ -329,12 +330,15 @@ parametersAndSources = [
     taxon: "Nepenthes ventricosa x glandulifera"
   }, {
     taxon: "Sarracenia 'Abandoned Hope'"
+    sources: [["http://www.carnivorousplants.org/cpn/Species/v29n2p46_49.html#hope"]]
   }, {
     taxon: "Sarracenia. flava v. cuprea BH x v. ornata Bullich(?) Co, GA"
   }, {
     taxon: "Drosera dichotoma 'T-Form'"
   }, {
-    taxon: "Sarracenia x 'Judith Hindle'"
+    taxon: "Sarracenia x 'Judith Hindle' (cross of Sarracenia (leucophylla X flava "rugelli") X. S. purpurea "chipola")"
+    common_name: ""
+    sources: [['CPN v22 n1_2p38', 'http://www.carnivorousplants.org/cpn/articles/CPNv22n1_2p38.pdf'], ['bog gardens in temperate zones (up to 100F, fork leafed sundew dont survive below 15F regularly (but could)), temps logged for purpurea, leucophylla, s. flava, judith hindle, rubra subsp. ruba, oreophila, psittacina x leucophylla (35-45F that night, 30 ok too (pupurea mentioned))', 'http://www.carnivorousplants.org/cpn/articles/CPNv31n2p57_59.pdf']]
   }, {
     taxon: "Sarracenia flava 'orange flower' x purpurea ssp. purpurea"
   }, {
