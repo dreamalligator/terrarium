@@ -10,10 +10,10 @@ parametersAndSources = [
     p: [] # ph [comments]
     s: [] # soil [comments]
     c: [] # container [comments]
-    dp: # dormancy period [comments]
+    dp: null # dormancy period [comments]
     d: { # databases
-      i: # ITIS taxonomic serial number
-      u: # USDA plants symbol
+      i: null # ITIS taxonomic serial number
+      u: null # USDA plants symbol
     }
     sources: [
       ["Barry Rice, <i>About Humidity</i>, The Carnivorous Plant FAQ (2007)", "http://www.sarracenia.com/faq/faq3440.html"]
@@ -336,9 +336,11 @@ parametersAndSources = [
   }, {
     taxon: "Drosera dichotoma 'T-Form'"
   }, {
-    taxon: "Sarracenia x 'Judith Hindle' (cross of Sarracenia (leucophylla X flava "rugelli") X. S. purpurea "chipola")"
+    taxon: "Sarracenia x 'Judith Hindle' (cross of Sarracenia (leucophylla X flava 'rugelli') X. S. purpurea 'chipola')"
     common_name: ""
-    sources: [['CPN v22 n1_2p38', 'http://www.carnivorousplants.org/cpn/articles/CPNv22n1_2p38.pdf'], ['bog gardens in temperate zones (up to 100F, fork leafed sundew dont survive below 15F regularly (but could)), temps logged for purpurea, leucophylla, s. flava, judith hindle, rubra subsp. ruba, oreophila, psittacina x leucophylla (35-45F that night, 30 ok too (pupurea mentioned))', 'http://www.carnivorousplants.org/cpn/articles/CPNv31n2p57_59.pdf']]
+    sources: [['James T. Robinson, <i>New CP Cultivar Received in 1992</i>, Carnivorous Plant Newsletter 22(1 & 2):38 (1993)', 'http://www.carnivorousplants.org/cpn/articles/CPNv22n1_2p38.pdf'], ['Doug Peel, <i>A Cure for the Common Cold</i>, Carnivorous Plant Newsletter 31(2):57-59 (2002)', 'http://www.carnivorousplants.org/cpn/articles/CPNv31n2p57_59.pdf']]
+    # TODO: add these notes from A Cure for the Common Cold
+    # bog gardens in temperate zones (up to 100F, fork leafed sundew dont survive below 15F regularly (but could)), temps logged for purpurea, leucophylla, s. flava, judith hindle, rubra subsp. ruba, oreophila, psittacina x leucophylla (35-45F that night, 30 ok too (pupurea mentioned))
   }, {
     taxon: "Sarracenia flava 'orange flower' x purpurea ssp. purpurea"
   }, {
@@ -351,7 +353,7 @@ parametersAndSources = [
 synonymList = [
   [
     {
-      taxon: "Drosera filiformis",
+      taxon: "Drosera filiformis"
       var: "tracyi"
     },
     {
@@ -364,53 +366,50 @@ circleOfLifeList = [
   {
     taxon: "Drosera binata"
     arrived: {
-      date: 20151005 12 # YYYYMMDD HR:MM:SS
+      date: "2015-10-05T12" # ISO 8601 format
       source: "shipped from California Carnivores, potted."
     }
     inBetween: [
       {
-        date: 20151009
-        size:
+        date: "2015-10-09"
         alive: true
-      } , {
-        date:
       }
     ]
     died: null
   }, {
     taxon: "Drosera tracyi"
     arrived: {
-      date: 20151005 12 # YYYYMMDD HR:MM:SS
+      date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
   }, {
     taxon: "Sarracenia rubra ssp. gulfensis 'ancestral x giant'"
     arrived: {
-      date: 20151005 12 # YYYYMMDD HR:MM:SS
+      date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
   }, {
     taxon: "Drosera Capensis"
     arrived: {
-      date: 20151005 12 # YYYYMMDD HR:MM:SS
+      date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
   }, {
     taxon: "Drosera Capensis 'alba'"
     arrived: {
-      date: 20151005 12 # YYYYMMDD HR:MM:SS
+      date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
   }, {
     taxon: "Drosera Capensis 'narrow red'"
     arrived: {
-      date: 20151005 12 # YYYYMMDD HR:MM:SS
+      date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
   }, {
     taxon: "Nepenthes ventricosa x (singalana x aristolochioides)"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       notes: "medium size. Super dark purple pitchers, almost black."
       source: "Bought on site at California Carnivores."
     }
@@ -418,18 +417,18 @@ circleOfLifeList = [
     taxon: "Drosera adelae"
     owner: "Tom"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date: 20151216 19:30:00
+        date: "2015-12-16T19:30:00"
         size: "+"
         alive: true
         notes: "the primary plant as well as the babies are flourishing. they have developed a beautiful red tinge, probably due to the long light I am giving every day. almost slobbering with dew."
       }
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
         notes: "looking great, about to flower. I installed a timer for my lights and the deep red seems to have died down."
       }
@@ -438,49 +437,49 @@ circleOfLifeList = [
     taxon: "Drosera adelae"
     owner: "Fonda"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
-    inBetween: {
+    inBetween: [
       {
-        date: 20151216 19:30:00
+        date: "2015-12-16-T19:30:00"
         size: "+"
         alive: true
         notes: "the primary plant as well as the babies are flourishing. they have developed a beautiful red tinge, probably due to the long light I am giving every day. almost slobbering with dew."
       }
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
         notes: "same as the other Adela, both are shooting up stalks to flower, and a couple of the smaller plants as well."
       }
-    }
+    ]
   }, {
     taxon: "Drosophyllum"
     owner: "Tom"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date: 20151108 17
+        date: "2015-11-08T17"
         size: 1
         alive: true
         notes: "slack potted in terra cotta clay pot, with mix made by Peter D'Amato. pot is approximately 6\" bottom diameter and 9.5\" on top. height is approx. 9\". some sphagnum over bottom hole to block losing soil. trimmed dead stalks away. thorougly wetted with distilled water. didn't have enough mix to fill to top, will have to add more soon."
       }
       {
-        date: 20151126 19:21:00
+        date: "2015-11-26T19:21:00"
         size: "-"
         alive: true
         notes: "been largely kept inside to shelter from the cold. put outside if the regular rains dont seem to be coming and sunny out. I think the lessened light has caused there to be less dew and shorter leaves. when bought, it was absolutely slobbering. now is looks less than the adelae, and maybe equivalent to the capensis dew-wise."
       }
       {
-        date: 20160110 19:30
+        date: "2016-01-10T19:30"
         alive: true
         notes: "was left outside in the rain and cold one night, maybe a week ago, seems to be slowly dying."
       }
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: false
         notes: "'Peter' the Drosophyllum passed away a good bit ago, but I was too depressed to log it."
       }
@@ -490,12 +489,12 @@ circleOfLifeList = [
     taxon: "Sarracenia psittacina"
     owner: "Tom"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
         notes: "have not seen any great growth, but there are definitely small green pitcher-letts. Put up a greenhouse this week, planning on moving outside, as well as the other Sarracenia, if I can ensure the greenhouse is keeping within a good temperature and humidity range."
       }
@@ -504,12 +503,12 @@ circleOfLifeList = [
     taxon: "Dionaea muscipula 'Royal Red'"
     owner: "Tom"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
         notes: "Alive, and looks okay, but have not seen any notable growth. Flightless drosophila eggs and media arrived this week, they've since grown into many larvae, hoping they turn into fruit flies soon to try to coax this plant into more growth."
       }
@@ -518,12 +517,12 @@ circleOfLifeList = [
     taxon: "Pinguicula primuliflora"
     owner: "Tom"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
         notes: "Doing super well, there's a couple extra pups. The biggest two plants have flowered and are very pretty! I haven't looked up the polination yet, but tried to angle the flowers over the cyclosecta pot in case anything falls."
       }
@@ -532,12 +531,12 @@ circleOfLifeList = [
     taxon: "Pinguicula cyclosecta"
     owner: "Tom"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
         notes: "Still so tiny!!! Unsure if giving best environment."
       }
@@ -546,12 +545,12 @@ circleOfLifeList = [
     taxon: "Nepenthes 'Miranda'"
     owner: "Alex"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
         notes: "Doing a-okay, has made a couple more pitchers."
       }
@@ -560,12 +559,12 @@ circleOfLifeList = [
     taxon: "Nepenthes x maxima"
     owner: "Fonda"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date:
+        date: "2015-12"
         alive: true
         notes: "went home with Fonda"
       }
@@ -576,12 +575,12 @@ circleOfLifeList = [
     taxon: "Sarracenia 'Dana\'s Delight'"
     owner: "Fonda"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
         notes: "Made really nice big pitcher, seems to be doing a-okay."
       }
@@ -590,12 +589,12 @@ circleOfLifeList = [
     taxon: "Nepenthes singalana 'Tujuh'"
     owner: "Tom"
     arrived: {
-      date: 20151016 18 # YYYYMMDD HR:MM:SS
+      date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
         notes: "Alive, but pretty tiny still, unsure if giving best environment."
       }
@@ -604,163 +603,163 @@ circleOfLifeList = [
     taxon: "Tillandsia tenuifolia blue"
     owner: "Tom"
     arrived: {
-      date: 20151211 12
+      date: "2015-12-11T12"
       source: "Shipped from California Carnivores"
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
       }
     ]
-  , {
+  }, {
     taxon: "Tillandsia tricolor"
     owner: "Tom"
     arrived: {
-      date: 20151211 12
+      date: "2015-12-11T12"
       source: "Shipped from California Carnivores"
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
       }
     ]
-  , {
+  }, {
     taxon: "Tillandsia caliginosa"
     owner: "Tom"
     arrived: {
-      date: 20151211 12
+      date: "2015-12-11T12"
       source: "Shipped from California Carnivores"
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
       }
     ]
-  , {
+  }, {
     taxon: "Tillandsia xerographica x brachycaulos"
     owner: "Tom"
     arrived: {
-      date: 20151211 12
+      date: "2015-12-11T12"
       source: "Shipped from California Carnivores"
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
       }
     ]
-  , {
+  }, {
     taxon: "Tillandsia ehlersiana"
     owner: "Tom"
     arrived: {
-      date: 20151211 12
+      date: "2015-12-11T12"
       source: "Shipped from California Carnivores"
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
       }
     ]
-  , {
+  }, {
     taxon: "Tillandsia captita 'Silver Rose'"
     owner: "Tom"
     arrived: {
-      date: 20151211 12
+      date: "2015-12-11T12"
       source: "Shipped from California Carnivores"
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
       }
     ]
-  , {
+  }, {
     taxon: "Tillandsia paleacea x tectorum"
     owner: "Tom"
     arrived: {
-      date: 20151211 12
+      date: "2015-12-11T12"
       source: "Shipped from California Carnivores"
     }
     inBetween: [
       {
-        date: 20160308
+        date: "2016-03-08"
         alive: true
       }
     ]
   }, {
     taxon: "Nepenthes ventricosa x glandulifera"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Sarracenia 'Abandoned Hope'"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Sarracenia. flava v. cuprea 'BH' x v. ornata 'Bulloch Co, GA'"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Drosera dichotoma 'T-Form'"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Sarracenia x 'Judith Hindle'"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Sarracenia flava 'orange flower' x purpurea ssp. purpurea"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Drosera intermedia x capillaris"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Drosera filiformis 'FL Giant'"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Dionaea muscipula"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Dionaea muscipula"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Drosera binata"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }, {
     taxon: "Darlingtonia californica"
     arrived: {
-      date: 20160308
+      date: "2016-03-08"
       source: "Shipped from California Carnivores"
     }
   }

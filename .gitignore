@@ -6,3 +6,5 @@ backup
 infragram
 arduino/libraries
 scratchpad*
+server.js
+js/*.js
