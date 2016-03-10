@@ -3,7 +3,8 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         exec: {
             coffee: {
-                cmd: 'coffee -c server.coffee'
+                cmd: 'coffee -c server.coffee && \
+                coffee -c js/*.coffee'
             },
             server: {
                 cmd: 'node server.js'
