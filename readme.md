@@ -39,7 +39,7 @@ We'll be thoroughly documenting this project with a physical lab notebook, suppl
 * Sarracenia 'Abandoned Hope' (Sarracenia x catesbaei, which is S. purpurea subsp. venosa var. burkei with S. flava var. flava.)
 * Sarracenia [flava](https://en.wikipedia.org/wiki/Sarracenia_flava) 'orange flower' x [purpurea ssp. purpurea](https://en.wikipedia.org/wiki/Sarracenia_purpurea#Taxonomy)
 * Sarracenia 'Judith Hindle' (leucophylla x flava 'rugelli') x S. purpurea 'chipola')
-* Sarracenia [flava](https://en.wikipedia.org/wiki/Sarracenia_flava) v. cuprea BH x v. ornata Bullich(?) Co, GA
+* Sarracenia [flava](https://en.wikipedia.org/wiki/Sarracenia_flava) v. cuprea 'BH' x v. ornata 'Bulloch Co, GA'
 * Nepenthes [ventricosa](https://en.wikipedia.org/wiki/Nepenthes_ventricosa) x [glandulifera](https://en.wikipedia.org/wiki/Nepenthes_glandulifera)
 
 ## Plants (first try at this, deprecating section soon)
@@ -126,8 +126,9 @@ If you want the Arduino libraries I use in this project, be sure to add the `--r
 
 1. `git clone --recursive https://github.com/digitalvapor/terrarium.git`
 2. `cd terrarium`
-3. `grunt` will run an Express server on port `3000`.
-4. For terrarium notebooks, `cd notebook` and then `ipython notebook`.
+3. `npm install`
+4. `grunt` will run an Express server on port `3000`.
+5. For terrarium notebooks, `cd notebook` and then `jupyter notebook`.
 
 # License
 All images in `images` folder are [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). The license for everything else is [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

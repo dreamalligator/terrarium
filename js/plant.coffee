@@ -332,7 +332,7 @@ parametersAndSources = [
     taxon: "Sarracenia 'Abandoned Hope'"
     sources: [["http://www.carnivorousplants.org/cpn/Species/v29n2p46_49.html#hope"]]
   }, {
-    taxon: "Sarracenia. flava v. cuprea BH x v. ornata Bullich(?) Co, GA"
+    taxon: "Sarracenia. flava v. cuprea 'BH' x v. ornata 'Bulloch Co, GA'"
   }, {
     taxon: "Drosera dichotoma 'T-Form'"
   }, {
@@ -704,7 +704,7 @@ circleOfLifeList = [
       source: "Shipped from California Carnivores"
     }
   }, {
-    taxon: "Sarracenia. flava v. cuprea BH x v. ornata Bullich(?) Co, GA"
+    taxon: "Sarracenia. flava v. cuprea 'BH' x v. ornata 'Bulloch Co, GA'"
     arrived: {
       date: 20160308
       source: "Shipped from California Carnivores"
