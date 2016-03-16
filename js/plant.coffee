@@ -596,7 +596,17 @@ circleOfLifeList = [
       {
         date: "2016-03-08"
         alive: true
-        notes: "Alive, but pretty tiny still, unsure if giving best environment."
+        notes: "Alive, but pretty tiny still, a whole new pitcher grew."
+      }
+      {
+        date: "2016-03-09"
+        alive: true
+        notes: "Gave approximately a third of an osmocote in the newest pitcher that had relatively recently opened."
+      }
+      {
+        date: "2016-03-10"
+        alive: true
+        notes: "The osmocote was too much! The pitcher is instantly withered."
       }
     ]
   }, {
