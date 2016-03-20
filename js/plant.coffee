@@ -7,10 +7,11 @@ parametersAndSources = [
     l: [] # luminosity [comments]
     m: [] # moisture [comments]
     f: [] # air flow [comments]
-    p: [] # ph [comments]
+    ph: [] # ph [comments]
     s: [] # soil [comments]
     c: [] # container [comments]
     dp: null # dormancy period [comments]
+    p: [] # propagation [comments]
     d: { # databases
       i: null # ITIS taxonomic serial number
       u: null # USDA plants symbol
@@ -26,7 +27,7 @@ parametersAndSources = [
     l: [[8, 10], "full to partly  sunny"]
     m: ["damp, but not waterlogged"]
     f: []
-    p: []
+    ph: []
     sources: [
       ["Brian Barnes, <i>Growing Byblis successfully</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Byblis.php"]
       ["Peter D'Amato, <i>The Savage Garden: Cultivating Carnivorous Plants</i>, p184-185, 1998", "ISBN: 0-89815-915-6"]
@@ -39,7 +40,7 @@ parametersAndSources = [
     l: [14]
     m: []
     f: []
-    p: []
+    ph: []
     d: {
       i: 22004
       u: "DACA5"
@@ -56,7 +57,7 @@ parametersAndSources = [
     l: ["medium (some shade)"]
     m: []
     f: []
-    p: []
+    ph: []
     d: {
       i: 34465
       u: "UTSU"
@@ -71,10 +72,12 @@ parametersAndSources = [
     h: []
     l: []
     m: []
+    ph: []
     f: []
-    p: []
+    p: ["by seed, self-polinating, homophyllus bi or triannual species"]
     sources: [
       ["<i>Growing warm temperate Pinguicula</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Pings_WarmTemp.php"]
+      ["<i>Pinguicula lusitanica</i>, A World of Pinguicula", "http://www.pinguicula.org/pages/plantes/pinguicula_lusitanica.htm"]
     ]
   }, {
     taxon: "Proboscidea parviflora var. hohokamiania"
@@ -84,7 +87,7 @@ parametersAndSources = [
     l: []
     m: []
     f: []
-    p: []
+    ph: []
     d: {
       i: 833964
       u: "PRPAH"
@@ -100,7 +103,7 @@ parametersAndSources = [
     l: ["as much as possible; will flower >16 hr photoperiod"]
     m: []
     f: []
-    p: []
+    ph: []
     sources: [
       ["Aaron May, <i>Drosera rotundifolia 'Charles Darwin'</i>, The Sundew Grow Guides", "http://www.growsundews.com/sundews/rotundifolia_charles_darwin.html"]
     ]
@@ -112,7 +115,7 @@ parametersAndSources = [
     l: []
     m: []
     f: []
-    p: []
+    ph: []
     d: {
       i: 527788
       u: "DRTR4"
@@ -129,7 +132,7 @@ parametersAndSources = [
     l: ["will turn red with 16hr photoperiod"]
     m: []
     f: []
-    p: []
+    ph: []
     sources: [
       ["Aaron May, <i>Drosera capensis varieties</i>, The Sundew Grow Guides", "http://www.growsundews.com/sundews/Drosera_capensis.html"]
     ]
@@ -141,7 +144,7 @@ parametersAndSources = [
     l: ["full sun"]
     m: []
     f: []
-    p: []
+    ph: []
     sources: [
       ["<i>Growing Sarracenia leucophylla</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/S_leucophylla.php"]
     ]
@@ -153,7 +156,7 @@ parametersAndSources = [
     l: [13, "consistent, low-intensity illumination, or at least indirect sunlight"]
     m: []
     f: []
-    p: []
+    ph: []
     sources: [
       ["David P. Evans, <i>Nepenthes maxima ‘Lake Poso’</i>, Carnivorous Plant Newsletter 38(1):12-22 (2009)", "http://www.carnivorousplants.org/cpn/Species/v38n1p12_22.html"]
       ["Jeff Shafer, <i>Cultivation of Nepenthes Northiana</i>, Carnivorous Plant Newsletter 32(2):49-51 (2003)", "http://www.carnivorousplants.org/cpn/articles/CPNv32n2p49_51.pdf"]
@@ -166,7 +169,7 @@ parametersAndSources = [
     l: ["bright, or full sun"]
     m: []
     f: []
-    p: []
+    ph: []
     sources: [
       ["John Brittnacher, <i>Growing Sarracenia purpurea and S. rosea</i>, International Carnivorous Plant Society","http://www.carnivorousplants.org/howto/GrowingGuides/S_purpurea.php"]
       ["John Brittnacher, <i>Growing Sarracenia</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Sarracenia.php"]
@@ -179,7 +182,7 @@ parametersAndSources = [
     l: ["strong light"]
     m: ["medium wet to sodden during growth periods, and some moisture during dormancy"]
     f: []
-    p: ["acidic"]
+    ph: ["acidic"]
     sources: [
       ["I. Gilbert, <i>Drosera Binata</i>, Carnivorous Plant Newsletter 13(3):74-76 (1984)", "http://carnivorousplants.org/cpn/articles/CPNv13n3p74_76.pdf"]
     ]
@@ -191,7 +194,7 @@ parametersAndSources = [
     l: []
     m: []
     f: []
-    p: []
+    ph: []
     sources: null
   }, {
     taxon: "Nepenthes ventricosa x (singalana x aristolochioides)"
@@ -201,7 +204,7 @@ parametersAndSources = [
     l: []
     m: []
     f: []
-    p: []
+    ph: []
     sources: null
   }, {
     taxon: "Drosera adelae"
@@ -211,7 +214,7 @@ parametersAndSources = [
     l: ["cited as found in wild with low light intensity, but lots of light cited by growers - see citations"]
     m: []
     f: []
-    p: []
+    ph: []
     sources: [
       ["John Brittnacher, <i>Growing Drosera adelae and sisters</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/DroseraTropical.php"]
       ["Roger Hoelter, <i>On the Care and (Not) Feeding of D. Adelae, Prolifera and Schizandra</i>, Carnivorous Plant Newsletter 17(1):22-24 (1988)", "http://www.carnivorousplants.org/cpn/articles/CPNv17n1p22_24.pdf"]
@@ -246,7 +249,7 @@ parametersAndSources = [
     l: ["full sun"]
     m: ["can handle submersion"]
     f: []
-    p: []
+    ph: []
     sources: [
       ["Growing Sarracenia psittacina, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/S_psittacina.php"]
       ["Barry Rice, <i>About Sarracenia psittacina, the parrot pitcher plant</i>", "http://www.sarracenia.com/faq/faq5536.html"]
@@ -260,7 +263,7 @@ parametersAndSources = [
     l: ["full sun"]
     m: ["wet, but not soggy. water level should be more than 5cm (2 in) below surface of soil."]
     f: []
-    p: []
+    ph: []
     sources: [
       ["John Brittnacher, <i>Growing Dionaea muscipula</i>", "http://www.carnivorousplants.org/howto/GrowingGuides/Dionaea.php"]
     ]
@@ -272,7 +275,7 @@ parametersAndSources = [
     l: ["indirect light or filtered, avoid direct sun exposure"]
     m: ["moist, can tolerate flooded conditions for a short period of time. a good aeration is especially necessary to avoid the prone rotting of the plants."]
     f: []
-    p: []
+    ph: []
     d: {
       i: 34440
       u: "PIPR"
@@ -289,7 +292,7 @@ parametersAndSources = [
     l: ["medium light, need seasonal light cues"]
     m: ["not boggy. water according to leaf type, not season. when the plants have carnivorous leaves, they need to be kept moist and enjoy high humidity although they do fine at 20% RH. Succulent leaves means they need less water, keep soild lightly damp. Can be totally dry if air is very humid."]
     f: ["windy"]
-    p: ["alkaline"]
+    ph: ["alkaline"]
     sources: [
       ["Johan van Marm, <i>'Here at last: Pinguicula cyclosecta</i>' The International Pinguicula Study Group, Newsletter No. 6, April 1995", "http://www.carnivorousplants.org/IPSG/IPSG_06.PDF"]
       ["John Brittnacher, <i>Growing Mexican Pinguicula</i>, International Carnivorous Plant Society", "http://www.carnivorousplants.org/howto/GrowingGuides/Pings_Mexican.php"]
@@ -304,7 +307,7 @@ parametersAndSources = [
     l: []
     m: []
     f: []
-    p: []
+    ph: []
     sources: null
   }, {
     taxon: "Sarracenia 'Dana\'s Delight'"
@@ -314,7 +317,7 @@ parametersAndSources = [
     l: []
     m: []
     f: []
-    p: []
+    ph: []
     sources: null
   }, {
     taxon: "Nepenthes singalana 'Tujuh'"
@@ -324,7 +327,7 @@ parametersAndSources = [
     l: []
     m: []
     f: []
-    p: []
+    ph: []
     sources: null
   }, {
     taxon: "Nepenthes ventricosa x glandulifera"
@@ -374,6 +377,11 @@ circleOfLifeList = [
         date: "2015-10-09"
         alive: true
       }
+      {
+        date: "2016-03-20"
+        alive: true
+        notes: "doing quite well"
+      }
     ]
     died: null
   }, {
@@ -382,30 +390,64 @@ circleOfLifeList = [
       date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
+    inBetween: [
+      {
+        date: "2016-03-20"
+        alive: true
+        notes: "finally shooting up new stalks. the drosera binata that snuck into the pot have been doing much more famously than the primary tenant. I'm very excited to see that a drosera binata var. multifida is in the pot as well!"
+      }
+    ]
   }, {
     taxon: "Sarracenia rubra ssp. gulfensis 'ancestral x giant'"
     arrived: {
       date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
+    inBetween: [
+      {
+        date: "2016-03-20"
+        alive: true
+        notes: "finally shot up a quickly growing pitcher! about 4 inches so far. all of the Sarracenia, plus the single Darlingtonia have been moved to their own tray, and packed with New Zealand sphagnum in the extra space. I am going to fashion an automatic watering bottle to keep these guys always happy and moist."
+      }
+    ]
   }, {
     taxon: "Drosera Capensis"
     arrived: {
       date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
+    inBetween: [
+      {
+        alive: false
+        notes: "gave away during the christmas party."
+      }
+    ]
   }, {
     taxon: "Drosera Capensis 'alba'"
     arrived: {
       date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
+    inBetween: [
+      {
+        date: "2016-03-20"
+        alive: true
+        notes: "doing great"
+      }
+    ]
   }, {
     taxon: "Drosera Capensis 'narrow red'"
     arrived: {
       date: "2015-10-05T12"
       source: "shipped from California Carnivores, potted."
     }
+    inBetween: [
+      {
+        date: "2016-03-20"
+        alive: true
+        notes: "doing well enough, but comparitively not as excellent as the alba."
+      }
+    ]
   }, {
     taxon: "Nepenthes ventricosa x (singalana x aristolochioides)"
     arrived: {
@@ -432,6 +474,11 @@ circleOfLifeList = [
         alive: true
         notes: "looking great, about to flower. I installed a timer for my lights and the deep red seems to have died down."
       }
+      {
+        date: "2016-03-20"
+        alive: true
+        notes: "still looking great. completely slobbery. flowering with cute little red starbursts."
+      }
     ]
   }, {
     taxon: "Drosera adelae"
@@ -450,7 +497,12 @@ circleOfLifeList = [
       {
         date: "2016-03-08"
         alive: true
-        notes: "same as the other Adela, both are shooting up stalks to flower, and a couple of the smaller plants as well."
+        notes: "same as the other Adelae, both are shooting up stalks to flower, and a couple of the smaller plants as well."
+      }
+      {
+        date: "2016-03-20"
+        alive: true
+        notes: "same as the other adelae. doing great."
       }
     ]
   }, {
@@ -526,6 +578,11 @@ circleOfLifeList = [
         alive: true
         notes: "Doing super well, there's a couple extra pups. The biggest two plants have flowered and are very pretty! I haven't looked up the polination yet, but tried to angle the flowers over the cyclosecta pot in case anything falls."
       }
+      {
+        date: "2016-03-20"
+        alive: true
+        notes: "The pups have flowered as well. I didn't have any toothpicks, so I attempted to cross-polinate with q-tips. I don't think it worked at all."
+      }
     ]
   }, {
     taxon: "Pinguicula cyclosecta"
@@ -540,10 +597,15 @@ circleOfLifeList = [
         alive: true
         notes: "Still so tiny!!! Unsure if giving best environment."
       }
+      {
+        date: "2016-03-20"
+        alive: true
+        notes: "I realize now that this plant was in its winter rosette form, I started paying a bit more attention to the watering and two bigger leaves formed almost right away. I am hoping it is transforming into the carnivorous phase."
+      }
     ]
   }, {
     taxon: "Nepenthes 'Miranda'"
-    owner: "Alex"
+    owner: "Tom"
     arrived: {
       date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
@@ -573,7 +635,7 @@ circleOfLifeList = [
     status: "unknown"
   }, {
     taxon: "Sarracenia 'Dana\'s Delight'"
-    owner: "Fonda"
+    owner: "Tom"
     arrived: {
       date: "2015-10-16T18"
       source: "Bought on site at California Carnivores."
