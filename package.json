@@ -3,13 +3,12 @@
   "version": "0.0.1",
   "description": "my terrarium of carnivorous plants",
   "author": "Tom Spalding (https://github.com/digitalvapor)",
-  "contributors": [{
-    "name": "Thomas Spalding",
-    "email": "antivapor@gmail.com"
-  }, {
-    "name": "Fonda Tong",
-    "email": "fondatong@gmail.com"
-  }],
+  "contributors": [
+    {
+      "name": "Thomas Spalding",
+      "email": "antivapor@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/digitalvapor/terrarium.git"
@@ -28,5 +27,8 @@
     "grunt-exec": ">= 0.4.6"
   },
   "engine": "node >= 0.6",
-  "license": "https://github.com/digitalvapor/terrarium/blob/master/readme.md#license"
+  "license": "https://github.com/digitalvapor/terrarium/blob/master/readme.md#license",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }

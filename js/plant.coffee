@@ -579,9 +579,14 @@ circleOfLifeList = [
         notes: "Doing super well, there's a couple extra pups. The biggest two plants have flowered and are very pretty! I haven't looked up the polination yet, but tried to angle the flowers over the cyclosecta pot in case anything falls."
       }
       {
-        date: "2016-03-20"
+        date: "2016-03-20T14"
         alive: true
         notes: "The pups have flowered as well. I didn't have any toothpicks, so I attempted to cross-polinate with q-tips. I don't think it worked at all."
+      }
+      {
+        date: "2016-03-20T20"
+        alive: true
+        notes: "My friend from the coffeeshop gave me some toothpicks, so I tried again to polinate the flowers."
       }
     ]
   }, {
