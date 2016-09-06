@@ -9,3 +9,4 @@ scratchpad*
 server.js
 javascripts/*.js
 *.css
+.sass-cache

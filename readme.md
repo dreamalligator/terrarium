@@ -110,7 +110,13 @@ When you load the plant data, an ajax call is made to the `plants.json` file. Th
 Currently it only plots temperature, humidity and luminosity, but it will be extended to plot ir, full, visible, lux, and heatindex as well. It already serially logs this data. The app utilizes [Highcharts](http://www.highcharts.com/). You can see a live version of this at [digitalvapor.github.io/terrarium](https://digitalvapor.github.io/terrarium). This was put together very fast and is still in the development stage. Please view with Chrome for the moment. I will massage any inconsistencies out soon. Feel free to report any bugs in the [issue tracker](https://github.com/digitalvapor/terrarium/issues).
 
 ## Dependencies
-You can install the app dependencies for a local server with `npm install`, then `node server.js`. You can also run `grunt` to compile the coffee-script and run the server. `pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, running Python 3.5.0 and Ruby 2.2.3.
+You can install the app dependencies for a local server with `npm install`, and the only Ruby dependency is Sass; run `gem install sass`.
+
+### Notebook related
+`pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, I am running Python 3.5.0 and Ruby 2.2.3.
+
+## Development and running the server
+The only command needed is `grunt`. This will compile everything and run the server. For each separate command, please see the `Gruntfile`.
 
 # Setup
 See [sunduino.fzz](https://github.com/digitalvapor/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)
