@@ -1,6 +1,24 @@
 @import './normalize.css';
 @import './pygments.css';
 
+$header-color: #073642;
+
+@font-face {
+  font-family: 'Slabo 27px';
+  src: url('../fonts/Slabo27px-Regular.ttf');
+}
+
+main {
+  padding: 0 10px;
+}
+
+h1,
+h2,
+h3 {
+  color: $header-color;
+  font-family: 'Slabo 27px', serif;
+}
+
 #plot-container {
   height: 400px;
   margin: 0 auto;
