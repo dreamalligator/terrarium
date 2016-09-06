@@ -652,6 +652,10 @@ circleOfLifeList = [
         notes: "Made really nice big pitcher, seems to be doing a-okay."
       }
     ]
+    left: {
+      date: "2016-08-21"
+      notes: "returned to Fonda's care."
+    }
   }, {
     taxon: "Nepenthes singalana 'Tujuh'"
     owner: "Tom"
@@ -838,6 +842,61 @@ circleOfLifeList = [
     arrived: {
       date: "2016-03-08"
       source: "Shipped from California Carnivores"
+    }
+  }, {
+    taxon: "Nepenthes Ventricosa"
+    arrived: {
+      date: "2016-07-22"
+      source: "Bought on Amazon with work competition prize money."
+    }
+  }, {
+    taxon: "Mimosa pudica"
+    arrived: {
+      date: "2016-08-20"
+      source: "Bought at Katsura Garden in Japantown"
+    }
+  }, {
+    taxon: "Nepenthes Copelandii"
+    arrived: {
+      date: "2016-08-21"
+      source: "Bought at California Carnivores"
+    }
+  }, {
+    taxon: "Nepenthes Ventricosa"
+    arrived: {
+      date: "2016-08-21"
+      source: "Bought at California Carnivores"
+    }
+  }, {
+    taxon: "Nepenthes Fusca"
+    arrived: {
+      date: "2016-08-21"
+      source: "Bought at California Carnivores"
+    }
+  }, {
+    taxon: "Nepenthes"
+    arrived: {
+      date: "2016-08-21"
+      source: "This was originally bought from FOTGH at SFSU in 2015. Has been in Fonda's care."
+    }
+  }, {
+    taxon: "Pinguicula emarginata"
+    arrived: {
+      date: "2016-08-21"
+      source: "Bought at California Carnivores"
+    }
+  }, {
+    taxon: "Cephalotus follicularis 'Old Gojira'"
+    arrived: {
+      date: "2016-08-14"
+      source: "Brian Lipinski at BACPS meeting, Oakland."
+      notes: "Labeled 'OG 09_7 CD'"
+    }
+  }, {
+    taxon: "sphagnum"
+    arrived: {
+      date: "2016"
+      source: "Amazon vendor. Hasnt responded to species questions."
     }
   }
 ]
