@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     exec: {
       coffee: {
         cmd: 'coffee -c server.coffee && \
-          coffee -c javascripts/*.coffee'
+          coffee --watch -c javascripts/main.coffee'
       },
       scss: {
         cmd: 'sass --sourcemap=none --watch stylesheets'
