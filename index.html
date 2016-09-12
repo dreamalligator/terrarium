@@ -4,16 +4,41 @@
   <meta charset="utf-8">
   <title>My Carnivorous Plant Terrarium</title>
   <link rel="stylesheet" href="/stylesheets/main.css">
-  <script type="text/javascript" src="javascripts/main.js"></script>
-  <script type="text/javascript" src="javascripts/ga.js"></script>
 </head>
 <body>
   <main>
     <h1>My Carnivorous Plant Terrarium</h1>
     <hr>
     <section id="plot-container"></section>
-    <section id='plant-container'>
-    </section>
+    <section id='plant-container'></section>
   </main>
 </body>
 </html>
+
+<script type="text/template" id="plant-collection-overview">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Taxon</th>
+        <th colspan="3">Temperature Bounds</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% _.each(plants, function(plant) { %>
+      <tr>
+        <td></td>
+        <td><%= plant.taxon %></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</script>
+
+<script type="text/javascript" src="javascripts/bundle.js"></script>
+<script type="text/javascript" src="javascripts/ga.js"></script>

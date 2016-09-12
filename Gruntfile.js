@@ -4,13 +4,16 @@ module.exports = function(grunt) {
     exec: {
       coffee: {
         cmd: 'coffee -c server.coffee && \
-          coffee --watch -c javascripts/main.coffee'
+          coffee -c javascripts/main.coffee'
       },
       scss: {
         cmd: 'sass --sourcemap=none --watch stylesheets'
       },
       server: {
         cmd: 'node server.js'
+      },
+      bundle: {
+        cmd: 'browserify javascripts/main.js --exclude jquery -o javascripts/bundle.js'
       },
       deploy: {
         cmd: 'git checkout gh-pages && \
@@ -20,7 +23,7 @@ module.exports = function(grunt) {
       },
     },
     concurrent: {
-      all: ['exec:scss', ['exec:coffee', 'exec:server']]
+      all: ['exec:scss', ['exec:coffee', 'exec:bundle', 'exec:server']]
     }
   });
 
@@ -29,6 +32,7 @@ module.exports = function(grunt) {
   grunt.registerTask('server', ['exec:server']);
   grunt.registerTask('deploy', ['exec:deploy']);
   grunt.registerTask('coffee', ['exec:coffee']);
+  grunt.registerTask('bundle', ['exec:bundle']);
   grunt.registerTask('scss', ['exec:scss']);
   grunt.registerTask('default', ['concurrent:all']);
 };
