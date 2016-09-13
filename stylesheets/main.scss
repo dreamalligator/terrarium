@@ -2,6 +2,9 @@
 @import './pygments.css';
 
 $header-color: #073642;
+$light-grey: #efefef;
+$grey: #ccc;
+$blue: #08c;
 
 @font-face {
   font-family: 'Slabo 27px';
@@ -19,6 +22,15 @@ h3 {
   font-family: 'Slabo 27px', serif;
 }
 
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($blue, 10%);
+  }
+}
+
 #plot-container {
   height: 400px;
   margin: 0 auto;
@@ -29,4 +41,51 @@ h3 {
 #plant-container {
   min-width: 300px;
   width: 100%;
+}
+
+.plant-collection-table {
+  border-collapse: collapse;
+  border-top: 1px solid $grey;
+  font-size: 14px;
+
+  thead {
+    font-weight: bold;
+  }
+
+  tbody {
+    .id {
+      font-family: monospace;
+    }
+
+    .taxon {
+      font-style: italic;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid $grey;
+
+    &:nth-child(odd) {
+      background-color: $light-grey;
+    }
+  }
+
+  td,
+  th {
+    padding: 10px 5px;
+  }
+
+  .taxon {
+    width: 200px;
+  }
+
+  .common-name {
+    width: 200px;
+  }
+
+  .sources {
+    a {
+      display: block;
+    }
+  }
 }

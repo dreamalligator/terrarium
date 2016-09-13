@@ -3,10 +3,31 @@ Backbone = require("backbone")
 Backbone.ajax = require('backbone.nativeajax')
 Backbone.D3ViewMixin = require("backbone.nativeview")
 Backbone.View = Backbone.NativeView
+require("./taxonomy")
 
 # Models
 Plant = Backbone.Model.extend(
   initialize: ->
+    _.extend(@, @attributes)
+    @addEnvironmentalParameters()
+
+  addEnvironmentalParameters: ->
+    foundParams = _.find(window.rawTaxonomy, (plantAttributes) =>
+      plantAttributes.taxon == @taxon
+    )
+    _.extend(@, foundParams) if foundParams
+
+  formattedTemperature: ->
+    if t = @environment?.temperature
+      [t.ambient, t.soil, t.extremes].join(' ')
+    else
+      ""
+
+  formattedHumidity: ->
+    @environment?.humidity || ""
+
+  formattedLuminosity: ->
+    @environment?.luminosity || ""
 
   defaults:
     owner: "tom"
@@ -26,9 +47,7 @@ PlantListView = Backbone.View.extend(
     @render()
 
   render: (eventName) ->
-    plants = _.pluck(@model, 'attributes')
-    formattedData = { plants: plants }
-    @el.innerHTML = @template(formattedData)
+    @el.innerHTML = @template({ plants: @model })
 )
 
 # Router

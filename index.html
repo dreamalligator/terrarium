@@ -16,25 +16,43 @@
 </html>
 
 <script type="text/template" id="plant-collection-overview">
-  <table>
+  <table class="plant-collection-table">
     <thead>
       <tr>
-        <th>ID</th>
-        <th>Taxon</th>
+        <th class="id">&nbsp;</th>
+        <th class="taxon">&nbsp;</th>
+        <th class="common-name">&nbsp;</th>
         <th colspan="3">Temperature Bounds</th>
-        <th>Notes</th>
+      </tr>
+      <tr>
+        <td class="id">ID</td>
+        <td class="taxon">Taxon</td>
+        <td class="common-name">Common Name</td>
+        <td class="temperature">Temp</td>
+        <td class="humidity">Hum</td>
+        <td class="luminosity">Lum</td>
       </tr>
     </thead>
     <tbody>
       <% _.each(plants, function(plant) { %>
       <tr>
-        <td></td>
-        <td><%= plant.taxon %></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="id"><%= plant.cid %></td>
+        <td class="taxon"><%= plant.taxon %></td>
+        <td class="common-name"><%= plant.commonName %></td>
+        <td class="temperature"><%= plant.formattedTemperature() %></td>
+        <td class="humidity"><%= plant.formattedHumidity() %></td>
+        <td class="luminosity"><%= plant.formattedLuminosity() %></td>
       </tr>
+      <% if(plant.sources) { %>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+        <td class="sources" colspan="4">
+          <% _.each(plant.sources, function(source) { %>
+          <a target="_blank" href="<%= source.link %>"><%= source.text %></a>
+          <% }); %>
+        </td>
+      </tr>
+      <% } %>
       <% }); %>
     </tbody>
   </table>
