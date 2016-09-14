@@ -4,6 +4,7 @@ module.exports = function(grunt) {
     exec: {
       coffee: {
         cmd: 'coffee -c server.coffee && \
+          coffee -c javascripts/plot.coffee && \
           coffee -c javascripts/taxonomy.coffee && \
           coffee -c javascripts/main.coffee'
       },

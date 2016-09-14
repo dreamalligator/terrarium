@@ -2,10 +2,7 @@
 node_modules
 backup
 *.log
-*_backup
-infragram
 arduino/libraries
-scratchpad*
 server.js
 javascripts/*.js
 *.css

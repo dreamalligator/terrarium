@@ -1,9 +1,10 @@
 _ = require("underscore")
 Backbone = require("backbone")
 Backbone.ajax = require('backbone.nativeajax')
-Backbone.D3ViewMixin = require("backbone.nativeview")
+require("backbone.nativeview")
 Backbone.View = Backbone.NativeView
 require("./taxonomy")
+require("./plot")
 
 # Models
 Plant = Backbone.Model.extend(
