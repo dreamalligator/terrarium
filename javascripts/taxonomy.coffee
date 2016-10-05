@@ -151,6 +151,10 @@ window.rawTaxonomy = [
       temperature: [[45, 90]]
       humidity: [50, null]
       luminosity: ["will turn red with 16hr photoperiod"]
+    databases: {
+      itis: 896168
+      usda: "DRCA14"
+    }
     sources: [
       {
         text: "Aaron May, <i>Drosera capensis varieties</i>, The Sundew Grow Guides"
@@ -353,6 +357,8 @@ window.rawTaxonomy = [
     taxon: "Sarracenia 'Dana\'s Delight'"
   }, {
     taxon: "Nepenthes singalana 'Tujuh'"
+    databases:
+      itis: 896617
   }, {
     taxon: "Nepenthes ventricosa x glandulifera"
   }, {
@@ -387,5 +393,9 @@ window.rawTaxonomy = [
     taxon: "Drosera intermedia x capillaris"
   }, {
     taxon: "Drosera filiformis 'FL Giant'"
+  }, {
+    taxon: "Cephalotus follicularis"
+    databases:
+      itis: 896744
   }
 ]

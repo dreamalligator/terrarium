@@ -36,7 +36,7 @@
     <tbody>
       <% _.each(plants, function(plant) { %>
       <tr>
-        <td class="id"><%= plant.cid %></td>
+        <td class="id"><%= plant.id %></td>
         <td class="taxon"><%= plant.taxon %></td>
         <td class="common-name"><%= plant.commonName %></td>
         <td class="temperature"><%= plant.formattedTemperature() %></td>
@@ -47,9 +47,11 @@
       <tr>
         <td colspan="2">&nbsp;</td>
         <td class="sources" colspan="4">
+          <ul>
           <% _.each(plant.sources, function(source) { %>
-          <a target="_blank" href="<%= source.link %>"><%= source.text %></a>
+            <li><a target="_blank" href="<%= source.link %>"><%= source.text %></a></li>
           <% }); %>
+          </ul>
         </td>
       </tr>
       <% } %>
