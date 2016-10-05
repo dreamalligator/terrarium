@@ -13,4 +13,4 @@ app.use express.static(app_root)
 server = http.createServer(app)
 
 server.listen app.get('port'), ->
-    console.log "Express server listening on port #{app.get('port')}"
+  console.log "Express server listening on port #{app.get('port')}"

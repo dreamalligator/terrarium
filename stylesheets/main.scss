@@ -1,0 +1,130 @@
+@import './normalize.css';
+@import './pygments.css';
+
+$header-color: #073642;
+$light-grey: #efefef;
+$grey: #ccc;
+$blue: #08c;
+
+@font-face {
+  font-family: 'Slabo 27px';
+  src: url('../fonts/Slabo27px-Regular.ttf');
+}
+
+h1 {
+  color: $header-color;
+  font-family: 'Slabo 27px', serif;
+  padding: 0 10px;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($blue, 10%);
+  }
+}
+
+#plot-container {
+  margin: 0 auto;
+  min-width: 400px;
+  width: 100%;
+
+  .axis {
+    stroke-width: 1;
+
+    .tick {
+
+      line {
+        stroke: black;
+      }
+
+      text {
+        fill: black;
+        font-size: 0.7em;
+      }
+    }
+
+    .domain {
+      fill: none;
+      stroke: black;
+    }
+  }
+
+  .group {
+    fill: none;
+    stroke: black;
+    stroke-width: 1.5;
+  }
+}
+
+#plant-container {
+  min-width: 300px;
+  width: 100%;
+
+  .environment-note {
+    padding: 10px;
+  }
+}
+
+.plant-collection-table {
+  border-collapse: collapse;
+  border-top: 1px solid $grey;
+  font-size: 14px;
+  width: 100%;
+
+  thead {
+    font-weight: bold;
+  }
+
+  tbody {
+    .id {
+      font-family: monospace;
+    }
+
+    .taxon {
+      font-style: italic;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid $grey;
+
+    &:nth-child(odd) {
+      background-color: $light-grey;
+    }
+  }
+
+  td,
+  th {
+    padding: 10px 5px;
+
+    &:first-child {
+      padding-left: 10px;
+    }
+
+    &:last-child {
+      padding-right: 10px;
+    }
+  }
+
+  .taxon {
+    width: 200px;
+  }
+
+  .common-name {
+    width: 200px;
+  }
+
+  .sources {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}

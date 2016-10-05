@@ -1,25 +1,41 @@
 {
-    "name": "terrarium",
-    "version": "0.0.1",
-    "description": "my terrarium of carnivorous plants",
-    "author": "Tom Spalding (https://github.com/digitalvapor)",
-    "scripts": {
-        "install": "node node_modules/coffee-script/bin/cake build",
-        "start": "node server.js"
-    },
-    "dependencies": {
-        "express": ">= 4.11.0",
-        "mongojs": ">= 0.18.1",
-        "coffee-script": ">= 1.8.0",
-        "body-parser": ">= 1.10.1",
-        "serve-favicon": ">= 2.2.0",
-        "express-logger": ">= 0.0.3",
-        "http": ">= 0.0.0",
-        "grunt-exec": ">= 0.4.6"
-    },
-    "engine": "node >= 0.6",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/digitalvapor/terrarium.git"
+  "name": "terrarium",
+  "version": "0.0.1",
+  "description": "my terrarium of carnivorous plants",
+  "author": "Tom Spalding (https://github.com/digitalvapor)",
+  "contributors": [
+    {
+      "name": "Thomas Spalding",
+      "email": "antivapor@gmail.com"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/digitalvapor/terrarium.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "backbone.nativeajax": "^0.4.4",
+    "backbone.nativeview": "^0.3.3",
+    "body-parser": "^1.14.1",
+    "browserify": "^13.1.0",
+    "coffee-script": "^1.10.0",
+    "d3": "^3.5.17",
+    "express": "^4.13.3",
+    "express-logger": "^0.0.3",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-exec": "^0.4.6",
+    "highcharts": "^4.2.3",
+    "http": "^0.0.0",
+    "jquery": "^2.2.2",
+    "mongojs": "^1.4.0",
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3"
+  },
+  "engine": "node ^= 0.6",
+  "license": "https://github.com/digitalvapor/terrarium/blob/master/readme.md#license"
 }
