@@ -6,6 +6,7 @@ module.exports = function(grunt) {
         cmd: 'coffee -c server.coffee && \
           coffee -c javascripts/plot.coffee && \
           coffee -c javascripts/taxonomy.coffee && \
+          coffee -c javascripts/database.coffee && \
           coffee -c javascripts/main.coffee'
       },
       scss: {
@@ -23,6 +24,9 @@ module.exports = function(grunt) {
           git push origin gh-pages && \
           git checkout master',
       },
+      database: {
+        cmd: 'mongod --dbpath=data --port 27017'
+      }
     },
     concurrent: {
       all: ['exec:scss', ['exec:coffee', 'exec:bundle', 'exec:server']]
@@ -36,5 +40,6 @@ module.exports = function(grunt) {
   grunt.registerTask('coffee', ['exec:coffee']);
   grunt.registerTask('bundle', ['exec:bundle']);
   grunt.registerTask('scss', ['exec:scss']);
+  grunt.registerTask('database', ['exec:database']);
   grunt.registerTask('default', ['concurrent:all']);
 };

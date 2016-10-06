@@ -393,9 +393,15 @@ window.rawTaxonomy = [
     taxon: "Drosera intermedia x capillaris"
   }, {
     taxon: "Drosera filiformis 'FL Giant'"
+    databases:
+      usda: "DRFI"
   }, {
     taxon: "Cephalotus follicularis"
     databases:
       itis: 896744
+  }, {
+    taxon: "Nepenthes sanguinea"
+    databases:
+      itis: 896614
   }
 ]

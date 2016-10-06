@@ -477,13 +477,27 @@
     "arrived": {
       "date": "2016-07-22",
       "source": "Bought on Amazon with work competition prize money."
-    }
+    },
+    "inBetween": [
+      {
+        "date": "2016-03-08",
+        "alive": true,
+        "notes": "gave to Annie"
+      }
+    ]
   }, {
     "taxon": "Mimosa pudica",
     "arrived": {
       "date": "2016-08-20",
       "source": "Bought at Katsura Garden in Japantown"
-    }
+    },
+    "inBetween": [
+      {
+        "date": "2016-09",
+        "alive": true,
+        "notes": "gave to Annie"
+      }
+    ]
   }, {
     "taxon": "Nepenthes Copelandii",
     "arrived": {
@@ -520,13 +534,19 @@
     "arrived": {
       "date": "2016-08-14",
       "source": "Brian Lipinski at BACPS meeting, Oakland.",
-      "notes": "Labeled 'OG 09_7 CD'"
+      "vendorId": "OG 09_7 CD"
     }
   }, {
     "taxon": "sphagnum",
     "arrived": {
       "date": "2016",
       "source": "Amazon vendor. Hasnt responded to species questions."
+    }
+  }, {
+    "taxon": "Nepenthes sanguinea",
+    "arrived": {
+      "date": "2016-10-05",
+      "source": "Predatory Plants"
     }
   }
 ]

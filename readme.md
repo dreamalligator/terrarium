@@ -1,7 +1,13 @@
-# Terrarium Notebook
+# [Terrarium Notebook](https://github.com/digitalvapor/terrarium)
 A new terrarium for carnivorous plants.
 
 We'll be thoroughly documenting this project with a physical lab notebook, supplemented with Jupyter [Notebooks](http://nbviewer.ipython.org/github/digitalvapor/terrarium/tree/master/), and light/humidity/temperature sensors attached to a Raspberry Pi.
+
+![sensor stream example](https://i.imgur.com/g2Lftvs.png)
+
+## Example
+
+see the example site and docs at: https://digitalvapor.github.io/terrarium/
 
 ## Plants
 
@@ -122,6 +128,9 @@ You can install the majority of the app dependencies with `npm install`. The onl
 ## Development and running the server
 The only command needed is `grunt`. This will compile everything and run the server. For each separate command, please see the [`Gruntfile`](https://github.com/digitalvapor/terrarium/blob/master/Gruntfile.js).
 
+### Database
+see https://github.com/digitalvapor/terrarium/issues/3
+
 # Setup
 See [sunduino.fzz](https://github.com/digitalvapor/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)
 
@@ -134,10 +143,10 @@ Please fork, contribute and comment!
 
 If you want the Arduino libraries I use in this project, be sure to add the `--recursive` flag to recursively clone these submodules.
 
-1. `git clone --recursive https://github.com/digitalvapor/terrarium.git`
+1. `git clone --recursive git@github.com:digitalvapor/terrarium.git`
 2. `cd terrarium`
 3. `npm install`
-4. `grunt` will run an Express server on port `3000`.
+4. `grunt` will run an Express server on port `3000`. It will also automatically compile assets. Because this project is still in the alpha phase, it is assumed you are a savvy hacker and know what all this means.
 5. For terrarium notebooks, `cd notebook` and then `jupyter notebook`.
 
 # License
