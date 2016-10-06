@@ -19,10 +19,16 @@ module.exports = function(grunt) {
         cmd: 'browserify javascripts/main.js --exclude jquery -o javascripts/bundle.js'
       },
       deploy: {
-        cmd: 'git checkout gh-pages && \
-          git merge master && \
-          git push origin gh-pages && \
-          git checkout master',
+        cmd: 'git branch -D gh-pages && \
+          git checkout -b gh-pages && \
+          grunt coffee && \
+          grunt bundle && \
+          sass --sourcemap=none --no-cache --update stylesheets && \
+          git add -f javascripts/main.js && \
+          git add -f stylesheets/main.css && \
+          git commit -m "adds compiled assets for github pages" && \
+          git push -f --set-upstream origin gh-pages && \
+          git checkout master'
       },
       database: {
         cmd: 'mongod --dbpath=data --port 27017'
