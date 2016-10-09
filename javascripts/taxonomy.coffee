@@ -219,11 +219,14 @@ window.rawTaxonomy = [
         link: "http://carnivorousplants.org/cpn/articles/CPNv13n3p74_76.pdf"
       }
     ]
+    databases:
+      itis:
   }, {
     taxon: "Sarracenia rubra ssp. gulfensis"
     commonName: "ancestral x giant"
   }, {
     taxon: "Nepenthes ventricosa x (singalana x aristolochioides)"
+    hybrid:
   }, {
     taxon: "Drosera adelae"
     environment:
@@ -244,6 +247,9 @@ window.rawTaxonomy = [
         link: "http://www.carnivorousplants.org/cpn/articles/CPNv08n2p60_64.pdf"
       }
     ]
+    databases:
+      usda:
+      itis:
   }, {
     taxon: "Drosophyllum lusitanicum"
     commonName: "dewey pine"
@@ -289,7 +295,10 @@ window.rawTaxonomy = [
         link: "http://www.sarracenia.com/faq/faq5536.html"
       }
     ]
-    notes: "top-water regularly to maintain oxygen levels for teh roots and to keep salt levels down in the soil"
+    databases:
+      itis: 22001
+      usda: "SAPS2"
+    notes: "top-water regularly to maintain oxygen levels for the roots and to keep salt levels down in the soil"
   }, {
     taxon: "Dionaea muscipula 'Royal Red'"
     environment:
@@ -303,6 +312,9 @@ window.rawTaxonomy = [
         link: "http://www.carnivorousplants.org/howto/GrowingGuides/Dionaea.php"
       }
     ]
+    databases:
+      itis: 22008
+      usda: "DIMU4"
   }, {
     taxon: "Pinguicula primuliflora"
     environment:
@@ -353,14 +365,17 @@ window.rawTaxonomy = [
     ]
   }, {
     taxon: "Nepenthes x maxima"
+    hybrid:
   }, {
     taxon: "Sarracenia 'Dana\'s Delight'"
+    hybrid:
   }, {
     taxon: "Nepenthes singalana 'Tujuh'"
     databases:
       itis: 896617
   }, {
     taxon: "Nepenthes ventricosa x glandulifera"
+    hybrid: 896549, 896638
   }, {
     taxon: "Sarracenia 'Abandoned Hope'"
     sources: [
@@ -371,8 +386,12 @@ window.rawTaxonomy = [
     ]
   }, {
     taxon: "Sarracenia. flava v. cuprea 'BH' x v. ornata 'Bulloch Co, GA'"
+    hybrid:
   }, {
     taxon: "Drosera dichotoma 'T-Form'"
+    databases:
+      itis:
+      usda:
   }, {
     taxon: "Sarracenia x 'Judith Hindle' (cross of Sarracenia (leucophylla X flava 'rugelli') X. S. purpurea 'chipola')"
     sources: [
@@ -389,11 +408,14 @@ window.rawTaxonomy = [
     # bog gardens in temperate zones (up to 100F, fork leafed sundew dont survive below 15F regularly (but could)), temps logged for purpurea, leucophylla, s. flava, judith hindle, rubra subsp. ruba, oreophila, psittacina x leucophylla (35-45F that night, 30 ok too (pupurea mentioned))
   }, {
     taxon: "Sarracenia flava 'orange flower' x purpurea ssp. purpurea"
+    hybrid:
   }, {
     taxon: "Drosera intermedia x capillaris"
+    hybrid: "DRIN3", "DRCA2"
   }, {
     taxon: "Drosera filiformis 'FL Giant'"
     databases:
+      itis:
       usda: "DRFI"
   }, {
     taxon: "Cephalotus follicularis"
@@ -403,5 +425,65 @@ window.rawTaxonomy = [
     taxon: "Nepenthes sanguinea"
     databases:
       itis: 896614
+  }, {
+    taxon: "Utricularia"
+    databases:
+      itis: 34443
+      usda: "UTRIC"
+  }, {
+    taxon: "Utricularia sandersonii"
+    environment:
+      moisture: "The soil should be permanently moist--I keep my pots in trays filled with enough water so the water table is just a few cm beneath the soil surface."
+      soil: "Use either pure dead milled Sphagnum or a 2:1 peat-sand mix in a 5 cm (2\") pot."
+      temperature: "warm year round, around 20-30°C (68-86°F).If the plants are kept too cool they grow extremely slowly, while if overheated the flowers are pale in colour and do not last as long. Since they are found in shady places in the wild I give them medium light. While this means some shade in the greenhouse, the light available in most 4-6 fluorescent bulb terrarium set-ups is fine."
+    sources: [
+      {
+        text: "<i>U. sandersonii--a Siren from Utricularia</a>, Bulletin of the A.C.P.S. 13:1, 6. (1994)"
+        link: "http://www.sarracenia.com/pubs/sand.html"
+      }
+    ]
+  }, {
+    taxon: "Drosera"
+    datbases:
+      itis: 22009
+      usda: "DROSE"
+  }, {
+    taxon: "Nepenthes",
+    databases:
+      itis: 564924
+      usda: "NEPEN"
+  }, {
+    taxon: "Pinguicula"
+    databases:
+      itis: 34433
+      usda: "PINGU"
+  }, {
+    taxon: "Tillandsia"
+    databases:
+      itis: 42359
+      usda: "TILLA2"
+  }, {
+    taxon: "Sarracenia"
+    databases:
+      itis: 21992
+      usda: "SARRA"
+  }, {
+    taxon: "Drosera intermedia"
+    databases:
+      itis: 22013
+      usda: "DRIN3"
+  }, {
+    taxon: "Drosera capillaris"
+    databases:
+      itis: 22011
+      usda: "DRCA2"
+  }, {
+    taxon: "Nepenthes ventricosa"
+    databases:
+      itis: 896638
+  }, {
+    taxon: "Nepenthes glandulifera"
+    databases:
+      itis: 896549
   }
 ]
