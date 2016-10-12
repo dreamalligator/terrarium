@@ -190,6 +190,7 @@ window.rawTaxonomy = [
         link: "http://www.carnivorousplants.org/cpn/articles/CPNv32n2p49_51.pdf"
       }
     ]
+    hybrid: 896583, 896594
   }, {
     taxon: "Sarracenia purpurea purpurea"
     commonName: "Northern Purple Pitcher Plant"
@@ -206,6 +207,9 @@ window.rawTaxonomy = [
         link: "http://www.carnivorousplants.org/howto/GrowingGuides/Sarracenia.php"
       }
     ]
+    databases:
+      itis: 195652
+      usda: "SAPUP6"
   }, {
     taxon: "Drosera binata"
     commonName: "t-form"
@@ -219,14 +223,15 @@ window.rawTaxonomy = [
         link: "http://carnivorousplants.org/cpn/articles/CPNv13n3p74_76.pdf"
       }
     ]
-    databases:
-      itis:
   }, {
     taxon: "Sarracenia rubra ssp. gulfensis"
     commonName: "ancestral x giant"
+    databases:
+      itis: 195665
+      usda: "SARUG"
   }, {
     taxon: "Nepenthes ventricosa x (singalana x aristolochioides)"
-    hybrid:
+    hybrid: [896638, [896617, 896517]]
   }, {
     taxon: "Drosera adelae"
     environment:
@@ -247,9 +252,6 @@ window.rawTaxonomy = [
         link: "http://www.carnivorousplants.org/cpn/articles/CPNv08n2p60_64.pdf"
       }
     ]
-    databases:
-      usda:
-      itis:
   }, {
     taxon: "Drosophyllum lusitanicum"
     commonName: "dewey pine"
@@ -365,10 +367,8 @@ window.rawTaxonomy = [
     ]
   }, {
     taxon: "Nepenthes x maxima"
-    hybrid:
   }, {
     taxon: "Sarracenia 'Dana\'s Delight'"
-    hybrid:
   }, {
     taxon: "Nepenthes singalana 'Tujuh'"
     databases:
@@ -386,12 +386,8 @@ window.rawTaxonomy = [
     ]
   }, {
     taxon: "Sarracenia. flava v. cuprea 'BH' x v. ornata 'Bulloch Co, GA'"
-    hybrid:
   }, {
     taxon: "Drosera dichotoma 'T-Form'"
-    databases:
-      itis:
-      usda:
   }, {
     taxon: "Sarracenia x 'Judith Hindle' (cross of Sarracenia (leucophylla X flava 'rugelli') X. S. purpurea 'chipola')"
     sources: [
@@ -408,14 +404,12 @@ window.rawTaxonomy = [
     # bog gardens in temperate zones (up to 100F, fork leafed sundew dont survive below 15F regularly (but could)), temps logged for purpurea, leucophylla, s. flava, judith hindle, rubra subsp. ruba, oreophila, psittacina x leucophylla (35-45F that night, 30 ok too (pupurea mentioned))
   }, {
     taxon: "Sarracenia flava 'orange flower' x purpurea ssp. purpurea"
-    hybrid:
   }, {
     taxon: "Drosera intermedia x capillaris"
     hybrid: "DRIN3", "DRCA2"
   }, {
     taxon: "Drosera filiformis 'FL Giant'"
     databases:
-      itis:
       usda: "DRFI"
   }, {
     taxon: "Cephalotus follicularis"
@@ -459,6 +453,7 @@ window.rawTaxonomy = [
       usda: "PINGU"
   }, {
     taxon: "Tillandsia"
+    carnivorous: false
     databases:
       itis: 42359
       usda: "TILLA2"
@@ -485,5 +480,47 @@ window.rawTaxonomy = [
     taxon: "Nepenthes glandulifera"
     databases:
       itis: 896549
+  }, {
+    taxon: "Nepenthes maxima"
+    databases:
+      itis: 896583
+  }, {
+    taxon: "Nepenthes northiana"
+    databases:
+      itis: 896594
+  }, {
+    taxon: "sphagnum"
+    databases:
+      itis: 15683
+      usda: "SPHAG2"
+  }, {
+    taxon: "Nepenthes fusca"
+    databases:
+      itis: 896547
+  }, {
+    taxon: "Nepenthes singalana"
+    databases:
+      itis: 896617
+  }, {
+    taxon: "Nepenthes aristolochioides"
+    databases:
+      itis: 896517
+  }, {
+    taxon: "Sarracenia rubra"
+    databases:
+      itis: 22002
+      usda: "SARU4"
+  }, {
+    taxon: "Nepenthes maxima"
+    databases:
+      itis: 896583
+  }, {
+    taxon: "Pinguicula emarginata"
+  }, {
+    taxon: "Mimosa pudica"
+    carnivorous: false
+    databases:
+      itis: 26790
+      usda: "MIPU8"
   }
 ]

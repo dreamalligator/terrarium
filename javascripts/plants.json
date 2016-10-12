@@ -1,5 +1,6 @@
 [
   {
+    "id": "DROSE_15_0",
     "taxon": "Drosera binata",
     "arrived": {
       "date": "2015-10-05T12",
@@ -32,6 +33,7 @@
       }
     ]
   }, {
+    "id": "SARUG_15_0",
     "taxon": "Sarracenia rubra ssp. gulfensis 'ancestral x giant'",
     "arrived": {
       "date": "2015-10-05T12",
@@ -86,7 +88,7 @@
       }
     ]
   }, {
-    "id": "NEPEN_15_0",
+    "id": "NEPEN_15_1",
     "taxon": "Nepenthes ventricosa x (singalana x aristolochioides)",
     "arrived": {
       "date": "2015-10-16T18",
@@ -94,7 +96,7 @@
       "source": "Bought on site at California Carnivores."
     }
   }, {
-    "id": "DROSE_15_0",
+    "id": "DROSE_15_1",
     "taxon": "Drosera adelae",
     "owner": "Tom",
     "arrived": {
@@ -119,7 +121,7 @@
       }
     ]
   }, {
-    "id": "DROSE_15_1",
+    "id": "DROSE_15_2",
     "taxon": "Drosera adelae",
     "owner": "Fonda",
     "arrived": {
@@ -144,6 +146,7 @@
       }
     ]
   }, {
+    "id": null,
     "taxon": "Drosophyllum",
     "owner": "Tom",
     "arrived": {
@@ -249,7 +252,7 @@
       }
     ]
   }, {
-    "id": "NEPEN_15_1",
+    "id": "NEPEN_15_2",
     "taxon": "Nepenthes 'Miranda'",
     "owner": "Tom",
     "arrived": {
@@ -299,7 +302,7 @@
     },
     "status": "unknown"
   }, {
-    "id": "NEPEN_15_2",
+    "id": "NEPEN_15_3",
     "taxon": "Nepenthes singalana 'Tujuh'",
     "owner": "Tom",
     "arrived": {
@@ -497,6 +500,7 @@
       "source": "Shipped from California Carnivores"
     }
   }, {
+    "id": null,
     "taxon": "Nepenthes Ventricosa",
     "arrived": {
       "date": "2016-07-22",
@@ -524,30 +528,37 @@
     ],
     "status": "unknown"
   }, {
+    "id": "896646_16_0",
     "taxon": "Nepenthes Copelandii",
     "arrived": {
       "date": "2016-08-21",
       "source": "Bought at California Carnivores"
     }
   }, {
+    "id": "896638_16_0",
     "taxon": "Nepenthes Ventricosa",
     "arrived": {
       "date": "2016-08-21",
       "source": "Bought at California Carnivores"
     }
   }, {
+    "id": "896547_16_0",
     "taxon": "Nepenthes Fusca",
     "arrived": {
       "date": "2016-08-21",
       "source": "Bought at California Carnivores"
     }
   }, {
+    "id": "NEPEN_15_0",
     "taxon": "Nepenthes",
+    "arrived": "2015",
+    "left": "etc",
     "arrived": {
       "date": "2016-08-21",
       "source": "This was originally bought from FOTGH at SFSU in 2015. Has been in Fonda's care."
     }
   }, {
+    "id": "PINGU_16_0",
     "taxon": "Pinguicula emarginata",
     "arrived": {
       "date": "2016-08-21",
@@ -568,6 +579,7 @@
       "source": "Amazon vendor. Hasnt responded to species questions."
     }
   }, {
+    "id": "896614_16_0",
     "taxon": "Nepenthes sanguinea",
     "arrived": {
       "date": "2016-10-05",

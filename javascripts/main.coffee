@@ -31,6 +31,7 @@ Plant = Backbone.Model.extend(
     @environment?.luminosity || ""
 
   defaults:
+    carnivorous: true
     owner: "tom"
 )
 

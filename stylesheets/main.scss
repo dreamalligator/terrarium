@@ -5,6 +5,7 @@ $header-color: #073642;
 $light-grey: #efefef;
 $grey: #ccc;
 $blue: #08c;
+$font-size-standard: 14px;
 
 @font-face {
   font-family: 'Slabo 27px';
@@ -71,7 +72,7 @@ a {
 .plant-collection-table {
   border-collapse: collapse;
   border-top: 1px solid $grey;
-  font-size: 14px;
+  font-size: $font-size-standard;
   width: 100%;
 
   thead {
@@ -109,6 +110,10 @@ a {
     }
   }
 
+  .id {
+    text-align: right;
+  }
+
   .taxon {
     width: 200px;
   }
@@ -121,6 +126,10 @@ a {
     ul {
       margin: 0;
       padding: 0;
+    }
+
+    li {
+      font-size: $font-size-standard;
     }
 
     a {
