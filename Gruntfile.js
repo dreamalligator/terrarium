@@ -6,7 +6,6 @@ module.exports = function(grunt) {
         cmd: 'coffee -c server.coffee && \
           coffee -c javascripts/plot.coffee && \
           coffee -c javascripts/taxonomy.coffee && \
-          coffee -c javascripts/database.coffee && \
           coffee -c javascripts/main.coffee'
       },
       scss: {
@@ -46,6 +45,5 @@ module.exports = function(grunt) {
   grunt.registerTask('coffee', ['exec:coffee']);
   grunt.registerTask('bundle', ['exec:bundle']);
   grunt.registerTask('scss', ['exec:scss']);
-  grunt.registerTask('database', ['exec:database']);
   grunt.registerTask('default', ['concurrent:all']);
 };
