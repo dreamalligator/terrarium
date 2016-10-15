@@ -74,6 +74,15 @@ luminosity,ir,full,visible,lux,humidity,temperature,heatindex
 * [W5200 Ethernet Shield](http://www.seeedstudio.com/depot/W5200-Ethernet-Shield-p-1577.html) ([library](https://github.com/Seeed-Studio/Ethernet_Shield_W5200), [wiki](http://www.seeedstudio.com/wiki/Ethernet_Shield_V2.4)) - v2.2 02/28/2014 10A14 by Seeed Studio
 * [YSD-439AB4B-35 7-Segment](https://www.sparkfun.com/products/9481) ([datasheet](http://www.sparkfun.com/datasheets/Components/LED/7-Segment/YSD-439AB4B-35.pdf))
 
+## Taxonomic Info
+The individual plant ids first use the [USDA](http://plants.usda.gov/adv_search.html) plant symbol if available, then the [ITIS](http://www.itis.gov/advanced_search.html) Taxonomic Serial Number (TSN). I still haven't figured out what I want to do for hybrids or plants that are not in these databases. For now I'm going to use the genus' symbol.
+
+```
+<tn>_<y>_<n>
+```
+
+where `tn` is the taxonomic plant symbol or TSN as available. `y` is year that the plant was obtained or propagated. `n` is the assigned number for each plant. `n` is reset for each `tn` and `y` combination. since I don't have enough of the same plant yet, this is likely to be `0-9` for a bit.
+
 ## Download and contribute
 Please fork, contribute and comment!
 
