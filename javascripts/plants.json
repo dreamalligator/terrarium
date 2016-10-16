@@ -540,6 +540,10 @@
     "arrived": {
       "date": "2016-08-21",
       "source": "Bought at California Carnivores"
+    },
+    "inBetween": {
+      "date": "2017-01-08",
+      "alive": false
     }
   }, {
     "id": "NEPEN_15_0",
@@ -659,5 +663,22 @@
       "date": "2016-10-30",
       "notes": "arrived a couple days ago, but gave a proper setup today. A generous Redditor sent it to us. Some sections are rather red or purple. a lot is the typical bright green. gave a base of pure peat in a tray. not really sure how much it matters, but tried to detect the parts that were \"the bottom\" and sowed further down in the peat. maybe a bit more than a half inch layer of peat."
     }
+  }, {
+    "id": "UTRIC_16_1",
+    "taxon": "Utricularia sandersonii",
+    "arrived": {
+      "date": "2016-07",
+      "source": "Amazon vendor in July."
+    },
+    "inBetween": [
+      {
+        "date": "2016-10-15",
+        "notes": "sowed ~100 seeds in 5 small plastic pots. worried about short utric shelf life we read about. soil media was 2:1 peat to sand mix. sand was grade #12. put each container in a sandwich bag, but didn't zip all the way closed. put a bit of distilled water in each bag. placed directly under a light."
+      },
+      {
+        "date": "2017-01-08",
+        "notes": "I'm giving up on these guys. I don't believe they're going to sprout. All the seeds have turned green, possibly algae."
+      }
+    ]
   }
 ]
