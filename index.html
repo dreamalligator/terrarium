@@ -15,7 +15,8 @@
 </body>
 </html>
 
-<script type="text/template" id="plant-collection-overview">
+<script type="text/template" id="plant-collection-template">
+  <a class="create">Add Plant</a>
   <table class="plant-collection-table">
     <thead>
       <tr>
@@ -23,6 +24,7 @@
         <th class="taxon">&nbsp;</th>
         <th class="common-name">&nbsp;</th>
         <th colspan="3">Temperature Bounds <a>*</a></th>
+        <td class="crud">&nbsp;</td>
       </tr>
       <tr>
         <td class="id">IDs</td>
@@ -31,17 +33,22 @@
         <td class="temperature">Temp</td>
         <td class="humidity">Hum</td>
         <td class="luminosity">Lum</td>
+        <td class="crud">&nbsp;</td>
       </tr>
     </thead>
     <tbody>
       <% _.each(plants, function(plant) { %>
       <tr>
-        <td class="id"><%= plant.id %></td>
+        <td class="id"><a href="plant-info/<%= plant.id %>"><%= plant.id %></a></td>
         <td class="taxon"><%= plant.taxon %></td>
         <td class="common-name"><%= plant.commonName %></td>
         <td class="temperature"><%= plant.formattedTemperature() %></td>
         <td class="humidity"><%= plant.formattedHumidity() %></td>
         <td class="luminosity"><%= plant.formattedLuminosity() %></td>
+        <td class="crud">
+          <!-- instead of editing inline, probably take to a new view here -->
+          <a class="update">Update</a>
+        </td>
       </tr>
       <% if(plant.sources) { %>
       <tr>
@@ -59,6 +66,7 @@
     </tbody>
   </table>
   <p class="environment-note"><a>*</a> Temp is lower/higher ambient temperature. Some plants such as Darlingtonia californica need a different soil temperature than ambient temperature. In these cases it is soil temp and then ambient temp. A third temperature field is if extremes are mentioned. Humidity is lower/higher humidity. Luminosity is for the moment just the number of hours of light needed. When I find more literature for lower/upper bounds I will add this; as well as soil moisture, air flow, and pH.</p>
+  <a class="create">Add Plant</a>
 </script>
 
 <script type="text/javascript" src="javascripts/bundle.js"></script>

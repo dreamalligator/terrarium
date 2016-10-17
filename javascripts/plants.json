@@ -585,5 +585,13 @@
       "date": "2016-10-05",
       "source": "Predatory Plants"
     }
+  }, {
+    "id": "NEPEN_16_1",
+    "taxon": "Nepenthes",
+    "arrived": {
+      "date": "2016-10-15",
+      "source": "Bought an unknown Nepenthes from Katsura Bonsai in Japantown.",
+      "notes": "Medium sized. Atm the largest in the collection. Many pitchers. All have started wilting, but will bring back to health."
+    }
   }
 ]

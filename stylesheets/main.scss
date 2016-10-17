@@ -137,3 +137,16 @@ a {
     }
   }
 }
+
+.create {
+  background-color: #eee;
+  border: 1px solid #08c;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.update {
+  cursor: pointer;
+}

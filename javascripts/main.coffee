@@ -1,12 +1,11 @@
-_ = require("underscore")
-Backbone = require("backbone")
+_ = require('underscore')
+Backbone = require('backbone')
 Backbone.ajax = require('backbone.nativeajax')
-require("backbone.nativeview")
-Backbone.View = Backbone.NativeView
-require("./taxonomy")
-require("./plot")
+Backbone.View = require('backbone.nativeview')
+# require('Backbone.dualStorage') # FIXME
+require('./taxonomy')
+require('./plot')
 
-# Models
 Plant = Backbone.Model.extend(
   initialize: ->
     _.extend(@, @attributes)
@@ -22,41 +21,62 @@ Plant = Backbone.Model.extend(
     if t = @environment?.temperature
       [t.ambient, t.soil, t.extremes].join(' ')
     else
-      ""
+      ''
 
   formattedHumidity: ->
-    @environment?.humidity || ""
+    @environment?.humidity || ''
 
   formattedLuminosity: ->
-    @environment?.luminosity || ""
+    @environment?.luminosity || ''
 
   defaults:
+    alive: true
     carnivorous: true
-    owner: "tom"
+    owner: 'tom'
 )
 
 PlantCollection = Backbone.Collection.extend(
   model: Plant
-  url: "./javascripts/plants.json"
+  url: './javascripts/plants.json'
 )
 
-# Views
+newPlantCollection = new PlantCollection
+
+newPlantCollection.on('add', (plant) ->
+  console.log("added plant: #{plant?.name}")
+)
+
 PlantListView = Backbone.View.extend(
-  el: "#plant-container"
-  template: _.template(document.querySelector("#plant-collection-overview").innerHTML)
+  el: '#plant-container'
+  events:
+    'click .update': 'updatePlant'
+    'click .create': 'createPlant'
+    'click .cancel': ''
+    'click .view': 'viewPlant'
+  template: _.template(document.querySelector('#plant-collection-template').innerHTML)
 
   initialize: ->
     @render()
 
   render: (eventName) ->
     @el.innerHTML = @template({ plants: @model })
+
+  updatePlant: (_event) ->
+    console.log 'update', @
+
+  createPlant: (_event) ->
+    console.log 'create', @
+    newPlantCollection.add([
+      { name: "Dionaea Muscipula" }
+      { name: "Drosera Capensis" }
+    ])
+    console.log newPlantCollection
 )
 
-# Router
 AppRouter = Backbone.Router.extend({
   routes:
-    "": "list"
-    "plants/:id": "plant"
+    '': 'list'
+    'plant-info/:id': 'viewPlant'
 
   list: =>
     @plantList = new PlantCollection()
@@ -66,14 +86,9 @@ AppRouter = Backbone.Router.extend({
         defaultPlantListView.render()
     })
 
-  plant: (id) =>
-    @plantList = new PlantCollection()
-    @plantList.fetch({
-      success: =>
-        console.log @plantList.get(id).attributes
-    })
+  viewPlant: (id) =>
+
 })
 
-app_router = new AppRouter()
-
+newAppRouter = new AppRouter()
 Backbone.history.start()

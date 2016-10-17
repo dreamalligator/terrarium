@@ -28,9 +28,6 @@ module.exports = function(grunt) {
           git commit -m "adds compiled assets for github pages" && \
           git push -f --set-upstream origin gh-pages && \
           git checkout master'
-      },
-      database: {
-        cmd: 'mongod --dbpath=data --port 27017'
       }
     },
     concurrent: {
