@@ -40,10 +40,9 @@ PlantCollection = Backbone.Collection.extend(
   url: './javascripts/plants.json'
 )
 
-newPlantCollection = new PlantCollection
-
-newPlantCollection.on('add', (plant) ->
-  console.log("added plant: #{plant?.name}")
+@plantList = new PlantCollection()
+@plantList.on('add', (plant) ->
+  console.log("added plant: #{plant?.taxon}")
 )
 
 PlantListView = Backbone.View.extend(
@@ -53,6 +52,7 @@ PlantListView = Backbone.View.extend(
     'click .create': 'createPlant'
     'click .cancel': ''
     'click .view': 'viewPlant'
+  model: @plantList.models
   template: _.template(document.querySelector('#plant-collection-template').innerHTML)
 
   initialize: ->
@@ -60,18 +60,21 @@ PlantListView = Backbone.View.extend(
 
   render: (eventName) ->
     @el.innerHTML = @template({ plants: @model })
+    @
 
   updatePlant: (_event) ->
     console.log 'update', @
 
-  createPlant: (_event) ->
+  createPlant: (_event) =>
     console.log 'create', @
-    newPlantCollection.add([
-      { name: "Dionaea Muscipula" }
-      { name: "Drosera Capensis" }
+    @plantList.add([
+      { taxon: "Dionaea Muscipula" }
+      { taxon: "Drosera Capensis" }
     ])
-    console.log newPlantCollection
 )
+
+@defaultPlantListView = null
+
 
 AppRouter = Backbone.Router.extend({
   routes:
@@ -79,11 +82,10 @@ AppRouter = Backbone.Router.extend({
     'plant-info/:id': 'viewPlant'
 
   list: =>
-    @plantList = new PlantCollection()
     @plantList.fetch({
       success: =>
-        defaultPlantListView = new PlantListView({ model: @plantList.models })
-        defaultPlantListView.render()
+        @defaultPlantListView = new PlantListView()
+        @defaultPlantListView.render()
     })
 
   viewPlant: (id) =>
