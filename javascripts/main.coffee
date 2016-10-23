@@ -50,8 +50,9 @@ PlantListView = Backbone.View.extend(
   events:
     'click .update': 'updatePlant'
     'click .create': 'createPlant'
-    'click .cancel': ''
-    'click .view': 'viewPlant'
+    'click .changes': 'viewUnsyncedChanges'
+    'click .cancel': 'cancelUnsyncedChanges'
+    'click .sync': 'syncPlants'
   model: @plantList.models
   template: _.template(document.querySelector('#plant-collection-template').innerHTML)
 
@@ -60,21 +61,19 @@ PlantListView = Backbone.View.extend(
 
   render: (eventName) ->
     @el.innerHTML = @template({ plants: @model })
+    # good convention to return `this` at the end of render to enable chained calls
     @
 
-  updatePlant: (_event) ->
+  updatePlant: (_event) =>
     console.log 'update', @
+    @defaultPlantListView.render()
 
   createPlant: (_event) =>
-    console.log 'create', @
     @plantList.add([
-      { taxon: "Dionaea Muscipula" }
-      { taxon: "Drosera Capensis" }
+      { taxon: "new plant! edit me" }
     ])
+    @defaultPlantListView.render()
 )
-
-@defaultPlantListView = null
-
 
 AppRouter = Backbone.Router.extend({
   routes:
@@ -88,7 +87,7 @@ AppRouter = Backbone.Router.extend({
         @defaultPlantListView.render()
     })
 
-  viewPlant: (id) =>
+  viewPlant: () =>
 
 })
 
