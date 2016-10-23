@@ -146,8 +146,8 @@
       }
     ]
   }, {
-    "id": null,
-    "taxon": "Drosophyllum",
+    "id": "896867_15_0",
+    "taxon": "Drosophyllum lusitanicum",
     "owner": "Tom",
     "arrived": {
       "date": "2015-10-16T18",
@@ -267,6 +267,7 @@
       }
     ]
   }, {
+    "id": "896583_15_0",
     "taxon": "Nepenthes x maxima",
     "owner": "Fonda",
     "arrived": {
@@ -281,25 +282,6 @@
       }
     ],
     "died": null,
-    "status": "unknown"
-  }, {
-    "taxon": "Sarracenia \"Dana\"s Delight'",
-    "owner": "Tom",
-    "arrived": {
-      "date": "2015-10-16T18",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
-      {
-        "date": "2016-03-08",
-        "alive": true,
-        "notes": "Made really nice big pitcher, seems to be doing a-okay."
-      }
-    ],
-    "left": {
-      "date": "2016-08-21",
-      "notes": "returned to Fonda's care."
-    },
     "status": "unknown"
   }, {
     "id": "NEPEN_15_3",
@@ -327,6 +309,7 @@
       }
     ]
   }, {
+    "id": "TITE_15_0",
     "taxon": "Tillandsia tenuifolia blue",
     "owner": "Tom",
     "arrived": {
@@ -340,6 +323,7 @@
       }
     ]
   }, {
+    "id": "TILLA2_15_0",
     "taxon": "Tillandsia tricolor",
     "owner": "Tom",
     "arrived": {
@@ -353,6 +337,7 @@
       }
     ]
   }, {
+    "id": "TILLA2_15_1",
     "taxon": "Tillandsia caliginosa",
     "owner": "Tom",
     "arrived": {
@@ -366,6 +351,7 @@
       }
     ]
   }, {
+    "id": "TILLA2_15_2",
     "taxon": "Tillandsia xerographica x brachycaulos",
     "owner": "Tom",
     "arrived": {
@@ -379,6 +365,7 @@
       }
     ]
   }, {
+    "id": "TILLA2_15_3",
     "taxon": "Tillandsia ehlersiana",
     "owner": "Tom",
     "arrived": {
@@ -392,6 +379,7 @@
       }
     ]
   }, {
+    "id": "TILLA2_15_4",
     "taxon": "Tillandsia captita 'Silver Rose'",
     "owner": "Tom",
     "arrived": {
@@ -405,6 +393,7 @@
       }
     ]
   }, {
+    "id": "TILLA2_15_5",
     "taxon": "Tillandsia paleacea x tectorum",
     "owner": "Tom",
     "arrived": {
@@ -467,6 +456,7 @@
       "source": "Shipped from California Carnivores"
     }
   }, {
+    "id": "DRFI_16_0",
     "taxon": "Drosera filiformis 'FL Giant'",
     "arrived": {
       "date": "2016-03-08",
@@ -487,6 +477,7 @@
       "source": "Shipped from California Carnivores"
     }
   }, {
+    "id": "DROSE_16_2",
     "taxon": "Drosera binata",
     "arrived": {
       "date": "2016-03-08",
@@ -500,7 +491,7 @@
       "source": "Shipped from California Carnivores"
     }
   }, {
-    "id": null,
+    "id": "896638_16_1",
     "taxon": "Nepenthes Ventricosa",
     "arrived": {
       "date": "2016-07-22",
@@ -512,8 +503,10 @@
         "alive": true,
         "notes": "gave to Annie"
       }
-    ]
+    ],
+    "status": "unknown"
   }, {
+    "id": "MIPU8_16_0",
     "taxon": "Mimosa pudica",
     "arrived": {
       "date": "2016-08-20",
@@ -573,6 +566,7 @@
       "vendorId": "OG 09_7 CD"
     }
   }, {
+    "id": "SPHAG2_16_0",
     "taxon": "sphagnum",
     "arrived": {
       "date": "2016",

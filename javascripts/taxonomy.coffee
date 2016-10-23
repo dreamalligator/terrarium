@@ -18,6 +18,7 @@ window.rawTaxonomy = [
       dormancyPeriod: null
       propagation: []
     databases: {
+      eol: null # Encyclopedia of Life id
       itis: null # ITIS taxonomic serial number
       usda: null # USDA plants symbol
     }
@@ -45,16 +46,14 @@ window.rawTaxonomy = [
         link: "ISBN: 0-89815-915-6"
       }
     ]
+    databases:
+      eol: 6359448
   }, {
     taxon: "Darlingtonia californica"
     commonName: "Cobra Lily"
     environment:
       temperature: [[null, 62.6], [null, 80]]
       luminosity: [14]
-    databases: {
-      itis: 22004
-      usda: "DACA5"
-    }
     sources: [
       {
         text: "John Brittnacher, <i>Growing Darlingtonia californica</i>, International Carnivorous Plant Society"
@@ -65,22 +64,28 @@ window.rawTaxonomy = [
         link: "http://www.carnivorousplants.org/cpn/articles/CPNv14n3p78_80.pdf"
       }
     ]
+    databases: {
+      eol: 584644
+      itis: 22004
+      usda: "DACA5"
+    }
   }, {
     taxon: "Utricularia subulata"
     commonName: "Zigzag Bladderwort"
     environment:
       temperature: [[68, 86]]
       luminosity: ["medium (some shade)"]
-    databases: {
-      itis: 34465
-      usda: "UTSU"
-    }
     sources: [
       {
         text: "Barry Rice, <i>About terrestrial Utricularia</i>, The Carnivorous Plant FAQ (2007)"
         link: "http://www.sarracenia.com/faq/faq5583.html"
       }
     ]
+    databases: {
+      eol: 577808
+      itis: 34465
+      usda: "UTSU"
+    }
   }, {
     taxon: "Pinguicula lusitanica"
     commonName: "Pale Butterwort"
@@ -97,21 +102,23 @@ window.rawTaxonomy = [
         link: "http://www.pinguicula.org/pages/plantes/pinguicula_lusitanica.htm"
       }
     ]
+    databases:
+      eol: 5652048
   }, {
     taxon: "Proboscidea parviflora var. hohokamiania"
     commonName: "Devil's Claw"
     environment:
       temperature: ["heat tolerant"]
-    databases: {
-      itis: 833964
-      usda: "PRPAH"
-    }
     sources: [
       {
         text: "<i>Growing Ibicella and Proboscidea</i>, International Carnivorous Plant Society"
         link: "http://www.carnivorousplants.org/howto/GrowingGuides/Ibicella.php"
       }
     ]
+    databases: {
+      itis: 833964
+      usda: "PRPAH"
+    }
   }, {
     taxon: "Drosera rotundifolia"
     commonName: "Round-Leafed Sundew"
@@ -125,15 +132,13 @@ window.rawTaxonomy = [
         link: "http://www.growsundews.com/sundews/rotundifolia_charles_darwin.html"
       }
     ]
+    databases:
+      eol: 593301
   }, {
     taxon: "Drosera filiformis tracyi"
     commonName: "Thread-Leafed Sundew, white form"
     environment:
       temperature: ["USDA zone 6-9, with winter protection. Most likely need a wintering to germinate seeds."]
-    databases: {
-      itis: 527788
-      usda: "DRTR4"
-    }
     sources: [
       {
         text: "John Brittnacher, <i>Growing Drosera filiformis and Drosera tracyi</i>, International Carnivorous Plant Society"
@@ -144,6 +149,11 @@ window.rawTaxonomy = [
         link: "http://www.sarracenia.com/pubs/cpn40-4-16.pdf"
       }
     ]
+    databases: {
+      eol: 481344
+      itis: 527788
+      usda: "DRTR4"
+    }
   }, {
     taxon: "Drosera capensis"
     commonName: "Cape Sundew, typical form"
@@ -151,16 +161,17 @@ window.rawTaxonomy = [
       temperature: [[45, 90]]
       humidity: [50, null]
       luminosity: ["will turn red with 16hr photoperiod"]
-    databases: {
-      itis: 896168
-      usda: "DRCA14"
-    }
     sources: [
       {
         text: "Aaron May, <i>Drosera capensis varieties</i>, The Sundew Grow Guides"
         link: "http://www.growsundews.com/sundews/Drosera_capensis.html"
       }
     ]
+    databases: {
+      eol: 5470948
+      itis: 896168
+      usda: "DRCA14"
+    }
   }, {
     taxon: "Sarracenia leucophylla"
     commonName: "White-topped Pitcher Plant"
@@ -173,6 +184,8 @@ window.rawTaxonomy = [
         link: "http://www.carnivorousplants.org/howto/GrowingGuides/S_leucophylla.php"
       }
     ]
+    databases:
+      eol: 584635
   }, {
     taxon: "Nepenthes (N. maxima x N. northiana)"
     commonName: "Miranda"
@@ -280,6 +293,8 @@ window.rawTaxonomy = [
         text: "James and Patricia Pietropaolo, <i>Carnivorous Plants of the World</i>, pg 100-104 (1986)"
       }
     ]
+    databases:
+      eol: 5471391
   }, {
     taxon: "Sarracenia psittacina"
     commonName: "parrot pitcher plant"
@@ -367,8 +382,8 @@ window.rawTaxonomy = [
     ]
   }, {
     taxon: "Nepenthes x maxima"
-  }, {
-    taxon: "Sarracenia 'Dana\'s Delight'"
+    databases:
+      itis: 896583
   }, {
     taxon: "Nepenthes singalana 'Tujuh'"
     databases:
@@ -410,6 +425,7 @@ window.rawTaxonomy = [
   }, {
     taxon: "Drosera filiformis 'FL Giant'"
     databases:
+      itis: 22012
       usda: "DRFI"
   }, {
     taxon: "Cephalotus follicularis"
@@ -457,6 +473,35 @@ window.rawTaxonomy = [
     databases:
       itis: 42359
       usda: "TILLA2"
+  }, {
+    taxon: "Tillandsia tenuifolia"
+    carnivorous: false
+    databases:
+      itis: 565569
+      usda: "TITE"
+  }, {
+    taxon: "Tillandsia tricolor"
+    carnivorous: false
+  }, {
+    taxon: "Tillandsia caliginosa"
+    carnivorous: false
+  }, {
+    taxon: "Tillandsia xerographica"
+    databases:
+      itis: 803809
+  }, {
+    taxon: "Tillandsia xerographica x brachycaulos"
+    carnivorous: false
+    hybrid: [803809, null]
+  }, {
+    taxon: "Tillandsia ehlersiana"
+    carnivorous: false
+  }, {
+    taxon: "Tillandsia captita 'Silver Rose'"
+    carnivorous: false
+  }, {
+    taxon: "Tillandsia paleacea x tectorum"
+    carnivorous: false
   }, {
     taxon: "Sarracenia"
     databases:
@@ -522,5 +567,9 @@ window.rawTaxonomy = [
     databases:
       itis: 26790
       usda: "MIPU8"
+  }, {
+    taxon: "Drosophyllaceae"
+    databases:
+      itis: 896867
   }
 ]
