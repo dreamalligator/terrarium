@@ -590,7 +590,31 @@
     "inBetween": [
       {
         "date": "2016-10-19",
-        "notes": "Based on the bottom half of all the pitchers (the peristome and lid are withered on all) and general shape, I'm going to guess that this is a N. Ventrata hybrid."
+        "notes": "Based on the bottom half of all the pitchers (the peristome and lid are withered on all) and general shape, I'm going to guess that this is a N. Alata or the hybrid N. Ventrata (alata x ventricosa)."
+      },
+      {
+        "date": "2016-10-23",
+        "notes": "Started repotting, and found out this recently bought plant was two! this company based on the label, looks like it is the same I got my next-most recently bought plant from 6th Avenue Aquarium. Now that I'm looking at the plant below the soil (milled peat), it looks like they directly sell cuttings in peat-pucks and drop them in more peat on selling. There was no root structure yet. I went ahead with repotting since I was this far along and gave a mostly sphagnum mix with perlite. I dipped the resuscitated sphagnum in perlite with each handful and then gently packed the plants in larger pots. Hope they survive! I wound up choosing this loose mix based on the Savage Garden's Nepenthes soil section. The other plant at this same arrival date is the other plant in the original pot. Bumped plant ID of other recent plant from NEPEN_16_2 to NEPEN_16_3."
+      }
+    ]
+  }, {
+    "id": "NEPEN_16_2",
+    "taxon": "Nepenthes",
+    "arrived": {
+      "date": "2016-10-15",
+      "source": "See notes on plant of same day. Bought both at Katsura Bonsai in Japantown."
+    }
+  }, {
+    "id": "NEPEN_16_3",
+    "taxon": "Nepenthes",
+    "arrived": {
+      "date": "2016-10-20",
+      "source": "Bought an unknown Nepenthes from 6th Avenue Aquarium. This is now the largest in my collection. Guessing a N. Alata."
+    },
+    "inBetween": [
+      {
+        "date": "2016-10-23",
+        "notes": "I hope it isn't the case, but the Nepenthes I repotted today that appeared to be from the same company based on the plant tag were mostly just a peat puck in peat, with no root structure.. It is likely this is the same."
       }
     ]
   }
