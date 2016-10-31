@@ -617,5 +617,47 @@
         "notes": "I hope it isn't the case, but the Nepenthes I repotted today that appeared to be from the same company based on the plant tag were mostly just a peat puck in peat, with no root structure.. It is likely this is the same."
       }
     ]
+  }, {
+    "id": "DROSE_16_3",
+    "taxon": "Drosera tokaiensis",
+    "arrived": {
+      "date": "2016-10-30",
+      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Warm Temperate'. Sprinkled seeds on top of a 50:50 peat:sand mix."
+    }
+  }, {
+    "id": "SARUJ_16_0",
+    "taxon": "Sarracenia jonesii",
+    "arrived": {
+      "date": "2016-10-30",
+      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'red/heavy veined, Cold Stratify 4 weeks, Do not plant on Federal property'. I should probably come up with another naming system for seeds. Sprinkled seeds on top of well chopped sphagnum. The sphagnum is a new species from a very generous Redditor. some sections of the sphagnum are red and purple. some is typical bright green too. Placed in a bag in the fridge for cold stratification."
+    }
+  }, {
+    "id": "SAPUP6_16_0",
+    "taxon": "Sarracenia purpurea var purpurea",
+    "arrived": {
+      "date": "2016-10-30",
+      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Wisconson, Cold Stratify 4 Weeks'."
+    }
+  }, {
+    "id": "DRBU3_16_0",
+    "taxon": "Drosera burmannii",
+    "arrived": {
+      "date": "2016-10-30",
+      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Pilliga Red, Summer Annual'. Sprinkled seeds on top of a 30% peat to 70% sand mix."
+    }
+  }, {
+    "id": "DROSE_16_4",
+    "taxon": "Drosera finlaysoniana",
+    "arrived": {
+      "date": "2016-10-30",
+      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Pink Flower, (was indica)'. Sprinkled seeds on top of a 95% sand to 5% peat mix."
+    }
+  }, {
+    "id": "SPHAG2_16_1",
+    "taxon": "sphagnum",
+    "arrived": {
+      "date": "2016-10-30",
+      "notes": "arrived a couple days ago, but gave a proper setup today. A generous Redditor sent it to us. Some sections are rather red or purple. a lot is the typical bright green. gave a base of pure peat in a tray. not really sure how much it matters, but tried to detect the parts that were \"the bottom\" and sowed further down in the peat. maybe a bit more than a half inch layer of peat."
+    }
   }
 ]

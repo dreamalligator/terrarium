@@ -1,3 +1,8 @@
+# NOTE: I'm not a taxonomist, so take this information with a grain of salt. Some phylogeny that could use some extra scrutiny are the following.
+#   * S. purpurea
+#   * D. filiformis
+#   * D. finlaysoniana
+
 window.rawTaxonomy = [
   {
     taxon: null
@@ -221,6 +226,7 @@ window.rawTaxonomy = [
       }
     ]
     databases:
+      eol: 1249326
       itis: 195652
       usda: "SAPUP6"
   }, {
@@ -571,5 +577,79 @@ window.rawTaxonomy = [
     taxon: "Drosophyllaceae"
     databases:
       itis: 896867
+  }, {
+    taxon: "Drosera rotundifolia"
+    databases:
+      itis: 22017
+      usda: "DRRO"
+    environment:
+      dormancy: true
+  }, {
+    taxon: "Drosera spatulata"
+    databases:
+      usda: "DRSP3"
+    environment:
+      dormancy: "semi-dormancy"
+      temperature:
+        ambient: [70, 80]
+    sources: [
+      {
+        text: "John Brittnacher, <i>Growing the Drosera spatulata species complex</i>"
+        link: "http://www.carnivorousplants.org/howto/GrowingGuides/D_spatulata.php"
+      }
+    ]
+  }, {
+    taxon: "Drosera tokaiensis"
+    hybrid: ["DRSP3", "DRRO"]
+    databases:
+      eol: 5471262
+  }, {
+    taxon: "Sarracenia jonesii"
+    databases:
+      itis: 195667
+      usda: "SARUJ"
+  }, {
+    taxon: "Drosera burmannii"
+    databases:
+      eol: 5471289
+      usda: "DRBU3"
+    environment:
+      annual: true
+      temperature:
+        ambient: [70, 80]
+      soil: ["They can grow well in pure Sphagnum moss, live, long fibered or shredded, as well as the standard peat:sand \"CP mix\" which can be anything from 30% to 100% peat."]
+      propagation: ["sow seeds on the surface. The soil surface should be lightly misted after the seeds are placed. It helps germination and settles the seed around large sand particles."]
+    sources: [
+      {
+        text: "John Brittnacher, <i>Growing Subtropical Drosera</i>"
+        link: "http://www.carnivorousplants.org/howto/GrowingGuides/D_subtropical.php"
+      }
+    ]
+  }, {
+    taxon: "Drosera finlaysoniana"
+    databases:
+      eol: 2886784
+    environment:
+      annual: true
+      temperature:
+        ambient: [80]
+      luminosity: ["bright"]
+      moisture: ["When the plants get to a few cm tall, Drosera finlaysoniana tends to prefer drier soil and can die if the plants are too wet. However watch your plants carefully. There can be major differences in preferences depending on the source location of the seeds. For some you can even allow the pots to go almost dry between waterings. Plants native to other locations may require constant wet conditions."]
+      soil: ["sandy. Drosera finlaysoniana does not do well in the typical sopping wet peat mix used for bog plants. A soil mix of mostly or even complete sand works best. Some people have told of success using an airy mix of peat and perlite."]
+      propagation: ["Sow the seeds on the surface and put the pot in a very warm and bright location. Drosera finlaysoniana is an annual and it has been reported it never reproduces from root or leaf cuttings. You may prolong its life by cutting the top off and re-rooting. This does not always produce a healthy plant. It is best to start over again from seed. The plant is a strict annual and will die after setting seed."]
+    sources: [
+      {
+        text: "John Brittnacher, <i>Growing Drosera indica complex species</i>"
+        link: "http://www.carnivorousplants.org/howto/GrowingGuides/D_indica.php"
+      }
+      {
+        text: "John Brittnacher, <i>The Drosera indica complex</i>"
+        link: "http://www.carnivorousplants.org/cp/Drosera_indica_complex.php"
+      }
+      {
+        text: "John Brittnacher, <i>Growing Subtropical Drosera</i>"
+        link: "http://www.carnivorousplants.org/howto/GrowingGuides/D_subtropical.php"
+      }
+    ]
   }
 ]
