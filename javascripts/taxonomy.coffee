@@ -1,7 +1,7 @@
 # NOTE: I'm not a taxonomist, so take this information with a grain of salt. Some phylogeny that could use some extra scrutiny are the following.
-#   * S. purpurea
-#   * D. filiformis
-#   * D. finlaysoniana
+# * S. purpurea purpurea
+# * D. filiformis tracyi
+# * D. finlaysoniana
 
 window.rawTaxonomy = [
   {
@@ -215,6 +215,7 @@ window.rawTaxonomy = [
     environment:
       temperature: [[-20, null], "most cold hardy of the <i>Sarracenia</i>, can survive USDA zone 5 and colder"]
       luminosity: ["bright, or full sun"]
+      soil: "live sphagnum"
     sources: [
       {
         text: "John Brittnacher, <i>Growing Sarracenia purpurea and S. rosea</i>, International Carnivorous Plant Society"
@@ -513,6 +514,17 @@ window.rawTaxonomy = [
     databases:
       itis: 21992
       usda: "SARRA"
+    environment:
+      dormancy: true
+      humidity: "high"
+      moisture: "wet"
+      soil: "live sphagnum is best"
+    sources: [
+      {
+        text: "Schnell, D.E. (1973) Growing Sarracenias. Carnivorous Plant Newsletter. 2(3):44-46"
+        link: "http://www.carnivorousplants.org/cpn/articles/CPNv02n3p44_46.pdf"
+      }
+    ]
   }, {
     taxon: "Drosera intermedia"
     databases:
