@@ -1,6 +1,6 @@
 //based on the DHT and TSL examples by Ladyada
 
-//https://github.com/digitalvapor/terrarium
+//https://github.com/nebulousdog/terrarium
 //Fonda Tong and Tom Spalding
 //http://antivapor.net
 

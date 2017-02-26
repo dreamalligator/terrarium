@@ -2,7 +2,7 @@
   "name": "terrarium",
   "version": "0.0.1",
   "description": "My collection of carnivorous plants. Plus sensors and cool things.",
-  "author": "Tom Spalding (https://github.com/digitalvapor)",
+  "author": "Tom Spalding (https://github.com/nebulousdog)",
   "contributors": [
     {
       "name": "Thomas Spalding",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/digitalvapor/terrarium.git"
+    "url": "git://github.com/nebulousdog/terrarium.git"
   },
   "scripts": {
     "start": "node server.js"
@@ -21,19 +21,12 @@
     "backbone": "^1.3.3",
     "backbone.nativeajax": "^0.4.4",
     "backbone.nativeview": "^0.3.3",
-    "body-parser": "^1.14.1",
-    "coffee-script": "^1.10.0",
     "d3": "^3.5.17",
     "express": "^4.13.3",
     "express-logger": "^0.0.3",
     "http": "^0.0.0",
     "underscore": "^1.8.3"
   },
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-concurrent": "^2.3.1",
-    "grunt-exec": "^0.4.7"
-  },
   "engine": "node ^= 0.6",
-  "license": "https://github.com/digitalvapor/terrarium/blob/master/readme.md#license"
+  "license": "https://github.com/nebulousdog/terrarium/blob/master/readme.md#license"
 }

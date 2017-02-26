@@ -3,7 +3,5 @@ node_modules
 backup
 *.log
 arduino/libraries
-server.js
-javascripts/*.js
 *.css
 .sass-cache

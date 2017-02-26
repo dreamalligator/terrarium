@@ -1,7 +1,7 @@
-# [Terrarium Notebook](https://github.com/digitalvapor/terrarium)
+# [Terrarium Notebook](https://github.com/nebulousdog/terrarium)
 My collection of carnivorous plants. Plus sensors and cool things.
 
-There are some Jupyter [Notebooks](http://nbviewer.ipython.org/github/digitalvapor/terrarium/tree/master/), light/humidity/temperature sensors (w Arduino and Rpi), and a web app.
+There are some Jupyter [Notebooks](http://nbviewer.ipython.org/github/nebulousdog/terrarium/tree/master/), light/humidity/temperature sensors (w Arduino and Rpi), and a web app.
 
 ![sensor stream example](https://i.imgur.com/g2Lftvs.png)
 
@@ -11,7 +11,7 @@ See the example site and docs at [antivapor.net/terrarium](https://antivapor.net
 
 ## Plants
 
-I used to list my individual plants here, but I'm even more organized now! you can just visit the [site](https://antivapor.net/terrarium), or less consumably, the [taxonomy](https://github.com/digitalvapor/terrarium/blob/master/javascripts/taxonomy.coffee) and [plant](https://github.com/digitalvapor/terrarium/blob/master/javascripts/plants.json) files to see all the info. There you'll hopefully find some cool data on drosera, nepenthes, cephalotus, utricularia, pinguicula, and sarracenia. Particularly check out the environmental parameters.
+I used to list my individual plants here, but I'm even more organized now! you can just visit the [site](https://antivapor.net/terrarium), or less consumably, the [taxonomy](https://github.com/nebulousdog/terrarium/blob/master/javascripts/taxonomy.coffee) and [plant](https://github.com/nebulousdog/terrarium/blob/master/javascripts/plants.json) files to see all the info. There you'll hopefully find some cool data on drosera, nepenthes, cephalotus, utricularia, pinguicula, and sarracenia. Particularly check out the environmental parameters.
 
 # The App
 You can see a live version of this at [antivapor.net/terrarium](https://antivapor.net/terrarium).
@@ -20,9 +20,9 @@ The humidity and temperature parameters are used to calculate the lower and uppe
 
 Currently it only plots temperature, humidity and luminosity, but it will be extended to plot ir, full, visible, lux, and heatindex as well. It already serially logs this data.
 
-The app utilizes [Backbone](http://backbonejs.org/) and [D3](https://d3js.org/). Backbone no longer has a hard dependency on jQuery for DOM manipulation and such, so I opted to [substitute with native javascript](https://github.com/jashkenas/backbone/wiki/Using-Backbone-without-jQuery). See [`Backbone.NativeView`](https://github.com/akre54/Backbone.NativeView) and [`Backbone.NativeAjax`](https://github.com/akre54/Backbone.NativeAjax). Additionally, [`Backbone.dualStorage`](https://github.com/nilbus/Backbone.dualStorage) provides 2/4 of my [issue #3](https://github.com/digitalvapor/terrarium/issues/3) database to-do items which is cool.
+The app utilizes [Backbone](http://backbonejs.org/) and [D3](https://d3js.org/). Backbone no longer has a hard dependency on jQuery for DOM manipulation and such, so I opted to [substitute with native javascript](https://github.com/jashkenas/backbone/wiki/Using-Backbone-without-jQuery). See [`Backbone.NativeView`](https://github.com/akre54/Backbone.NativeView) and [`Backbone.NativeAjax`](https://github.com/akre54/Backbone.NativeAjax). Additionally, [`Backbone.dualStorage`](https://github.com/nilbus/Backbone.dualStorage) provides 2/4 of my [issue #3](https://github.com/nebulousdog/terrarium/issues/3) database to-do items which is cool.
 
-Feel free to report any bugs in the [issue tracker](https://github.com/digitalvapor/terrarium/issues).
+Feel free to report any bugs in the [issue tracker](https://github.com/nebulousdog/terrarium/issues).
 
 ## Dependencies
 You can install the majority of the app dependencies with `npm install`. The only Ruby dependency is Sass; run `gem install sass`.
@@ -31,17 +31,17 @@ You can install the majority of the app dependencies with `npm install`. The onl
 `pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, I am running Python 3.5.0 and Ruby 2.2.3.
 
 ## Development and running the server
-The only command needed is `grunt`. This will compile everything and run the server. For each separate command, please see the [`Gruntfile`](https://github.com/digitalvapor/terrarium/blob/master/Gruntfile.js).
+The only command needed is `grunt`. This will compile everything and run the server. For each separate command, please see the [`Gruntfile`](https://github.com/nebulousdog/terrarium/blob/master/Gruntfile.js).
 
 # Hardware Setup
-See [sunduino.fzz](https://github.com/digitalvapor/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)
+See [sunduino.fzz](https://github.com/nebulousdog/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)
 
-![breadboard](https://github.com/digitalvapor/terrarium/blob/master/images/sunduino_breadboard.png "Sunduino connections")
+![breadboard](https://github.com/nebulousdog/terrarium/blob/master/images/sunduino_breadboard.png "Sunduino connections")
 
 Be sure to use a level converter or the above voltage divider between the Arduino and the Raspberry Pi.
 
 ## Arduino
-Flash [sunduino.ino](https://github.com/digitalvapor/terrarium/blob/master/sunduino/sunduino.ino) to your Arduino. Unplug from the rPi while doing so.
+Flash [sunduino.ino](https://github.com/nebulousdog/terrarium/blob/master/sunduino/sunduino.ino) to your Arduino. Unplug from the rPi while doing so.
 
 Serial output.
 
@@ -88,7 +88,7 @@ Please fork, contribute and comment!
 
 If you want the Arduino libraries I use in this project, be sure to add the `--recursive` flag to recursively clone these submodules.
 
-1. `git clone --recursive git@github.com:digitalvapor/terrarium.git`
+1. `git clone --recursive git@github.com:nebulousdog/terrarium.git`
 2. `cd terrarium`
 3. `npm install`
 4. `grunt` will run an Express server on port `3000`. It will also automatically compile assets. Because this project is still in the alpha phase, it is assumed you are a savvy hacker and know what all this means.
