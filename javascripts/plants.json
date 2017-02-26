@@ -677,7 +677,8 @@
       },
       {
         "date": "2017-01-08",
-        "notes": "I'm giving up on these guys. I don't believe they're going to sprout. All the seeds have turned green, possibly algae."
+        "notes": "I'm giving up on these guys. I don't believe they're going to sprout. All the seeds have turned green, possibly algae.",
+        "alive": false
       }
     ]
   }

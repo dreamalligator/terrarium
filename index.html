@@ -10,7 +10,8 @@
     <h1>My Carnivorous Plant Terrarium</h1>
     <hr>
     <section id="plot-container"></section>
-    <section id='plant-container'></section>
+    <section id="plant-container"></section>
+    <section id="plant-history-container"></section>
   </main>
 </body>
 </html>
@@ -48,6 +49,7 @@
         <td class="crud">
           <a class="view" href="plant-info/<%- plant.id %>">View</a>
         </td>
+        <td><a class="update" click="updatePlant(event)">update</td>
       </tr>
       <% if(plant.sources) { %>
       <tr>
@@ -81,6 +83,10 @@
       </tr>
     </tbody>
   </table>
+</script>
+
+<script type="text/template" id="plant-history-template">
+  LOOK AT THIS <span class="do-something">do something</span>
 </script>
 
 <script type="text/javascript" src="javascripts/bundle.js"></script>

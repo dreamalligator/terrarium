@@ -22,7 +22,6 @@
     "backbone.nativeajax": "^0.4.4",
     "backbone.nativeview": "^0.3.3",
     "body-parser": "^1.14.1",
-    "browserify": "^13.1.0",
     "coffee-script": "^1.10.0",
     "d3": "^3.5.17",
     "express": "^4.13.3",

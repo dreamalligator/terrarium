@@ -59,7 +59,7 @@ PlantListView = Backbone.View.extend(
   initialize: ->
     @render()
 
-  render: (eventName) ->
+  render: ->
     @el.innerHTML = @template({ plants: @model })
     # good convention to return `this` at the end of render to enable chained calls
     @
@@ -73,6 +73,22 @@ PlantListView = Backbone.View.extend(
       { taxon: "new plant! edit me" }
     ])
     @defaultPlantListView.render()
+)
+
+PlantHistoryView = Backbone.View.extend(
+  el: "#plant-history-container"
+  events:
+    'click .do-something': 'doSomething'
+  template: _.template(document.querySelector("#plant-history-template").innerHTML)
+
+  initialize: ->
+    'yah history'
+
+  render: ->
+    @el.innerHTML = @template({ junk: yuh })
+
+  doSomething: ->
+    console.log 'did something'
 )
 
 AppRouter = Backbone.Router.extend({
