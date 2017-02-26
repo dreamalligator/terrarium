@@ -1,11 +1,11 @@
 {
   "name": "terrarium",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "My collection of carnivorous plants. Plus sensors and cool things.",
   "author": "Tom Spalding (https://github.com/nebulousdog)",
   "contributors": [
     {
-      "name": "Thomas Spalding",
+      "name": "Tom Spalding",
       "email": "antivapor@gmail.com"
     }
   ],
@@ -14,7 +14,13 @@
     "url": "git://github.com/nebulousdog/terrarium.git"
   },
   "scripts": {
-    "start": "node server.js"
+    "build": "rollup -c",
+    "start": "node server.js",
+    "prebuild": "eslint lib test",
+    "prepublish": "npm test",
+    "pretest": "npm run build",
+    "test": "mocha",
+    "watch": "rollup -c -w"
   },
   "dependencies": {
     "Backbone.dualStorage": "github:nilbus/backbone.dualstorage",
@@ -27,6 +33,19 @@
     "http": "^0.0.0",
     "underscore": "^1.8.3"
   },
+  "keywords": [
+    "carnivorous",
+    "plants",
+    "terrarium",
+    "growth",
+    "monitoring"
+  ],
   "engine": "node ^= 0.6",
-  "license": "https://github.com/nebulousdog/terrarium/blob/master/readme.md#license"
+  "license": "https://github.com/nebulousdog/terrarium/blob/master/readme.md#license",
+  "devDependencies": {
+    "babel-preset-latest": "^6.22.0",
+    "eslint": "^3.16.1",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1"
+  }
 }
