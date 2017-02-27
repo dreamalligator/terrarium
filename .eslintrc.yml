@@ -1,0 +1,38 @@
+env:
+  browser: true
+  es6: true
+  amd: true
+globals:
+  _: true
+parserOptions:
+  ecmaVersion: 2017
+  sourceType: module
+extends: eslint:recommended
+rules:
+  # possible errors
+  no-cond-assign: off
+  no-console: off
+  valid-jsdoc: error
+  # best practices
+  complexity: [error, 10]
+  dot-location: [error, property]
+  no-multi-spaces: error
+  vars-on-top: error
+  # variables
+  no-unused-vars: [error, { argsIgnorePattern: "^_" }]
+  # stylistic issues
+  array-bracket-spacing: [error, never]
+  block-spacing: [error, always]
+  camelcase: [error, { properties: always }]
+  comma-spacing: [error, { before: false, after: true }]
+  comma-style: [error, last]
+  eol-last: error
+  func-call-spacing: error
+  indent: [error, 2]
+  key-spacing: [error, { mode: strict }]
+  keyword-spacing: error
+  no-trailing-spaces: error
+  object-curly-spacing: [error, always]
+  semi-spacing: [error, { before: false, after: true }]
+  # ecmascript 6
+  arrow-spacing: error

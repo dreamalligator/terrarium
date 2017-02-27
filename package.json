@@ -43,9 +43,13 @@
   "engine": "node ^= 0.6",
   "license": "https://github.com/nebulousdog/terrarium/blob/master/readme.md#license",
   "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-latest": "^6.22.0",
+    "babelrc-rollup": "^3.0.0",
     "eslint": "^3.16.1",
     "rollup": "^0.41.4",
-    "rollup-plugin-babel": "^2.7.1"
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-eslint": "^3.0.0",
+    "rollup-plugin-json": "^2.1.0"
   }
 }

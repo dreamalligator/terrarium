@@ -1,142 +1,184 @@
-(function() {
-  var AppRouter, Backbone, Plant, PlantCollection, PlantHistoryView, PlantListView, _, newAppRouter;
+const _ = require('underscore');
+var Backbone = require('backbone');
 
-  _ = require('underscore');
-  Backbone = require('backbone');
-  Backbone.ajax = require('backbone.nativeajax');
-  Backbone.View = require('backbone.nativeview');
-  require('./taxonomy');
-  require('./plot');
+Backbone.ajax = require('backbone.nativeajax');
+Backbone.View = require('backbone.nativeview');
 
-  Plant = Backbone.Model.extend({
-    initialize: function() {
-      _.extend(this, this.attributes);
-      return this.addEnvironmentalParameters();
-    },
-    addEnvironmentalParameters: function() {
-      var foundParams;
-      foundParams = _.find(window.rawTaxonomy, (function(_this) {
-        return function(plantAttributes) {
-          return plantAttributes.taxon === _this.taxon;
-        };
-      })(this));
-      if (foundParams) {
-        return _.extend(this, foundParams);
-      }
-    },
-    formattedTemperature: function() {
-      var ref, t;
-      if (t = (ref = this.environment) != null ? ref.temperature : void 0) {
-        return [t.ambient, t.soil, t.extremes].join(' ');
-      } else {
-        return '';
-      }
-    },
-    formattedHumidity: function() {
-      var ref;
-      return ((ref = this.environment) != null ? ref.humidity : void 0) || '';
-    },
-    formattedLuminosity: function() {
-      var ref;
-      return ((ref = this.environment) != null ? ref.luminosity : void 0) || '';
-    },
-    defaults: {
+import rawTaxonomy from './taxonomy';
+import './plot';
+import { version, name } from '../package.json';
+
+class Plant extends Backbone.Model {
+  constructor() {
+    super();
+    this.defaults = {
       alive: true,
       carnivorous: true,
       owner: 'tom'
     }
-  });
+  }
 
-  PlantCollection = Backbone.Collection.extend({
-    model: Plant,
-    url: './javascripts/plants.json'
-  });
+  initialize() {
+    _.extend(this, this.attributes);
+    return this.addEnvironmentalParameters();
+  }
 
-  this.plantList = new PlantCollection();
+  addEnvironmentalParameters() {
+    let foundParams = _.find(rawTaxonomy, function(plantAttributes) {
+      return plantAttributes.taxon === plantAttributes.taxon;
+    });
 
-  this.plantList.on('add', function(plant) {
-    return console.log("added plant: " + (plant != null ? plant.taxon : void 0));
-  });
-
-  PlantListView = Backbone.View.extend({
-    el: '#plant-container',
-    events: {
-      'click .update': 'updatePlant',
-      'click .create': 'createPlant',
-      'click .changes': 'viewUnsyncedChanges',
-      'click .cancel': 'cancelUnsyncedChanges',
-      'click .sync': 'syncPlants'
-    },
-    model: this.plantList.models,
-    template: _.template(document.querySelector('#plant-collection-template').innerHTML),
-    initialize: function() {
-      return this.render();
-    },
-    render: function() {
-      this.el.innerHTML = this.template({
-        plants: this.model
-      });
-      return this;
-    },
-    updatePlant: (function(_this) {
-      return function(_event) {
-        console.log('update', _this);
-        return _this.defaultPlantListView.render();
-      };
-    })(this),
-    createPlant: (function(_this) {
-      return function(_event) {
-        _this.plantList.add([
-          {
-            taxon: "new plant! edit me"
-          }
-        ]);
-        return _this.defaultPlantListView.render();
-      };
-    })(this)
-  });
-
-  PlantHistoryView = Backbone.View.extend({
-    el: "#plant-history-container",
-    events: {
-      'click .do-something': 'doSomething'
-    },
-    template: _.template(document.querySelector("#plant-history-template").innerHTML),
-    initialize: function() {
-      return 'yah history';
-    },
-    render: function() {
-      return this.el.innerHTML = this.template({
-        junk: yuh
-      });
-    },
-    doSomething: function() {
-      return console.log('did something');
+    if (foundParams) {
+      return _.extend(this, foundParams);
     }
-  });
+  }
 
-  AppRouter = Backbone.Router.extend({
-    routes: {
+  formattedTemperature() {
+    let ref, t;
+    if (t = (ref = this.environment) != null ? ref.temperature : void 0) {
+      return [t.ambient, t.soil, t.extremes].join(' ');
+    } else {
+      return '';
+    }
+  }
+
+  formattedHumidity() {
+    let ref;
+    return ((ref = this.environment) != null ? ref.humidity : void 0) || '';
+  }
+
+  formattedLuminosity() {
+    var ref;
+    return ((ref = this.environment) != null ? ref.luminosity : void 0) || '';
+  }
+
+}
+
+class PlantCollection extends Backbone.Collection {
+  constructor() {
+    super();
+
+    return {
+      model: Plant,
+      url: './javascripts/plants.json'
+    }
+  }
+}
+
+class PlantListView extends Backbone.View {
+  constructor() {
+    super();
+    return {
+      el: '#plant-container',
+      events: {
+        'click .update': 'updatePlant',
+        'click .create': 'createPlant',
+        'click .changes': 'viewUnsyncedChanges',
+        'click .cancel': 'cancelUnsyncedChanges',
+        'click .sync': 'syncPlants'
+      },
+      model: this.plantList.models,
+      template: _.template(document.querySelector('#plant-collection-template').innerHTML),
+    }
+  }
+
+  initialize() {
+    return this.render();
+  }
+
+  render() {
+    this.el.innerHTML = this.template({
+      plants: this.model
+    });
+    return this;
+  }
+
+  updatePlant(_this) {
+    return function(_event) {
+      console.log('update', _this);
+      return _this.defaultPlantListView.render();
+    };
+  }
+
+  createPlant(_this) {
+    return function(_event) {
+      _this.plantList.add([
+        {
+          taxon: "new plant! edit me"
+        }
+      ]);
+      return _this.defaultPlantListView.render();
+    };
+  }
+}
+
+/* eslint-disable no-unused-vars */
+class PlantHistoryView extends Backbone.View {
+  constructor() {
+    super();
+    return {
+      el: "#plant-history-container",
+      events: {
+        'click .do-something': 'doSomething'
+      },
+      template: _.template(document.querySelector("#plant-history-template").innerHTML),
+    }
+  }
+
+  initialize() {
+    return 'yah history';
+  }
+
+  render() {
+    return this.el.innerHTML = this.template({
+      junk: 'yuh'
+    });
+  }
+
+  doSomething() {
+    return console.log('did something');
+  }
+}
+/* eslint-enable no-unused-vars */
+
+class AppRouter extends Backbone.Router {
+  constructor() {
+    super();
+    this.routes = {
       '': 'list',
       'plant-info/:id': 'viewPlant'
-    },
-    list: (function(_this) {
-      return function() {
-        return _this.plantList.fetch({
-          success: function() {
-            _this.defaultPlantListView = new PlantListView();
-            return _this.defaultPlantListView.render();
-          }
-        });
-      };
-    })(this),
-    viewPlant: (function(_this) {
-      return function() {};
-    })(this)
-  });
+    };
+  }
 
-  newAppRouter = new AppRouter();
+  list(_this) {
+    return function() {
+      return _this.plantList.fetch({
+        success: function() {
+          _this.defaultPlantListView = new PlantListView();
+          return _this.defaultPlantListView.render();
+        }
+      });
+    };
+  }
 
-  Backbone.history.start();
+  viewPlant(_this) {
+    return function() {};
+  }
+}
 
-}).call(this);
+class Application {
+  constructor() {
+    new AppRouter();
+    Backbone.history.start();
+    console.log(`${name} version ${version}`);
+  }
+}
+
+this.plantList = new PlantCollection();
+this.plantList.on('add', function(plant) {
+  return console.log("added plant: " + (plant != null ? plant.taxon : void 0));
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  new Application();
+});
