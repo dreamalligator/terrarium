@@ -1,6 +1,6 @@
 {
   "name": "terrarium",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "My collection of carnivorous plants. Plus sensors and cool things.",
   "author": "Tom Spalding (https://github.com/nebulousdog)",
   "contributors": [
@@ -14,42 +14,40 @@
     "url": "git://github.com/nebulousdog/terrarium.git"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "./node_modules/.bin/rollup -c -o",
     "start": "node server.js",
-    "prebuild": "eslint lib test",
-    "prepublish": "npm test",
+    "prebuild": "eslint src",
+    "prepublish": "npm test; ./node_modules/.bin/jsdoc src -d docs",
     "pretest": "npm run build",
-    "test": "mocha",
-    "watch": "rollup -c -w"
+    "test": "mocha"
   },
   "dependencies": {
-    "Backbone.dualStorage": "github:nilbus/backbone.dualstorage",
-    "backbone": "^1.3.3",
-    "backbone.nativeajax": "^0.4.4",
-    "backbone.nativeview": "^0.3.3",
-    "d3": "^3.5.17",
+    "body-parser": "^1.17.2",
     "express": "^4.13.3",
     "express-logger": "^0.0.3",
-    "http": "^0.0.0",
-    "underscore": "^1.8.3"
+    "http": "^0.0.0"
   },
   "keywords": [
     "carnivorous",
     "plants",
     "terrarium",
     "growth",
-    "monitoring"
+    "monitoring",
+    "dual storage"
   ],
   "engine": "node ^= 0.6",
   "license": "https://github.com/nebulousdog/terrarium/blob/master/readme.md#license",
   "devDependencies": {
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-latest": "^6.22.0",
-    "babelrc-rollup": "^3.0.0",
-    "eslint": "^3.16.1",
-    "rollup": "^0.41.4",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-eslint": "^3.0.0",
-    "rollup-plugin-json": "^2.1.0"
+    "eslint": "^3.19.0",
+    "jsdoc": "^3.4.3",
+    "json-schema-faker": "^0.5.0-rc3",
+    "mocha": "^3.4.1",
+    "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-json": "^2.1.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-watch": "^3.2.2"
   }
 }

@@ -1,7 +1,5 @@
-.ipynb_checkpoints
 node_modules
-backup
 *.log
 arduino/libraries
-*.css
-.sass-cache
+docs
+bundle.js

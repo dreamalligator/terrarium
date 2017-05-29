@@ -1,19 +1,15 @@
-(function() {
-  var app, app_root, bodyParser, express, http, logger, server;
+const app_root = __dirname;
+const express = require("express");
+const bodyParser = require('body-parser');
+const logger = require('express-logger');
+const http = require('http');
+const app = express();
 
-  app_root = __dirname;
-  express = require("express");
-  bodyParser = require('body-parser');
-  logger = require('express-logger');
-  http = require('http');
-  app = express();
+app.set('port', process.env.PORT || 3000);
+app.use(express["static"](app_root));
 
-  app.set('port', process.env.PORT || 3000);
-  app.use(express["static"](app_root));
+const server = http.createServer(app);
 
-  server = http.createServer(app);
-
-  server.listen(app.get('port'), function() {
-    return console.log("Express server listening on port " + (app.get('port')));
-  });
-}).call(this);
+server.listen(app.get('port'), function() {
+  console.log(`Express server listening on port ${(app.get('port'))}`);
+});

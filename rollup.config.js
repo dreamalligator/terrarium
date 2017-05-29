@@ -1,13 +1,8 @@
-// import babel from 'rollup-plugin-babel';
 import json from 'rollup-plugin-json';
-// import babelrc from 'babelrc-rollup';
-// import eslint from 'rollup-plugin-eslint';
-// import pkg from './package.json';
-
-// let external = Object.keys(pkg.dependencies);
+import resolve from 'rollup-plugin-node-resolve';
 
 export default {
-  entry: 'javascripts/main.js',
+  entry: 'src/main.js',
   dest: 'bundle.js',
   format: 'iife',
   plugins: [
@@ -15,13 +10,14 @@ export default {
       exclude: ['node_modules/**'],
       preferConst: true
     }),
-    // babel(babelrc()),
-    // eslint(),
+    resolve({
+      main: true,
+      jsnext: true,
+      browser: true,
+    })
   ],
-  // external: external,
   targets: [
     {
-      // dest: pkg.main,
       dest: 'bundle.js',
       moduleName: 'terrarium',
     }
