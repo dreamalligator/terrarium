@@ -1,12 +1,39 @@
-// see http://validatejs.org/
-
 const plantSchema = {
   taxon: {
-    presense: true
+    format: {
+      pattern: /\D/
+    },
+    presence: true
   },
   id: {
-    pattern: /\d/,
-    presense: true
+    // format: {
+    //   pattern: /\D/
+    // },
+    presence: true
+  },
+  owner: {
+
+  },
+  vendor: {
+
+  },
+  'vendor.vendorId': {
+
+  },
+  'vendor.name': {
+
+  },
+  notes: {
+
+  },
+  'notes.date': {
+
+  },
+  'notes.comments': {
+
+  },
+  alive: {
+
   }
 }
 
