@@ -10,7 +10,8 @@ class PlantCollection {
       return [];
 
     const alivePlants = plantJSON.filter(function(plant) {
-      return plant.isAlive === true;
+      // TODO: haven't figured out how I wanna notate this yet.
+      return plant.alive !== false;
     });
 
     return alivePlants.map(function(plant) {

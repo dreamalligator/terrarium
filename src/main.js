@@ -1,4 +1,5 @@
 import PlantCollection from './plant_collection';
+import TaxonomicTree from './taxonomic_tree';
 import rawTaxonomyData from './taxonomy';
 import rawPlantData from './plants.json';
 
@@ -9,7 +10,7 @@ const taxonomyTree = new TaxonomicTree(rawTaxonomyData);
 // probably will place this in plantCollection later
 plantCollection.plants.forEach(function(plant) {
   const linkingId = taxonomyTree.findClosestTaxonInfo(plant);
-  plant.taxonomicLink(linkingId);
-})
+  plant.taxonomicLink = linkingId;
+});
 
 console.log('plantCollection', plantCollection);

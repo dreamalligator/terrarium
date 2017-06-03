@@ -25,7 +25,8 @@
     "body-parser": "^1.17.2",
     "express": "^4.13.3",
     "express-logger": "^0.0.3",
-    "http": "^0.0.0"
+    "http": "^0.0.0",
+    "validate.js": "^0.11.1"
   },
   "keywords": [
     "carnivorous",
