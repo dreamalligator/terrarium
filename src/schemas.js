@@ -16,16 +16,16 @@ const plantSchema = {
       pattern: /\D*/ // no digits
     }
   },
-  vendor: {
+  source: {
 
   },
-  'vendor.id': {
+  'source.id': {
 
   },
-  'vendor.name': {
+  'source.name': {
 
   },
-  'vendor.comments': {
+  'source.comments': {
     length: {
       minimum: 10
     }
@@ -48,9 +48,8 @@ const plantSchema = {
   },
   alive: {
     inclusion: {
-      within: [true, false, undefined] // undefined is for when I've given it away, or maybe I'm a mess and lost track of my plant :O. Just planning for future ;)
-    },
-    presence: true
+      within: [true, false]
+    }
   }
 }
 

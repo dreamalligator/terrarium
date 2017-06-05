@@ -1,5 +1,5 @@
 const assert = require('assert');
-import 'main';
+import Plant from 'plant';
 
 describe('Plant', function() {
   describe('#formattedTemperature()', function() {

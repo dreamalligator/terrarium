@@ -2,14 +2,11 @@
   {
     "id": "DROSE_15_0",
     "taxon": "Drosera binata",
-    "vendor": {
+    "source": {
       "name": "California Carnivores",
       "comments": "Shipped. Arrived potted."
     },
     "notes": [
-      {
-        "date": "testing validation"
-      },
       {
         "date": "2015-10-05T12:00:00",
         "comments": "shipped from California Carnivores, potted."
@@ -23,11 +20,11 @@
   }, {
     "id": "512524_15_0",
     "taxon": "Drosera tracyi",
-    "arrived": {
-      "date": "2015-10-05T12:00:00",
-      "source": "shipped from California Carnivores, potted."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-05T12:00:00",
+        "source": "shipped from California Carnivores, potted."
+      },
       {
         "date": "2016-03-20",
         "notes": "finally shooting up new stalks. the drosera binata that snuck into the pot have been doing much more famously than the primary tenant. I'm very excited to see that a drosera binata var. multifida is in the pot as well!"
@@ -37,11 +34,11 @@
   }, {
     "id": "SARUG_15_0",
     "taxon": "Sarracenia rubra ssp. gulfensis 'ancestral x giant'",
-    "arrived": {
-      "date": "2015-10-05T12:00:00",
-      "source": "shipped from California Carnivores, potted."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-05T12:00:00",
+        "source": "shipped from California Carnivores, potted."
+      },
       {
         "date": "2016-03-20",
         "notes": "finally shot up a quickly growing pitcher! about 4 inches so far. all of the Sarracenia, plus the single Darlingtonia have been moved to their own tray, and packed with New Zealand sphagnum in the extra space. I am going to fashion an automatic watering bottle to keep these guys always happy and moist."
@@ -51,11 +48,11 @@
   }, {
     "id": "DRCA14_15_0",
     "taxon": "Drosera Capensis",
-    "arrived": {
-      "date": "2015-10-05T12:00:00",
-      "source": "shipped from California Carnivores, potted."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-05T12:00:00",
+        "source": "shipped from California Carnivores, potted."
+      },
       {
         "notes": "gave away during the christmas party."
       }
@@ -64,11 +61,11 @@
   }, {
     "id": "DRCA14_15_1",
     "taxon": "Drosera Capensis 'alba'",
-    "arrived": {
-      "date": "2015-10-05T12:00:00",
-      "source": "shipped from California Carnivores, potted."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-05T12:00:00",
+        "source": "shipped from California Carnivores, potted."
+      },
       {
         "date": "2016-03-20",
         "notes": "doing great"
@@ -78,11 +75,11 @@
   }, {
     "id": "DRCA14_15_2",
     "taxon": "Drosera Capensis 'narrow red'",
-    "arrived": {
-      "date": "2015-10-05T12:00:00",
-      "source": "shipped from California Carnivores, potted."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-05T12:00:00",
+        "source": "shipped from California Carnivores, potted."
+      },
       {
         "date": "2016-03-20",
         "notes": "doing well enough, but comparitively not as excellent as the alba."
@@ -92,20 +89,23 @@
   }, {
     "id": "NEPEN_15_1",
     "taxon": "Nepenthes ventricosa x (singalana x aristolochioides)",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "notes": "medium size. Super dark purple pitchers, almost black.",
-      "source": "Bought on site at California Carnivores."
-    }
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "notes": "medium size. Super dark purple pitchers, almost black.",
+        "source": "Bought on site at California Carnivores."
+      }
+    ],
+    "alive": true
   }, {
     "id": "DROSE_15_1",
     "taxon": "Drosera adelae",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2015-12-16T19:30:00",
         "notes": "the primary plant as well as the babies are flourishing. they have developed a beautiful red tinge, probably due to the long light I am giving every day. almost slobbering with dew."
@@ -124,11 +124,11 @@
     "id": "DROSE_15_2",
     "taxon": "Drosera adelae",
     "owner": "Fonda",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2015-12-16-T19:30:00",
         "notes": "the primary plant as well as the babies are flourishing. they have developed a beautiful red tinge, probably due to the long light I am giving every day. almost slobbering with dew."
@@ -147,11 +147,11 @@
     "id": "896867_15_0",
     "taxon": "Drosophyllum lusitanicum",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2015-11-08T17:00:00",
         "notes": "slack potted in terra cotta clay pot, with mix made by Peter D'Amato. pot is approximately 6\" bottom diameter and 9.5\" on top. height is approx. 9\". some sphagnum over bottom hole to block losing soil. trimmed dead stalks away. thorougly wetted with distilled water. didn't have enough mix to fill to top, will have to add more soon."
@@ -174,11 +174,11 @@
     "id": "SAPS2_15_0",
     "taxon": "Sarracenia psittacina",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2016-03-08",
         "notes": "have not seen any great growth, but there are definitely small green pitcher-letts. Put up a greenhouse this week, planning on moving outside, as well as the other Sarracenia, if I can ensure the greenhouse is keeping within a good temperature and humidity range."
@@ -189,11 +189,11 @@
     "id": "DIMU4_15_0",
     "taxon": "Dionaea muscipula 'Royal Red'",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2016-03-08",
         "notes": "Alive, and looks okay, but have not seen any notable growth. Flightless drosophila eggs and media arrived this week, they've since grown into many larvae, hoping they turn into fruit flies soon to try to coax this plant into more growth."
@@ -204,388 +204,445 @@
     "id": "PIPR_15_0",
     "taxon": "Pinguicula primuliflora",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2016-03-08",
-        "alive": true,
         "notes": "Doing super well, there's a couple extra pups. The biggest two plants have flowered and are very pretty! I haven't looked up the polination yet, but tried to angle the flowers over the cyclosecta pot in case anything falls."
       },
       {
         "date": "2016-03-20T14:00:00",
-        "alive": true,
         "notes": "The pups have flowered as well. I didn't have any toothpicks, so I attempted to cross-polinate with q-tips. I don't think it worked at all."
       },
       {
         "date": "2016-03-20T20:00:00",
-        "alive": true,
         "notes": "My friend from the coffeeshop gave me some toothpicks, so I tried again to polinate the flowers."
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "PINGU_15_0",
     "taxon": "Pinguicula cyclosecta",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2016-03-08",
-        "alive": true,
         "notes": "Still so tiny!!! Unsure if giving best environment."
       },
       {
         "date": "2016-03-20",
-        "alive": true,
         "notes": "I realize now that this plant was in its winter rosette form, I started paying a bit more attention to the watering and two bigger leaves formed almost right away. I am hoping it is transforming into the carnivorous phase."
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "NEPEN_15_2",
     "taxon": "Nepenthes 'Miranda'",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2016-03-08",
-        "alive": true,
         "notes": "Doing a-okay, has made a couple more pitchers."
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "896583_15_0",
     "taxon": "Nepenthes x maxima",
     "owner": "Fonda",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2015-12",
-        "alive": true,
         "notes": "went home with Fonda"
       }
     ],
-    "died": null,
-    "status": "unknown"
+    "alive": null,
   }, {
     "id": "NEPEN_15_3",
     "taxon": "Nepenthes singalana 'Tujuh'",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-10-16T18:00:00",
-      "source": "Bought on site at California Carnivores."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-10-16T18:00:00",
+        "source": "Bought on site at California Carnivores."
+      },
       {
         "date": "2016-03-08",
-        "alive": true,
         "notes": "Alive, but pretty tiny still, a whole new pitcher grew."
       },
       {
         "date": "2016-03-09",
-        "alive": true,
         "notes": "Gave approximately a third of an osmocote in the newest pitcher that had relatively recently opened."
       },
       {
         "date": "2016-03-10",
-        "alive": true,
         "notes": "The osmocote was too much! The pitcher is instantly withered."
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "TITE_15_0",
     "taxon": "Tillandsia tenuifolia blue",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-12-11T12:00:00",
-      "source": "Shipped from California Carnivores"
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-12-11T12:00:00",
+        "source": "Shipped from California Carnivores"
+      },
       {
         "date": "2016-03-08",
-        "alive": true
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "TILLA2_15_0",
     "taxon": "Tillandsia tricolor",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-12-11T12:00:00",
-      "source": "Shipped from California Carnivores"
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-12-11T12:00:00",
+        "source": "Shipped from California Carnivores"
+      },
       {
         "date": "2016-03-08",
-        "alive": true
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "TILLA2_15_1",
     "taxon": "Tillandsia caliginosa",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-12-11T12:00:00",
-      "source": "Shipped from California Carnivores"
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-12-11T12:00:00",
+        "source": "Shipped from California Carnivores"
+      },
       {
         "date": "2016-03-08",
-        "alive": true
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "TILLA2_15_2",
     "taxon": "Tillandsia xerographica x brachycaulos",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-12-11T12:00:00",
-      "source": "Shipped from California Carnivores"
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-12-11T12:00:00",
+        "source": "Shipped from California Carnivores"
+      },
       {
         "date": "2016-03-08",
-        "alive": true
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "TILLA2_15_3",
     "taxon": "Tillandsia ehlersiana",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-12-11T12:00:00",
-      "source": "Shipped from California Carnivores"
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-12-11T12:00:00",
+        "source": "Shipped from California Carnivores"
+      },
       {
         "date": "2016-03-08",
-        "alive": true
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "TILLA2_15_4",
     "taxon": "Tillandsia captita 'Silver Rose'",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-12-11T12:00:00",
-      "source": "Shipped from California Carnivores"
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-12-11T12:00:00",
+        "source": "Shipped from California Carnivores"
+      },
       {
         "date": "2016-03-08",
-        "alive": true
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "TILLA2_15_5",
     "taxon": "Tillandsia paleacea x tectorum",
     "owner": "Tom",
-    "arrived": {
-      "date": "2015-12-11T12:00:00",
-      "source": "Shipped from California Carnivores"
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2015-12-11T12:00:00",
+        "source": "Shipped from California Carnivores"
+      },
       {
         "date": "2016-03-08",
-        "alive": true
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "NEPEN_16_0",
     "taxon": "Nepenthes ventricosa x glandulifera",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "SARRA_16_0",
     "taxon": "Sarracenia 'Abandoned Hope'",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "SARRA_16_1",
     "taxon": "Sarracenia. flava v. cuprea 'BH' x v. ornata 'Bulloch Co, GA'",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "DROSE_16_0",
     "taxon": "Drosera dichotoma 'T-Form'",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "SARRA_16_2",
     "taxon": "Sarracenia x 'Judith Hindle'",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "SARRA_16_3",
     "taxon": "Sarracenia flava 'orange flower' x purpurea ssp. purpurea",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "DROSE_16_1",
     "taxon": "Drosera intermedia x capillaris",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "DRFI_16_0",
     "taxon": "Drosera filiformis 'FL Giant'",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "DIMU4_16_0",
     "taxon": "Dionaea muscipula",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "DIMU4_16_1",
     "taxon": "Dionaea muscipula",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "DROSE_16_2",
     "taxon": "Drosera binata",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-03-08",
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "DACA5_16_0",
     "taxon": "Darlingtonia californica",
-    "arrived": {
-      "date": "2016-03-08",
-      "source": "Shipped from California Carnivores"
-    }
-  }, {
-    "id": "896638_16_1",
-    "taxon": "Nepenthes Ventricosa",
-    "arrived": {
-      "date": "2016-07-22",
-      "source": "Bought on Amazon with work competition prize money."
-    },
-    "inBetween": [
+    "notes": [
       {
         "date": "2016-03-08",
-        "alive": true,
+        "source": "Shipped from California Carnivores"
+      }
+    ],
+    "alive": true
+  }, {
+    "id": "896638_16_1",
+    "owner": "Annie",
+    "taxon": "Nepenthes Ventricosa",
+    "notes": [
+      {
+        "date": "2016-07-22",
+        "source": "Bought on Amazon with work competition prize money."
+      },
+      {
+        "date": "2016-03-08",
         "notes": "gave to Annie"
       }
     ],
-    "status": "unknown"
+    "alive": null
   }, {
     "id": "MIPU8_16_0",
     "taxon": "Mimosa pudica",
-    "arrived": {
-      "date": "2016-08-20",
-      "source": "Bought at Katsura Garden in Japantown"
-    },
-    "inBetween": [
+    "owner": "Annie",
+    "notes": [
+      {
+        "date": "2016-08-20",
+        "source": "Bought at Katsura Garden in Japantown"
+      },
       {
         "date": "2016-09",
-        "alive": true,
         "notes": "gave to Annie"
       }
     ],
-    "status": "unknown"
+    "alive": null
   }, {
     "id": "896646_16_0",
     "taxon": "Nepenthes Copelandii",
-    "arrived": {
-      "date": "2016-08-21",
-      "source": "Bought at California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-08-21",
+        "source": "Bought at California Carnivores"
+      }
+    ],
+    "alive": null
   }, {
     "id": "896638_16_0",
     "taxon": "Nepenthes Ventricosa",
-    "arrived": {
-      "date": "2016-08-21",
-      "source": "Bought at California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-08-21",
+        "source": "Bought at California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "896547_16_0",
     "taxon": "Nepenthes Fusca",
-    "arrived": {
-      "date": "2016-08-21",
-      "source": "Bought at California Carnivores"
-    },
-    "inBetween": {
-      "date": "2017-01-08",
-      "alive": false
-    }
+    "notes": [
+      {
+        "date": "2016-08-21",
+        "source": "Bought at California Carnivores"
+      },
+      {
+        "date": "2017-01-08",
+        "comments": "dead"
+      },
+    ],
+    "alive": false
   }, {
     "id": "NEPEN_15_0",
     "taxon": "Nepenthes",
     "arrived": "2015",
     "left": "etc",
-    "arrived": {
-      "date": "2016-08-21",
-      "source": "This was originally bought from FOTGH at SFSU in 2015. Has been in Fonda's care."
-    }
+    "notes": [
+      {
+        "date": "2016-08-21",
+        "source": "This was originally bought from FOTGH at SFSU in 2015. Has been in Fonda's care."
+      }
+    ],
+    "alive": true
   }, {
     "id": "PINGU_16_0",
     "taxon": "Pinguicula emarginata",
-    "arrived": {
-      "date": "2016-08-21",
-      "source": "Bought at California Carnivores"
-    }
+    "notes": [
+      {
+        "date": "2016-08-21",
+        "source": "Bought at California Carnivores"
+      }
+    ],
+    "alive": true
   }, {
     "id": "896744_16_0",
     "taxon": "Cephalotus follicularis 'Old Gojira'",
-    "arrived": {
-      "date": "2016-08-14",
-      "source": "Brian Lipinski at BACPS meeting, Oakland.",
-      "vendorId": "OG 09_7 CD"
-    }
+    "notes": [
+      {
+        "date": "2016-08-14",
+        "source": "Brian Lipinski at BACPS meeting, Oakland.",
+        "vendorId": "OG 09_7 CD"
+      },
+      {
+        "date": "2017-06-04",
+        "comments": "has a flower stalk growing. noticed a bunch of aphids on the stalk. have to do something about that. healthy looking otherwise."
+      }
+    ],
+    "alive": true
   }, {
     "id": "SPHAG2_16_0",
     "taxon": "sphagnum",
-    "arrived": {
-      "date": "2016",
-      "source": "Amazon vendor. Hasnt responded to species questions."
-    }
+    "notes": [
+      {
+        "date": "2016",
+        "source": "Amazon vendor. Hasnt responded to species questions."
+      }
+    ],
+    "alive": true
   }, {
     "id": "896614_16_0",
     "taxon": "Nepenthes sanguinea",
-    "arrived": {
-      "date": "2016-10-05",
-      "source": "Predatory Plants"
-    }
+    "notes": [
+      {
+        "date": "2016-10-05",
+        "source": "Predatory Plants"
+      }
+    ],
+    "alive": true
   }, {
     "id": "NEPEN_16_1",
     "taxon": "Nepenthes",
-    "arrived": {
-      "date": "2016-10-15",
-      "source": "Bought an unknown Nepenthes from Katsura Bonsai in Japantown.",
-      "notes": "Medium sized. Atm the largest in the collection. Many pitchers. All have started wilting, but will bring back to health."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2016-10-15",
+        "source": "Bought an unknown Nepenthes from Katsura Bonsai in Japantown.",
+        "notes": "Medium sized. Atm the largest in the collection. Many pitchers. All have started wilting, but will bring back to health."
+      },
       {
         "date": "2016-10-19",
         "notes": "Based on the bottom half of all the pitchers (the peristome and lid are withered on all) and general shape, I'm going to guess that this is a N. Alata or the hybrid N. Ventrata (alata x ventricosa)."
@@ -594,77 +651,100 @@
         "date": "2016-10-23",
         "notes": "Started repotting, and found out this recently bought plant was two! this company based on the label, looks like it is the same I got my next-most recently bought plant from 6th Avenue Aquarium. Now that I'm looking at the plant below the soil (milled peat), it looks like they directly sell cuttings in peat-pucks and drop them in more peat on selling. There was no root structure yet. I went ahead with repotting since I was this far along and gave a mostly sphagnum mix with perlite. I dipped the resuscitated sphagnum in perlite with each handful and then gently packed the plants in larger pots. Hope they survive! I wound up choosing this loose mix based on the Savage Garden's Nepenthes soil section. The other plant at this same arrival date is the other plant in the original pot. Bumped plant ID of other recent plant from NEPEN_16_2 to NEPEN_16_3."
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "NEPEN_16_2",
     "taxon": "Nepenthes",
-    "arrived": {
-      "date": "2016-10-15",
-      "source": "See notes on plant of same day. Bought both at Katsura Bonsai in Japantown."
-    }
+    "notes": [
+      {
+        "date": "2016-10-15",
+        "source": "See notes on plant of same day. Bought both at Katsura Bonsai in Japantown."
+      }
+    ],
+    "alive": true
   }, {
     "id": "NEPEN_16_3",
     "taxon": "Nepenthes",
-    "arrived": {
-      "date": "2016-10-20",
-      "source": "Bought an unknown Nepenthes from 6th Avenue Aquarium. This is now the largest in my collection. Guessing a N. Alata."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2016-10-20",
+        "source": "Bought an unknown Nepenthes from 6th Avenue Aquarium. This is now the largest in my collection. Guessing a N. Alata."
+      },
       {
         "date": "2016-10-23",
         "notes": "I hope it isn't the case, but the Nepenthes I repotted today that appeared to be from the same company based on the plant tag were mostly just a peat puck in peat, with no root structure.. It is likely this is the same."
       }
-    ]
+    ],
+    "alive": true
   }, {
     "id": "DROSE_16_3",
     "taxon": "Drosera tokaiensis",
-    "arrived": {
-      "date": "2016-10-30",
-      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Warm Temperate'. Sprinkled seeds on top of a 50:50 peat:sand mix."
-    }
+    "notes": [
+      {
+        "date": "2016-10-30",
+        "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Warm Temperate'. Sprinkled seeds on top of a 50:50 peat:sand mix."
+      }
+    ],
+    "alive": true
   }, {
     "id": "SARUJ_16_0",
     "taxon": "Sarracenia jonesii",
-    "arrived": {
-      "date": "2016-10-30",
-      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'red/heavy veined, Cold Stratify 4 weeks, Do not plant on Federal property'. I should probably come up with another naming system for seeds. Sprinkled seeds on top of well chopped sphagnum. The sphagnum is a new species from a very generous Redditor. some sections of the sphagnum are red and purple. some is typical bright green too. Placed in a bag in the fridge for cold stratification."
-    }
+    "notes": [
+      {
+        "date": "2016-10-30",
+        "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'red/heavy veined, Cold Stratify 4 weeks, Do not plant on Federal property'. I should probably come up with another naming system for seeds. Sprinkled seeds on top of well chopped sphagnum. The sphagnum is a new species from a very generous Redditor. some sections of the sphagnum are red and purple. some is typical bright green too. Placed in a bag in the fridge for cold stratification."
+      }
+    ],
+    "alive": null
   }, {
     "id": "SAPUP6_16_0",
     "taxon": "Sarracenia purpurea var purpurea",
-    "arrived": {
-      "date": "2016-10-30",
-      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Wisconson, Cold Stratify 4 Weeks'."
-    }
+    "notes": [
+      {
+        "date": "2016-10-30",
+        "comments": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Wisconson, Cold Stratify 4 Weeks'."
+      }
+    ],
+    "alive": null
   }, {
     "id": "DRBU3_16_0",
     "taxon": "Drosera burmannii",
-    "arrived": {
-      "date": "2016-10-30",
-      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Pilliga Red, Summer Annual'. Sprinkled seeds on top of a 30% peat to 70% sand mix."
-    }
+    "notes": [
+      {
+        "date": "2016-10-30",
+        "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Pilliga Red, Summer Annual'. Sprinkled seeds on top of a 30% peat to 70% sand mix."
+      }
+    ],
+    "alive": true
   }, {
     "id": "DROSE_16_4",
     "taxon": "Drosera finlaysoniana",
-    "arrived": {
-      "date": "2016-10-30",
-      "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Pink Flower, (was indica)'. Sprinkled seeds on top of a 95% sand to 5% peat mix."
-    }
+    "notes": [
+      {
+        "date": "2016-10-30",
+        "notes": "Seeds arrived a few days ago from ICPS seed bank. Labeled 'Pink Flower, (was indica)'. Sprinkled seeds on top of a 95% sand to 5% peat mix."
+      }
+    ],
+    "alive": true
   }, {
     "id": "SPHAG2_16_1",
     "taxon": "sphagnum",
-    "arrived": {
-      "date": "2016-10-30",
-      "notes": "arrived a couple days ago, but gave a proper setup today. A generous Redditor sent it to us. Some sections are rather red or purple. a lot is the typical bright green. gave a base of pure peat in a tray. not really sure how much it matters, but tried to detect the parts that were \"the bottom\" and sowed further down in the peat. maybe a bit more than a half inch layer of peat."
-    }
+    "notes": [
+      {
+        "date": "2016-10-30",
+        "notes": "arrived a couple days ago, but gave a proper setup today. A generous Redditor sent it to us. Some sections are rather red or purple. a lot is the typical bright green. gave a base of pure peat in a tray. not really sure how much it matters, but tried to detect the parts that were \"the bottom\" and sowed further down in the peat. maybe a bit more than a half inch layer of peat."
+      }
+    ],
+    "alive": true
   }, {
     "id": "UTRIC_16_1",
     "taxon": "Utricularia sandersonii",
-    "arrived": {
-      "date": "2016-07",
-      "source": "Amazon vendor in July."
-    },
-    "inBetween": [
+    "notes": [
+      {
+        "date": "2016-07",
+        "source": "Amazon vendor in July."
+      },
       {
         "date": "2016-10-15",
         "notes": "sowed ~100 seeds in 5 small plastic pots. worried about short utric shelf life we read about. soil media was 2:1 peat to sand mix. sand was grade #12. put each container in a sandwich bag, but didn't zip all the way closed. put a bit of distilled water in each bag. placed directly under a light."
@@ -672,8 +752,8 @@
       {
         "date": "2017-01-08",
         "notes": "I'm giving up on these guys. I don't believe they're going to sprout. All the seeds have turned green, possibly algae.",
-        "alive": false
       }
-    ]
+    ],
+    "alive": false
   }
 ]

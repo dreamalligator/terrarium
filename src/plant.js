@@ -8,14 +8,15 @@ validate.options = {
 };
 
 validate.extend(validate.validators.datetime, {
-  parse: function(value, options) {
-    // console.log(value, options)
-    // return +moment.utc(value);
+  parse: function(value, _options) {
+    console.log(Date.parse(value));
+    return Date.parse(value);
   },
-  format: function(value, options) {
-    // return moment.utc(value).format('YYYY-MM-DD hh:mm:ss');
+  format: function(value, _options) {
+    console.log(Date.parse(value).format('blehZZZ'));
+    return Date.parse(value).format('blehZZZ')
   }
-})
+});
 
 // until array validation gets added to validate.js can make our own generic validator.
 validate.validators.arrayValidator = function(value, options) {
@@ -25,6 +26,11 @@ validate.validators.arrayValidator = function(value, options) {
   value.forEach(function(obj) {
     validate(obj, options);
   });
+};
+
+// if an object exists it should only have these keys
+validate.validators.keyValidator = function(value, options) {
+  console.log('keyValidator', value, options);
 };
 
 class Plant extends Organism {

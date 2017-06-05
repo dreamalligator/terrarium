@@ -16,7 +16,7 @@
   "scripts": {
     "build": "./node_modules/.bin/rollup -c -o",
     "start": "node server.js",
-    "prebuild": "eslint src",
+    "prebuild": "./node_modules/.bin/eslint src",
     "prepublish": "npm test; ./node_modules/.bin/jsdoc src -d docs",
     "pretest": "npm run build",
     "test": "mocha"
@@ -40,6 +40,7 @@
   "license": "https://github.com/nebulousdog/terrarium/blob/master/readme.md#license",
   "devDependencies": {
     "eslint": "^3.19.0",
+    "faker": "^4.1.0",
     "jsdoc": "^3.4.3",
     "json-schema-faker": "^0.5.0-rc3",
     "mocha": "^3.4.1",
