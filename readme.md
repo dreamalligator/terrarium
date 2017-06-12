@@ -29,7 +29,7 @@ You can install the majority of the app dependencies with `npm install`. The onl
 `pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, I am running Python 3.5.0 and Ruby 2.2.3.
 
 ## Development and running the server
-`npm start` or see `package.json` for other commands. If you're a developer run `./node_modules/.bin/rollup -c -w` (or if you globally have installed rollup you can do `rollup -c -w`) to compile and watch your output.
+`npm start` or see `package.json` for other commands. If you're a developer run `npm run watch` to compile and watch your output.
 
 # Hardware Setup
 See [sunduino.fzz](https://github.com/nebulousdog/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)

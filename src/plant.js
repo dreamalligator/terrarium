@@ -9,11 +9,11 @@ validate.options = {
 
 validate.extend(validate.validators.datetime, {
   parse: function(value, _options) {
-    console.log(Date.parse(value));
+    // console.log(Date.parse(value));
     return Date.parse(value);
   },
   format: function(value, _options) {
-    console.log(Date.parse(value).format('blehZZZ'));
+    // console.log(Date.parse(value).format('blehZZZ'));
     return Date.parse(value).format('blehZZZ')
   }
 });
@@ -29,8 +29,11 @@ validate.validators.arrayValidator = function(value, options) {
 };
 
 // if an object exists it should only have these keys
-validate.validators.keyValidator = function(value, options) {
-  console.log('keyValidator', value, options);
+validate.validators.keyValidator = function(value, options, key, attributes) {
+  options.forEach(function(requiredKey) {
+    if (attributes[key] && attributes[key][requiredKey] === undefined)
+      throw new Error(`required key '${requiredKey}' not present`);
+  })
 };
 
 class Plant extends Organism {

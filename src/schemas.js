@@ -17,15 +17,16 @@ const plantSchema = {
     }
   },
   source: {
-
+    keyValidator: ['name', 'comments']
   },
   'source.id': {
-
+    // not required, can be anything
   },
   'source.name': {
-
+    // required key if object exists, can be anything
   },
   'source.comments': {
+    // required key if object exists, can be anything
     length: {
       minimum: 10
     }

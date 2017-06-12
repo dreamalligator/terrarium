@@ -15,11 +15,12 @@
   },
   "scripts": {
     "build": "./node_modules/.bin/rollup -c -o",
-    "start": "node server.js",
     "prebuild": "./node_modules/.bin/eslint src",
     "prepublish": "npm test; ./node_modules/.bin/jsdoc src -d docs",
     "pretest": "npm run build",
-    "test": "mocha"
+    "start": "node server.js",
+    "test": "mocha",
+    "watch": "./node_modules/.bin/rollup -c -w"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
