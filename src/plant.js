@@ -9,12 +9,14 @@ validate.options = {
 
 validate.extend(validate.validators.datetime, {
   parse: function(value, _options) {
-    // console.log(Date.parse(value));
-    return Date.parse(value);
+    const parsedValue = Date.parse(value);
+    if (isNaN(parsedValue))
+      throw new Error(`invalid date format found: ${value}`);
+
+    return parsedValue;
   },
   format: function(value, _options) {
-    // console.log(Date.parse(value).format('blehZZZ'));
-    return Date.parse(value).format('blehZZZ')
+    return value;
   }
 });
 
