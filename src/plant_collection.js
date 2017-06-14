@@ -3,6 +3,17 @@ import Plant from './plant';
 class PlantCollection {
   constructor(plantJSON) {
     this.plants = this.build(plantJSON);
+
+    this.uniqueTaxonomicLinks = new Set();
+    this.uniqueRemainingTaxons = new Set();
+    this.plants.forEach((plant) => {
+      if (plant.taxonomicLink)
+        this.uniqueTaxonomicLinks.add(plant.taxonomicLink);
+      else
+        this.uniqueRemainingTaxons.add(plant.taxon);
+    });
+
+    console.log(`${this.uniqueTaxonomicLinks.size} ids have already been assigned. ${this.uniqueRemainingTaxons.size} taxons need to be paired.`);
   }
 
   build(plantJSON) {
@@ -10,7 +21,6 @@ class PlantCollection {
       return [];
 
     const alivePlants = plantJSON.filter(function(plant) {
-      // TODO: haven't figured out how I wanna notate this yet.
       return plant.alive !== false;
     });
 
@@ -19,15 +29,7 @@ class PlantCollection {
     });
   }
 
-  get environmentalLimits() {
-    return this.plants.map(function(plant) {
-      console.log(plant);
-    });
-  }
 
-  get humanizedEnvironmentalLimits() {
-    return this.environmentalLimits.join(' - ');
-  }
 }
 
 export default PlantCollection;

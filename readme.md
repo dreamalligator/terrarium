@@ -1,7 +1,7 @@
 # [Terrarium Notebook](https://github.com/nebulousdog/terrarium)
 My collection of carnivorous plants. Plus sensors and cool things.
 
-There are some Jupyter [Notebooks](http://nbviewer.ipython.org/github/nebulousdog/terrarium/tree/master/), light/humidity/temperature sensors (w Arduino and Rpi), and a web app.
+I've been mostly focusing on the web app portion lately, so please check that out before digging into the hardware setup. It is a bit stale.
 
 ![sensor stream example](https://i.imgur.com/g2Lftvs.png)
 
@@ -13,6 +13,15 @@ See the example site and docs at [nebulousdog.com/terrarium](https://nebulousdog
 
 I used to list my individual plants here, but I'm even more organized now! you can just visit the [site](https://nebulousdog.com/terrarium), or less consumably, the [taxonomy](https://github.com/nebulousdog/terrarium/blob/master/javascripts/taxonomy.js) and [plant](https://github.com/nebulousdog/terrarium/blob/master/javascripts/plants.json) files to see all the info. There you'll hopefully find some cool data on drosera, nepenthes, cephalotus, utricularia, pinguicula, and sarracenia. Particularly check out the environmental parameters.
 
+## Taxonomic Info
+The individual plant ids first use the [USDA](http://plants.usda.gov/adv_search.html) plant symbol if available, then the [ITIS](http://www.itis.gov/advanced_search.html) Taxonomic Serial Number (TSN). I still haven't figured out what I want to do for hybrids or plants that are not in these databases. For now I'm going to use the genus' symbol.
+
+```
+<tn>_<y>_<n>
+```
+
+where `tn` is the taxonomic plant symbol or TSN as available. `y` is year that the plant was obtained or propagated. `n` is the assigned number for each plant. `n` is reset for each `tn` and `y` combination. since I don't have enough of the same plant yet, this is likely to be `0-9` for a bit.
+
 # The App
 You can see a live version of this at [nebulousdog.com/terrarium](https://nebulousdog.com/terrarium).
 
@@ -22,14 +31,14 @@ Currently it only plots temperature, humidity and luminosity, but it will be ext
 
 Feel free to report any bugs in the [issue tracker](https://github.com/nebulousdog/terrarium/issues).
 
+## Development and running the server
+Run `npm start` to run a local server. If you're a developer run `npm run watch` to watch for changes and compile. See `package.json` for other commands.
+
 ## Dependencies
 You can install the majority of the app dependencies with `npm install`. The only Ruby dependency is Sass; run `gem install sass`.
 
 ### Notebook related
-`pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, I am running Python 3.5.0 and Ruby 2.2.3.
-
-## Development and running the server
-`npm start` or see `package.json` for other commands. If you're a developer run `npm run watch` to compile and watch your output.
+`pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, I am running Python 3.5.2 and Ruby 2.3.1.
 
 # Hardware Setup
 See [sunduino.fzz](https://github.com/nebulousdog/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)
@@ -71,15 +80,6 @@ luminosity,ir,full,visible,lux,humidity,temperature,heatindex
 # Etc
 * [W5200 Ethernet Shield](http://www.seeedstudio.com/depot/W5200-Ethernet-Shield-p-1577.html) ([library](https://github.com/Seeed-Studio/Ethernet_Shield_W5200), [wiki](http://www.seeedstudio.com/wiki/Ethernet_Shield_V2.4)) - v2.2 02/28/2014 10A14 by Seeed Studio
 * [YSD-439AB4B-35 7-Segment](https://www.sparkfun.com/products/9481) ([datasheet](http://www.sparkfun.com/datasheets/Components/LED/7-Segment/YSD-439AB4B-35.pdf))
-
-## Taxonomic Info
-The individual plant ids first use the [USDA](http://plants.usda.gov/adv_search.html) plant symbol if available, then the [ITIS](http://www.itis.gov/advanced_search.html) Taxonomic Serial Number (TSN). I still haven't figured out what I want to do for hybrids or plants that are not in these databases. For now I'm going to use the genus' symbol.
-
-```
-<tn>_<y>_<n>
-```
-
-where `tn` is the taxonomic plant symbol or TSN as available. `y` is year that the plant was obtained or propagated. `n` is the assigned number for each plant. `n` is reset for each `tn` and `y` combination. since I don't have enough of the same plant yet, this is likely to be `0-9` for a bit.
 
 ## Download and contribute
 Please fork, contribute and comment!

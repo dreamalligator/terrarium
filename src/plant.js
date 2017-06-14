@@ -35,7 +35,7 @@ validate.validators.keyValidator = function(value, options, key, attributes) {
   options.forEach(function(requiredKey) {
     if (attributes[key] && attributes[key][requiredKey] === undefined)
       throw new Error(`required key '${requiredKey}' not present`);
-  })
+  });
 };
 
 class Plant extends Organism {

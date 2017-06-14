@@ -5,12 +5,8 @@ import rawPlantData from './plants.json';
 
 // based on the plants i have in my collection that are _alive_, build the base PlantCollection.
 const plantCollection = new PlantCollection(rawPlantData);
+
+// this first builds from the data we already have
 const taxonomyTree = new TaxonomicTree(rawTaxonomyData);
 
-// probably will place this in plantCollection later
-plantCollection.plants.forEach(function(plant) {
-  const linkingId = taxonomyTree.findClosestTaxonInfo(plant);
-  plant.taxonomicLink = linkingId;
-});
-
-console.log('plantCollection', plantCollection);
+console.log(plantCollection, taxonomyTree);

@@ -1,16 +1,26 @@
 class TaxonomicTree {
   constructor(rawTaxonomyData) {
+    this._rawData = rawTaxonomyData;
+    this.floatingTrees = this.buildFloatingTrees();
 
+    console.log(`${this.floatingTrees.length} trees produced.`);
   }
 
-  buildLookup() {
-
-    return {};
+  get rawData() {
+    return this._rawData;
   }
 
-  findClosestTaxonInfo(plantObject) {
+  /**
+   * This uses the data we already have available to build floating trees
+   * @param {object} rawTaxonomyData the raw data saved
+   * @return {object[]} the processed trees
+   */
+  buildFloatingTrees() {
+    const unsortedPlants = this.rawData;
 
-    return null; // general params default ID if nothing found
+    unsortedPlants.forEach(function(plant) {
+      console.log('do something with this plant', plant);
+    });
   }
 }
 
