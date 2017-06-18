@@ -2,4 +2,10 @@ node_modules
 *.log
 arduino/libraries
 docs
+
+# after this project is out of alpha state, I'll remove bundle.js, main.css, and
+# package-lock.json from the .gitignore, but right now no point in the extra
+# diffs.
 bundle.js
+package-lock.json
+main.css

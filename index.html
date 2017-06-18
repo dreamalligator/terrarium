@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8">
   <title>My Carnivorous Plant Terrarium</title>
-  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <main>
     <h1>My Carnivorous Plant Terrarium</h1>
     <hr>
     <section id="plot-container"></section>
-    <section id="plant-container"></section>
+    <section id="plant-container" data-bind="template: { name: 'plantCollectionTemplate', data: $data.plantCollection }"></section>
     <section id="plant-history-container"></section>
   </main>
 </body>
 </html>
 
-<script type="text/template" id="plant-collection-template">
-  <a class="create">Add Plant</a>
-  <table class="plant-collection-table">
+<script type="text/template" id="plantCollectionTemplate">
+  <a class="create" data-bind="click: $data.addPlant">Add Plant</a>
+  <table class="plant-collection-table" data-bind="with: $data.plants">
+    <span data-bind="text: (function(){console.log($data)})()"></span>
     <thead>
       <tr>
         <th class="id">&nbsp;</th>
@@ -38,55 +39,34 @@
       </tr>
     </thead>
     <tbody>
-      <!-- <% _.each(plants, function(plant) { %>
+      <!-- ko foreach: $data -->
       <tr>
-        <td class="id"><a href="plant-info/<%- plant.id %>"><%= plant.id %></a></td>
-        <td class="taxon"><%= plant.taxon %></td>
-        <td class="common-name"><%= plant.commonName %></td>
-        <td class="temperature"><%= plant.formattedTemperature() %></td>
-        <td class="humidity"><%= plant.formattedHumidity() %></td>
-        <td class="luminosity"><%= plant.formattedLuminosity() %></td>
+        <td class="id"><a data-bind="attr: { href: 'plant-info/' + $data.id }"></a></td>
+        <td class="taxon" data-bind="text: $data.taxon"></td>
+        <td class="common-name" data-bind="text: $data.commonName"></td>
+        <td class="temperature" data-bind="text: $data.formattedTemperature"></td>
+        <td class="humidity" data-bind="text: $data.formattedHumidity"></td>
+        <td class="luminosity" data-bind="text: $data.formattedLuminosity"></td>
         <td class="crud">
-          <a class="view" href="plant-info/<%- plant.id %>">View</a>
+          <a class="view" data-bind="attr: { href: 'plant-info/' + $data.id }">View</a>
         </td>
-        <td><a class="update" click="updatePlant(event)">update</td>
+        <td><a class="update" data-bind="click: $data.updatePlant">update</td>
       </tr>
-      <% if(plant.sources) { %>
+      <!-- ko if: $data.sources -->
       <tr>
         <td colspan="2">&nbsp;</td>
         <td class="sources" colspan="4">
-          <ul>
-          <% _.each(plant.sources, function(source) { %>
-            <li><a target="_blank" href="<%= source.link %>"><%= source.text %></a></li>
-          <% }); %>
+          <ul data-bind="foreach: $data.plant.sources">
+            <li><a target="_blank" data-bind="attr: { href: $data.link }, text: $data.text"></a></li>
           </ul>
         </td>
       </tr>
-      <% } %>
-      <% }); %> -->
+      <!-- /ko -->
+      <!-- /ko -->
     </tbody>
   </table>
   <p class="environment-note"><a>*</a> Temp is lower/higher ambient temperature. Some plants such as Darlingtonia californica need a different soil temperature than ambient temperature. In these cases it is soil temp and then ambient temp. A third temperature field is if extremes are mentioned. Humidity is lower/higher humidity. Luminosity is for the moment just the number of hours of light needed. When I find more literature for lower/upper bounds I will add this; as well as soil moisture, air flow, and pH.</p>
-  <a class="create">Add Plant</a>
-</script>
-
-<script type="text/template" id="plant-view-template">
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</script>
-
-<script type="text/template" id="plant-history-template">
-  LOOK AT THIS <span class="do-something">do something</span>
+  <a class="create" data-bind="click: $data.addPlant">Add Plant</a>
 </script>
 
 <script type="text/javascript" src="bundle.js"></script>

@@ -32,13 +32,13 @@ Currently it only plots temperature, humidity and luminosity, but it will be ext
 Feel free to report any bugs in the [issue tracker](https://github.com/nebulousdog/terrarium/issues).
 
 ## Development and running the server
-Run `npm start` to run a local server. If you're a developer run `npm run watch` to watch for changes and compile. See `package.json` for other commands.
+Run `npm start` to run a local server. If you're a developer run `npm run watch` to watch for changes and compile JS. Run `npm run scss` to watch for changes in the `.scss`. See `package.json` for other commands.
 
 ## Dependencies
-You can install the majority of the app dependencies with `npm install`. The only Ruby dependency is Sass; run `gem install sass`.
+You can install the majority of the app dependencies with `npm install`.
 
 ### Notebook related
-`pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, I am running Python 3.5.2 and Ruby 2.3.1.
+`pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, I am running Python 3.5.2.
 
 # Hardware Setup
 See [sunduino.fzz](https://github.com/nebulousdog/terrarium/blob/master/sunduino.fzz) (made in [Fritzing](http://fritzing.org), `sudo apt-get install fritzing`)

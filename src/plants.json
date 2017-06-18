@@ -271,7 +271,7 @@
         "notes": "went home with Fonda"
       }
     ],
-    "alive": null,
+    "alive": null
   }, {
     "id": "NEPEN_15_3",
     "taxon": "Nepenthes singalana 'Tujuh'",
@@ -305,7 +305,7 @@
         "source": "Shipped from California Carnivores"
       },
       {
-        "date": "2016-03-08",
+        "date": "2016-03-08"
       }
     ],
     "alive": true
@@ -319,7 +319,7 @@
         "source": "Shipped from California Carnivores"
       },
       {
-        "date": "2016-03-08",
+        "date": "2016-03-08"
       }
     ],
     "alive": true
@@ -333,7 +333,7 @@
         "source": "Shipped from California Carnivores"
       },
       {
-        "date": "2016-03-08",
+        "date": "2016-03-08"
       }
     ],
     "alive": true
@@ -347,7 +347,7 @@
         "source": "Shipped from California Carnivores"
       },
       {
-        "date": "2016-03-08",
+        "date": "2016-03-08"
       }
     ],
     "alive": true
@@ -361,7 +361,7 @@
         "source": "Shipped from California Carnivores"
       },
       {
-        "date": "2016-03-08",
+        "date": "2016-03-08"
       }
     ],
     "alive": true
@@ -375,7 +375,7 @@
         "source": "Shipped from California Carnivores"
       },
       {
-        "date": "2016-03-08",
+        "date": "2016-03-08"
       }
     ],
     "alive": true
@@ -389,7 +389,7 @@
         "source": "Shipped from California Carnivores"
       },
       {
-        "date": "2016-03-08",
+        "date": "2016-03-08"
       }
     ],
     "alive": true
@@ -574,7 +574,7 @@
       {
         "date": "2017-01-08",
         "comments": "dead"
-      },
+      }
     ],
     "alive": false
   }, {
@@ -751,7 +751,7 @@
       },
       {
         "date": "2017-01-08",
-        "notes": "I'm giving up on these guys. I don't believe they're going to sprout. All the seeds have turned green, possibly algae.",
+        "notes": "I'm giving up on these guys. I don't believe they're going to sprout. All the seeds have turned green, possibly algae."
       }
     ],
     "alive": false

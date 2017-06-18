@@ -18,6 +18,7 @@
     "prebuild": "./node_modules/.bin/eslint src",
     "prepublish": "npm test; ./node_modules/.bin/jsdoc src -d docs",
     "pretest": "npm run build",
+    "scss": "./node_modules/.bin/node-sass stylesheets/main.scss -o . --watch",
     "start": "node server.js",
     "test": "mocha",
     "watch": "./node_modules/.bin/rollup -c -w"
@@ -27,6 +28,7 @@
     "express": "^4.13.3",
     "express-logger": "^0.0.3",
     "http": "^0.0.0",
+    "knockout": "^3.4.2",
     "validate.js": "^0.11.1"
   },
   "keywords": [
@@ -45,6 +47,7 @@
     "jsdoc": "^3.4.3",
     "json-schema-faker": "^0.5.0-rc3",
     "mocha": "^3.4.1",
+    "node-sass": "^4.5.3",
     "rollup": "^0.41.6",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-json": "^2.1.1",

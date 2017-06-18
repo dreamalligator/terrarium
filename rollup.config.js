@@ -4,7 +4,6 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
   entry: 'src/main.js',
-  dest: 'bundle.js',
   format: 'iife',
   plugins: [
     json({
@@ -16,7 +15,7 @@ export default {
       main: true,
       jsnext: true,
       browser: true,
-    })
+    }),
   ],
   targets: [
     {

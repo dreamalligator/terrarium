@@ -27,38 +27,38 @@ a {
   }
 }
 
-#plot-container {
-  margin: 0 auto;
-  min-width: 400px;
-  width: 100%;
-
-  .axis {
-    stroke-width: 1;
-
-    .tick {
-
-      line {
-        stroke: black;
-      }
-
-      text {
-        fill: black;
-        font-size: 0.7em;
-      }
-    }
-
-    .domain {
-      fill: none;
-      stroke: black;
-    }
-  }
-
-  .group {
-    fill: none;
-    stroke: black;
-    stroke-width: 1.5;
-  }
-}
+// #plot-container {
+//   margin: 0 auto;
+//   min-width: 400px;
+//   width: 100%;
+//
+//   .axis {
+//     stroke-width: 1;
+//
+//     .tick {
+//
+//       line {
+//         stroke: black;
+//       }
+//
+//       text {
+//         fill: black;
+//         font-size: 0.7em;
+//       }
+//     }
+//
+//     .domain {
+//       fill: none;
+//       stroke: black;
+//     }
+//   }
+//
+//   .group {
+//     fill: none;
+//     stroke: black;
+//     stroke-width: 1.5;
+//   }
+// }
 
 #plant-container {
   min-width: 300px;
