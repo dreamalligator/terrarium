@@ -75,10 +75,6 @@ a {
   font-size: $font-size-standard;
   width: 100%;
 
-  thead {
-    font-weight: bold;
-  }
-
   tbody {
     .id {
       font-family: monospace;
@@ -100,6 +96,7 @@ a {
   td,
   th {
     padding: 10px 5px;
+    text-align: left;
 
     &:first-child {
       padding-left: 10px;
@@ -107,6 +104,16 @@ a {
 
     &:last-child {
       padding-right: 10px;
+    }
+  }
+
+  th {
+    font-weight: 600;
+
+    &.id,
+    &.taxon,
+    &.common-name {
+      cursor: pointer;
     }
   }
 
