@@ -21,6 +21,8 @@ class TaxonomicTree {
     unsortedPlants.forEach(function(plant) {
       console.log('do something with this plant', plant);
     });
+
+    unsortedPlants
   }
 }
 

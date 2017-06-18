@@ -40,7 +40,7 @@
   "engine": "node ^= 0.6",
   "license": "https://github.com/nebulousdog/terrarium/blob/master/readme.md#license",
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.0.0",
     "faker": "^4.1.0",
     "jsdoc": "^3.4.3",
     "json-schema-faker": "^0.5.0-rc3",
