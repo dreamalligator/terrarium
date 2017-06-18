@@ -22,6 +22,9 @@ The individual plant ids first use the [USDA](http://plants.usda.gov/adv_search.
 
 where `tn` is the taxonomic plant symbol or TSN as available. `y` is year that the plant was obtained or propagated. `n` is the assigned number for each plant. `n` is reset for each `tn` and `y` combination. since I don't have enough of the same plant yet, this is likely to be `0-9` for a bit.
 
+### Taxonomic Links
+Taxonomic Links are lazily created. They have a one-to-one relationship with each taxon name once they've been paired to aide the lookup for taxon info for each individual plant. This atm implies that these IDs can change on initial creation, because they are automatically generated and will vary based on the algorithm to look plants up and place them in a taxonomic hierarchy. These taxonomic links shouldnt be confused with individual plant IDs. The individual plant IDs are simply to keep inventory of my physical plants. Maybe in the future though it would be nice that the generated taxonomic links make sense enough to be used as IDs going forward for my actual plants, but we'll have to see.
+
 # The App
 You can see a live version of this at [nebulousdog.com/terrarium](http://nebulousdog.com/terrarium).
 
