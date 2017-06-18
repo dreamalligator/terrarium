@@ -616,6 +616,7 @@
     "alive": true
   }, {
     "id": "SPHAG2_16_0",
+    "carnivorous": false,
     "taxon": "sphagnum",
     "notes": [
       {

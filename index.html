@@ -11,15 +11,14 @@
     <hr>
     <section id="plot-container"></section>
     <section id="plant-container" data-bind="template: { name: 'plantCollectionTemplate', data: $data.plantCollection }"></section>
-    <section id="plant-history-container"></section>
+    <section id="plant-edit-container"></section>
   </main>
 </body>
 </html>
 
 <script type="text/template" id="plantCollectionTemplate">
   <a class="create" data-bind="click: $data.addPlant">Add Plant</a>
-  <table class="plant-collection-table" data-bind="with: $data.plants">
-    <span data-bind="text: (function(){console.log($data)})()"></span>
+  <table class="plant-collection-table">
     <thead>
       <tr>
         <th class="id">&nbsp;</th>
@@ -29,17 +28,16 @@
         <td class="crud">&nbsp;</td>
       </tr>
       <tr>
-        <td class="id">IDs</td>
-        <td class="taxon">Taxon</td>
-        <td class="common-name">Common Name</td>
+        <td class="id" data-bind="click: function() { $data.sortBy('id') }">IDs</td>
+        <td class="taxon" data-bind="click: function() { $data.sortBy('taxon') }">Taxon</td>
+        <td class="common-name" data-bind="click: function() { $data.sortBy('commonName') }">Common Name</td>
         <td class="temperature">Temp</td>
         <td class="humidity">Hum</td>
         <td class="luminosity">Lum</td>
         <td class="crud">&nbsp;</td>
       </tr>
     </thead>
-    <tbody>
-      <!-- ko foreach: $data -->
+    <tbody data-bind="foreach: $data.sortedPlants">
       <tr>
         <td class="id"><a data-bind="attr: { href: 'plant-info/' + $data.id }"></a></td>
         <td class="taxon" data-bind="text: $data.taxon"></td>
@@ -62,11 +60,14 @@
         </td>
       </tr>
       <!-- /ko -->
-      <!-- /ko -->
     </tbody>
   </table>
   <p class="environment-note"><a>*</a> Temp is lower/higher ambient temperature. Some plants such as Darlingtonia californica need a different soil temperature than ambient temperature. In these cases it is soil temp and then ambient temp. A third temperature field is if extremes are mentioned. Humidity is lower/higher humidity. Luminosity is for the moment just the number of hours of light needed. When I find more literature for lower/upper bounds I will add this; as well as soil moisture, air flow, and pH.</p>
   <a class="create" data-bind="click: $data.addPlant">Add Plant</a>
+</script>
+
+<script type="text/html" id="plantEditTemplate">
+  <input data-bind="value: $data.taxon">
 </script>
 
 <script type="text/javascript" src="bundle.js"></script>

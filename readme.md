@@ -7,11 +7,11 @@ I've been mostly focusing on the web app portion lately, so please check that ou
 
 ## Example
 
-See the example site and docs at [nebulousdog.com/terrarium](https://nebulousdog.com/terrarium).
+See the example site and docs at [nebulousdog.com/terrarium](http://nebulousdog.com/terrarium).
 
 ## Plants
 
-I used to list my individual plants here, but I'm even more organized now! you can just visit the [site](https://nebulousdog.com/terrarium), or less consumably, the [taxonomy](https://github.com/nebulousdog/terrarium/blob/master/javascripts/taxonomy.js) and [plant](https://github.com/nebulousdog/terrarium/blob/master/javascripts/plants.json) files to see all the info. There you'll hopefully find some cool data on drosera, nepenthes, cephalotus, utricularia, pinguicula, and sarracenia. Particularly check out the environmental parameters.
+I used to list my individual plants here, but I'm even more organized now! you can just visit the [site](http://nebulousdog.com/terrarium), or less consumably, the [taxonomy](https://github.com/nebulousdog/terrarium/blob/master/javascripts/taxonomy.js) and [plant](https://github.com/nebulousdog/terrarium/blob/master/javascripts/plants.json) files to see all the info. There you'll hopefully find some cool data on drosera, nepenthes, cephalotus, utricularia, pinguicula, and sarracenia. Particularly check out the environmental parameters.
 
 ## Taxonomic Info
 The individual plant ids first use the [USDA](http://plants.usda.gov/adv_search.html) plant symbol if available, then the [ITIS](http://www.itis.gov/advanced_search.html) Taxonomic Serial Number (TSN). I still haven't figured out what I want to do for hybrids or plants that are not in these databases. For now I'm going to use the genus' symbol.
@@ -23,7 +23,7 @@ The individual plant ids first use the [USDA](http://plants.usda.gov/adv_search.
 where `tn` is the taxonomic plant symbol or TSN as available. `y` is year that the plant was obtained or propagated. `n` is the assigned number for each plant. `n` is reset for each `tn` and `y` combination. since I don't have enough of the same plant yet, this is likely to be `0-9` for a bit.
 
 # The App
-You can see a live version of this at [nebulousdog.com/terrarium](https://nebulousdog.com/terrarium).
+You can see a live version of this at [nebulousdog.com/terrarium](http://nebulousdog.com/terrarium).
 
 The humidity and temperature parameters are used to calculate the lower and upper bounds that would make it so that all the plants can live in harmony. There is one dummy plant for general parameters that may not belong to a single species.
 

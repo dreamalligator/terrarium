@@ -4,7 +4,7 @@ env:
   es6: true
   mocha: true
 globals:
-  _: true
+  ko: true
 parserOptions:
   ecmaVersion: 2017
   sourceType: module
