@@ -38,7 +38,7 @@ Feel free to report any bugs in the [issue tracker](https://github.com/nebulousd
 Run `npm start` to run a local server. If you're a developer run `npm run watch` to watch for changes and compile JS. Run `npm run scss` to watch for changes in the `.scss`. See `package.json` for other commands.
 
 ## Dependencies
-You can install the majority of the app dependencies with `npm install`.
+You can install the app dependencies with `npm install`.
 
 ### Notebook related
 `pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, I am running Python 3.5.2.

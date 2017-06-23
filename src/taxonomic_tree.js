@@ -1,29 +1,24 @@
-class TaxonomicTree {
+export default class TaxonomicTree {
   constructor(rawTaxonomyData) {
     this._rawData = rawTaxonomyData;
-    this.floatingTrees = this.buildFloatingTrees();
-
-    console.log(`${this.floatingTrees.length} trees produced.`);
   }
 
+  /**
+   * @return {object[]} all of the raw plant species data
+   */
   get rawData() {
     return this._rawData;
   }
 
   /**
-   * This uses the data we already have available to build floating trees
-   * @param {object} rawTaxonomyData the raw data saved
-   * @return {object[]} the processed trees
+   * NOTE: this doesn't account for changes in the raw data. Will have to restart app atm to get changes.
+   * @return {string[]} a sorted list of the taxonomic names that we already have data for.
    */
-  buildFloatingTrees() {
-    const unsortedPlants = this.rawData;
+  validTaxons() {
+    if (this._validTaxonNames)
+      return this._validTaxonNames;
 
-    unsortedPlants.forEach(function(plant) {
-      console.log('do something with this plant', plant);
-    });
-
-    unsortedPlants
+    this._validTaxonNames = this.rawData.map(function(plant) { return plant.taxon; }).sort();
+    return this._validTaxonNames;
   }
 }
-
-export default TaxonomicTree;

@@ -20,7 +20,7 @@
     "pretest": "npm run build",
     "scss": "./node_modules/.bin/node-sass stylesheets/main.scss -o . --watch",
     "start": "node server.js",
-    "test": "mocha",
+    "test": "./node_modules/.bin/mocha",
     "watch": "./node_modules/.bin/rollup -c -w"
   },
   "dependencies": {

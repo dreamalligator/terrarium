@@ -112,7 +112,8 @@ a {
 
     &.id,
     &.taxon,
-    &.common-name {
+    &.common-name,
+    &.taxonomic-link {
       cursor: pointer;
     }
   }
@@ -145,13 +146,30 @@ a {
   }
 }
 
-.create {
-  background-color: #eee;
-  border: 1px solid #08c;
-  cursor: pointer;
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
+.add-plant-container {
+
+  .create {
+    background-color: #eee;
+    border: 1px solid $blue;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .plant-id {
+    border: 1px solid $blue;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 9px;
+  }
+
+  .taxon {
+    font-size: 16px;
+    padding: 6px;
+    width: 300px;
+  }
 }
 
 .view {

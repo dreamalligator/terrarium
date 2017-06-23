@@ -10,17 +10,18 @@
     <h1>My Carnivorous Plant Terrarium</h1>
     <hr>
     <section id="plot-container"></section>
+    <section class="add-plant-container" data-bind="template: { name: 'addPlantTemplate' }"></section>
     <section id="plant-container" data-bind="template: { name: 'plantCollectionTemplate', data: $data.plantCollection }"></section>
-    <section id="plant-edit-container"></section>
+    <section class="add-plant-container" data-bind="template: { name: 'addPlantTemplate' }"></section>
   </main>
 </body>
 </html>
 
 <script type="text/template" id="plantCollectionTemplate">
-  <a class="create" data-bind="click: $data.addPlant">Add Plant</a>
   <table class="plant-collection-table">
     <thead>
       <tr>
+        <td>&nbsp;</td>
         <td class="id">&nbsp;</td>
         <td class="taxonomic-link">&nbsp;</td>
         <td class="taxon">&nbsp;</td>
@@ -29,6 +30,7 @@
         <td class="crud">&nbsp;</td>
       </tr>
       <tr>
+        <th class="save-state">Save State</th>
         <th class="id" data-bind="click: function() { $data.sortBy('id') }">Individual Plant ID</th>
         <th class="taxonomic-link" data-bind="click: function() { $data.sortBy('taxonomicLink') }">Taxonomic Link</th>
         <th class="taxon" data-bind="click: function() { $data.sortBy('taxon') }">Taxon</th>
@@ -41,6 +43,7 @@
     </thead>
     <tbody data-bind="foreach: $data.sortedPlants">
       <tr>
+        <td class="save-state"><a data-bind="text: $data.saveStateIcon(), click: $data.sync()"></a></th>
         <td class="id"><a data-bind="text: $data.id, attr: { href: 'plant-info/' + $data.id }"></a></td>
         <td class="taxonomic-link"><a data-bind="text: $data.taxonomicLink"></a></td>
         <td class="taxon" data-bind="text: $data.taxon"></td>
@@ -51,7 +54,6 @@
         <td class="crud">
           <a class="view" data-bind="attr: { href: 'plant-info/' + $data.id }">View</a>
         </td>
-        <td><a class="update" data-bind="click: $data.updatePlant">update</td>
       </tr>
       <!-- ko if: $data.sources -->
       <tr>
@@ -66,11 +68,12 @@
     </tbody>
   </table>
   <p class="environment-note"><a>*</a> Temp is lower/higher ambient temperature. Some plants such as Darlingtonia californica need a different soil temperature than ambient temperature. In these cases it is soil temp and then ambient temp. A third temperature field is if extremes are mentioned. Humidity is lower/higher humidity. Luminosity is for the moment just the number of hours of light needed. When I find more literature for lower/upper bounds I will add this; as well as soil moisture, air flow, and pH.</p>
-  <a class="create" data-bind="click: $data.addPlant">Add Plant</a>
 </script>
 
-<script type="text/html" id="plantEditTemplate">
-  <input data-bind="value: $data.taxon">
+<script type="text/html" id="addPlantTemplate">
+  <a class="create" data-bind="click: $data.addPlant">Add Plant</a>
+  <input class="plant-id" placeholder="plant id" data-bind="textInput: $data.plantId">
+  <select class="taxon" data-bind="options: $data.taxonomyTree.validTaxons(), value: $data.plantTaxon"></select>
 </script>
 
 <script type="text/javascript" src="bundle.js"></script>

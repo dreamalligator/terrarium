@@ -56,8 +56,8 @@ class PlantCollection {
     const ascending = (sorting.key === key) ? !sorting.ascending : true;
 
     this.tableSorting({
-      key: key,
       ascending: ascending,
+      key: key,
     })
   }
 }
