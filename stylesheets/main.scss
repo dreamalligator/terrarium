@@ -1,5 +1,5 @@
-@import 'normalize.css';
-@import 'pygments.css';
+@import 'stylesheets/normalize.css';
+@import 'stylesheets/pygments.css';
 
 $header-color: #073642;
 $light-grey: #efefef;
@@ -118,6 +118,10 @@ a {
     }
   }
 
+  .save-state {
+    text-align: center;
+  }
+
   .id {
     text-align: right;
   }
@@ -174,4 +178,18 @@ a {
 
 .view {
   cursor: pointer;
+}
+
+.legends {
+  > table {
+    caption {
+      font-weight: 600;
+    }
+
+    // tr {
+    //   > td {
+    //
+    //   }
+    // }
+  }
 }

@@ -60,6 +60,13 @@ class PlantCollection {
       key: key,
     })
   }
+
+  /**
+   * @return {number} number of taxon
+   */
+  numberOfTaxon(taxon) {
+    console.log(this.plants)
+  }
 }
 
 export default PlantCollection;

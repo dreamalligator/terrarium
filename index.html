@@ -12,6 +12,17 @@
     <section id="plot-container"></section>
     <section class="add-plant-container" data-bind="template: { name: 'addPlantTemplate' }"></section>
     <section id="plant-container" data-bind="template: { name: 'plantCollectionTemplate', data: $data.plantCollection }"></section>
+    <section class="legends">
+      <table>
+        <caption>Save State</caption>
+        <tbody>
+          <tr><td>◌</td><td>no changes from hardcoded data</td></tr>
+          <tr><td>◐</td><td>only local storage</td></tr>
+          <tr><td>◑</td><td>only db</td></tr>
+          <tr><td>◉</td><td>both local storage and db</td></tr>
+        </tbody>
+      </table>
+    </section>
     <section class="add-plant-container" data-bind="template: { name: 'addPlantTemplate' }"></section>
   </main>
 </body>
