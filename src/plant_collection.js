@@ -62,10 +62,12 @@ class PlantCollection {
   }
 
   /**
-   * @return {number} number of taxon
+   * @param {String} [taxon] taxon name
+   * @return {Number} number of taxon
    */
   numberOfTaxon(taxon) {
-    console.log(this.plants)
+    console.log(this.plants, taxon);
+    return 0;
   }
 }
 

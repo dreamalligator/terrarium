@@ -49,20 +49,20 @@ export default class Plot {
     this.axis = this.svg.append('g').attr('class', 'x axis').attr('transform', 'translate(0,' + this.height + ')').call(this.x.axis = d3.svg.axis().scale(this.x).orient('bottom'));
     this.paths = this.svg.append('g');
 
-    _.each(this.groups, function(group) {
+    this.groups.forEach(function(group) {
       return group.path = this.paths.append('path').data([group.data]).attr('class', group.name + ' group').style('stroke', group.color);
     });
 
     this.tick = function() {
       this.now = new Date();
-      _.each(this.groups, function(group) {
+      this.groups.forEach(function(group) {
         group.data.push(20 + Math.random() * 100);
         return group.path.attr('d', this.line);
       });
       this.x.domain([this.now - (this.limit - 2) * this.duration, this.now - this.duration]);
       this.axis.transition().duration(this.duration).ease('linear').call(this.x.axis);
       this.paths.attr('transform', null).transition().duration(this.duration).ease('linear').attr('transform', 'translate(' + this.x(this.now - (this.limit - 1) * this.duration) + ')').each('end', this.tick);
-      return _.each(this.groups, function(group) {
+      return this.groups.forEach(function(group) {
         return group.data.shift();
       });
     };

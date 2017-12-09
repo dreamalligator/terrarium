@@ -40,6 +40,9 @@ Run `npm start` to run a local server. If you're a developer run `npm run watch`
 ## Dependencies
 You can install the app dependencies with `npm install`.
 
+## Docs
+`npm run prepublish` or `./node_modules/.bin/jsdoc src -d docs`
+
 ### Notebook related
 `pip3 install jupyter` to install Jupyter, but see Jupyter [docs on installation](https://jupyter.readthedocs.org/en/latest/install.html) for notebook-related dependencies, because you'll probably have to run stuff like `apt-get install build-essential python3-dev`. And Python 3+ I think is good, but as an FYI, I am running Python 3.5.2.
 
