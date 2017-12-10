@@ -25,7 +25,7 @@ class TerrariumApp {
 
     // TODO: move into PlantCollection?
     this.plantCollection.plants.forEach((plant) => {
-      const taxonInfo = this.taxonomyTree.taxonInfoLookup()[plant.taxon]
+      const taxonInfo = this.taxonomyTree.taxonInfoLookup()[plant.taxon];
 
       Object.assign(plant, taxonInfo);
     });
@@ -46,7 +46,7 @@ class TerrariumApp {
       this.temporaryPlant({
         id: this.suggestPlantId(newPlant.taxon),
         taxon: newPlant.taxon,
-      })
+      });
     });
   }
 

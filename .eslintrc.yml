@@ -17,6 +17,7 @@ rules:
   # best practices
   complexity: [error, 10]
   dot-location: [error, property]
+  eqeqeq: [error, always]
   no-multi-spaces: error
   vars-on-top: error
   # variables
@@ -34,6 +35,7 @@ rules:
   keyword-spacing: error
   no-trailing-spaces: error
   object-curly-spacing: [error, always]
+  semi: [error, always]
   semi-spacing: [error, { before: false, after: true }]
   # ecmascript 6
   arrow-spacing: error

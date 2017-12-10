@@ -38,6 +38,10 @@ class PlantCollection {
     console.log(`${this.uniqueTaxonomicLinks.size} ids have already been assigned. ${this.uniqueRemainingTaxons.size} taxons need to be paired.`);
   }
 
+  /**
+   * @param {JSON} [plantJSON] plant data
+   * @return {Plant[]} all of the alive plants
+   */
   build(plantJSON) {
     if (plantJSON === undefined)
       return [];
@@ -51,14 +55,22 @@ class PlantCollection {
     });
   }
 
+  /**
+   * @example
+   *
+   *   this.sortBy('id')
+   *
+   * @param {String} [key] key to sort by
+   * @return {void}
+   */
   sortBy(key) {
-    const sorting = this.tableSorting()
+    const sorting = this.tableSorting();
     const ascending = (sorting.key === key) ? !sorting.ascending : true;
 
     this.tableSorting({
       ascending: ascending,
       key: key,
-    })
+    });
   }
 
   /**

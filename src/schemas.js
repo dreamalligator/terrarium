@@ -52,6 +52,6 @@ const plantSchema = {
       within: [true, false]
     }
   }
-}
+};
 
 export default plantSchema;
