@@ -48,12 +48,23 @@ class Plant extends Organism {
       throw new Error(`Unexpected schema for plant (id: ${this.id}). ${validationErrors.join('. ')}.`);
   }
 
-  // after the taxonomic tree is build, set the nearest taxonomic link. Invoked in main.js atm. At worst case scenario will use the general parameters.
+  /**
+   * after the taxonomic tree is build, set the nearest taxonomic link. Invoked in main.js atm. At worst case scenario will use the general parameters.
+   * @param {String} linkingId new id
+   * @return {String} taxonomic link
+   */
   set taxonomicLink(linkingId) {
     // TODO: can add some sort of validation here
+    if (typeof linkingId !== 'string') {
+      throw new TypeError();
+    }
+
     this._taxonomicLink = linkingId;
   }
 
+  /**
+   * @return {String} taxonomic link id
+   */
   get taxonomicLink() {
     return this._taxonomicLink;
   }
