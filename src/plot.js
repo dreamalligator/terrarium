@@ -13,21 +13,21 @@ export default class Plot {
         color: '#859900',
         data: d3.range(this.limit).map(function() {
           return 0;
-        })
+        }),
       }, {
         name: 'target',
         value: 0,
         color: '#2aa198',
         data: d3.range(this.limit).map(function() {
           return 0;
-        })
+        }),
       }, {
         name: 'output',
         value: 0,
         color: '#268bd2',
         data: d3.range(this.limit).map(function() {
           return 0;
-        })
+        }),
       }
     ];
 

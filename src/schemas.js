@@ -1,23 +1,23 @@
 const plantSchema = {
   taxon: {
     format: {
-      pattern: /\D*/ // no digits
+      pattern: /\D*/, // no digits
     },
-    presence: true
+    presence: true,
   },
   id: {
     format: {
-      pattern: /\S*/ // no whitespace
+      pattern: /\S*/, // no whitespace
     },
-    presence: true
+    presence: true,
   },
   owner: {
     format: {
-      pattern: /\D*/ // no digits
-    }
+      pattern: /\D*/, // no digits
+    },
   },
   source: {
-    keyValidator: ['name', 'comments']
+    keyValidator: ['name', 'comments'],
   },
   'source.id': {
     // not required, can be anything
@@ -28,30 +28,30 @@ const plantSchema = {
   'source.comments': {
     // required key if object exists, can be anything
     length: {
-      minimum: 10
-    }
+      minimum: 10,
+    },
   },
   notes: {
     length: {
-      minimum: 1
+      minimum: 1,
     },
     arrayValidator: {
       date: {
-        datetime: true
+        datetime: true,
       },
       comments: {
         length: {
-          minimum: 10
-        }
-      }
+          minimum: 10,
+        },
+      },
     },
-    presence: true
+    presence: true,
   },
   alive: {
     inclusion: {
-      within: [true, false]
-    }
-  }
+      within: [true, false],
+    },
+  },
 };
 
 export default plantSchema;

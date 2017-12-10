@@ -4,7 +4,7 @@ import validate from 'validate.js';
 
 // TODO: move validation options elsewhere, such as with schema..
 validate.options = {
-  format: 'flat'
+  format: 'flat',
 };
 
 validate.extend(validate.validators.datetime, {
@@ -17,7 +17,7 @@ validate.extend(validate.validators.datetime, {
   },
   format: function(value, _options) {
     return value;
-  }
+  },
 });
 
 // until array validation gets added to validate.js can make our own generic validator.
