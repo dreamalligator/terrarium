@@ -1,13 +1,13 @@
 // dependencies
-import ko from './node_modules/knockout/build/output/knockout-latest.js';
+import ko from 'knockout';
 
 // raw data
-import rawTaxonomyData from './src/taxonomy.js';
+import rawTaxonomyData from './src/taxonomy';
 import rawPlantData from './src/plants.json';
 
 // classes
-import PlantCollection from './src/plant_collection.js';
-import TaxonomicTree from './src/taxonomic_tree.js';
+import PlantCollection from './src/plant_collection';
+import TaxonomicTree from './src/taxonomic_tree';
 
 window.ko = ko;
 ko.options.useOnlyNativeEvents = true;
