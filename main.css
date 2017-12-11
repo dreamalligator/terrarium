@@ -1,0 +1,91 @@
+@import url(stylesheets/normalize.css);
+@import url(stylesheets/pygments.css);
+@font-face {
+  font-family: 'Slabo 27px';
+  src: url("../fonts/Slabo27px-Regular.ttf"); }
+
+h1 {
+  color: #073642;
+  font-family: 'Slabo 27px', serif;
+  padding: 0 10px; }
+
+a {
+  color: #08c;
+  text-decoration: none; }
+  a:hover {
+    color: #006699; }
+
+#plant-container {
+  min-width: 300px;
+  width: 100%; }
+  #plant-container .environment-note {
+    padding: 10px; }
+
+.plant-collection-table {
+  border-collapse: collapse;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%; }
+  .plant-collection-table tbody .id {
+    font-family: monospace; }
+  .plant-collection-table tbody .taxon {
+    font-style: italic; }
+  .plant-collection-table tr {
+    border-bottom: 1px solid #ccc; }
+    .plant-collection-table tr:nth-child(odd) {
+      background-color: #efefef; }
+  .plant-collection-table td,
+  .plant-collection-table th {
+    padding: 10px 5px;
+    text-align: left; }
+    .plant-collection-table td:first-child,
+    .plant-collection-table th:first-child {
+      padding-left: 10px; }
+    .plant-collection-table td:last-child,
+    .plant-collection-table th:last-child {
+      padding-right: 10px; }
+  .plant-collection-table th {
+    font-weight: 600; }
+    .plant-collection-table th.id, .plant-collection-table th.taxon, .plant-collection-table th.common-name, .plant-collection-table th.taxonomic-link {
+      cursor: pointer; }
+  .plant-collection-table .save-state {
+    text-align: center; }
+  .plant-collection-table .id {
+    text-align: right; }
+  .plant-collection-table .taxon {
+    width: 200px; }
+  .plant-collection-table .common-name {
+    width: 200px; }
+  .plant-collection-table .sources ul {
+    margin: 0;
+    padding: 0; }
+  .plant-collection-table .sources li {
+    font-size: 14px; }
+  .plant-collection-table .sources a {
+    display: block; }
+
+.add-plant-container .create {
+  background-color: #eee;
+  border: 1px solid #08c;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px; }
+
+.add-plant-container .plant-id {
+  border: 1px solid #08c;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 9px; }
+
+.add-plant-container .taxon {
+  font-size: 16px;
+  padding: 6px;
+  width: 300px; }
+
+.view {
+  cursor: pointer; }
+
+.legends > table caption {
+  font-weight: 600; }

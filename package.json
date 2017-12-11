@@ -14,7 +14,7 @@
     "url": "git://github.com/nebulousdog/terrarium.git"
   },
   "scripts": {
-    "build": "./node_modules/.bin/rollup -c -o",
+    "build": "./node_modules/.bin/rollup -c rollup.config.js",
     "prebuild": "./node_modules/.bin/eslint src",
     "prepublish": "npm test; ./node_modules/.bin/jsdoc src -d docs",
     "pretest": "npm run build",
@@ -45,15 +45,8 @@
     "eslint": "^4.13.0",
     "faker": "^4.1.0",
     "jsdoc": "^3.5.5",
-    "json-schema-faker": "^0.5.0-rc3",
-    "mocha": "^3.4.1",
-    "node-sass": "^4.5.3",
-    "rollup": "^0.41.6",
-    "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-json": "^2.1.1",
-    "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-node-globals": "^1.1.0",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-watch": "^3.2.2"
+    "json-schema-faker": "^0.5.0-rc9",
+    "mocha": "^3.5.3",
+    "node-sass": "^4.7.2"
   }
 }
