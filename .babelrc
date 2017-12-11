@@ -1,11 +1,8 @@
 {
   "presets": [
-    "latest",
-    {
-      "modules": false
-    }
+    "latest"
   ],
-  "plugins": ["external-helpers"],
+  "plugins": null,
   "ignore": [
     "node_modules/**",
     "*.json"

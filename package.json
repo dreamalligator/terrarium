@@ -42,6 +42,8 @@
   "engine": "node ^= 0.6",
   "license": "https://github.com/nebulousdog/terrarium/blob/master/readme.md#license",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
     "eslint": "^4.13.0",
     "faker": "^4.1.0",
     "jsdoc": "^3.5.5",
@@ -49,6 +51,7 @@
     "mocha": "^3.5.3",
     "node-sass": "^4.7.2",
     "rollup": "^0.52.1",
+    "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-node-resolve": "^3.0.0"
