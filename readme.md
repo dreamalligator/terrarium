@@ -35,7 +35,7 @@ Currently it only plots temperature, humidity and luminosity, but it will be ext
 Feel free to report any bugs in the [issue tracker](https://github.com/nebulousdog/terrarium/issues).
 
 ## Development and running the server
-Run `npm start` to run a local server. If you're a developer run `npm run watch` to watch for changes and compile JS. Run `npm run scss` to watch for changes in the `.scss`. See `package.json` for other commands.
+Run `yarn start` to run a local server. If you're a developer run `yarn run watch` to watch for changes and compile JS. Run `yarn run scss` to watch for changes in the `.scss`. See `package.json` for other commands.
 
 ## Dependencies
 You can install the app dependencies with `npm install`.

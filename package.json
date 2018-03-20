@@ -16,8 +16,8 @@
   "scripts": {
     "build": "./node_modules/.bin/rollup -c rollup.config.js",
     "prebuild": "./node_modules/.bin/eslint src",
-    "prepublish": "npm test; ./node_modules/.bin/jsdoc src -d docs",
-    "pretest": "npm run build",
+    "prepublish": "yarn test; ./node_modules/.bin/jsdoc src -d docs",
+    "pretest": "yarn run build",
     "scss": "./node_modules/.bin/node-sass stylesheets/main.scss -o . --watch",
     "start": "node server.js",
     "test": "./node_modules/.bin/mocha",
@@ -25,8 +25,6 @@
   },
   "dependencies": {
     "body-parser": "^1.17.2",
-    "express": "^4.13.3",
-    "express-logger": "^0.0.3",
     "http": "^0.0.0",
     "knockout": "^3.4.2",
     "validate.js": "^0.11.1"
