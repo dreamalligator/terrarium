@@ -26,7 +26,7 @@ rules:
   array-bracket-spacing: [error, never]
   block-spacing: [error, always]
   camelcase: [error, { properties: always }]
-  comma-dangle: [error, { objects: always }]
+  comma-dangle: [error, { objects: always-multiline }]
   comma-spacing: [error, { before: false, after: true }]
   comma-style: [error, last]
   eol-last: error

@@ -1,15 +1,47 @@
-const app_root = __dirname;
-const express = require("express");
-const bodyParser = require('body-parser');
-const logger = require('express-logger');
 const http = require('http');
-const app = express();
+const fs = require('fs');
+const path = require('path');
 
-app.set('port', process.env.PORT || 3000);
-app.use(express["static"](app_root));
+http.createServer(function (request, response) {
+  console.log('request ', request.url);
 
-const server = http.createServer(app);
+  const filePath = request.url === '/' ? './index.html' : `.${request.url}`;
+  const extname = String(path.extname(filePath)).toLowerCase();
+  const mimeTypes = {
+    '.html': 'text/html',
+    '.js': 'text/javascript',
+    '.css': 'text/css',
+    '.json': 'application/json',
+    '.png': 'image/png',
+    '.jpg': 'image/jpg',
+    '.gif': 'image/gif',
+    '.wav': 'audio/wav',
+    '.mp4': 'video/mp4',
+    '.woff': 'application/font-woff',
+    '.ttf': 'application/font-ttf',
+    '.eot': 'application/vnd.ms-fontobject',
+    '.otf': 'application/font-otf',
+    '.svg': 'application/image/svg+xml',
+  };
+  const contentType = mimeTypes[extname] || 'application/octet-stream';
 
-server.listen(app.get('port'), function() {
-  console.log(`Express server listening on port ${(app.get('port'))}`);
-});
+  fs.readFile(filePath, function(error, content) {
+    if (error) {
+      if (error.code === 'ENOENT') {
+        fs.readFile('./404.html', function(error, content) {
+          response.writeHead(200, { 'Content-Type': contentType });
+          response.end(content, 'utf-8');
+        });
+      } else {
+        response.writeHead(500);
+        response.end('Sorry, check with the site admin for error: ' + error.code + ' ..\n');
+        response.end();
+      }
+    } else {
+      response.writeHead(200, { 'Content-Type': contentType });
+      response.end(content, 'utf-8');
+    }
+  });
+}).listen(8125);
+
+console.log('Server running at http://127.0.0.1:8125/');

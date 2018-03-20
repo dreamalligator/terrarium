@@ -16,7 +16,7 @@
   "scripts": {
     "build": "./node_modules/.bin/rollup -c rollup.config.js",
     "prebuild": "./node_modules/.bin/eslint src",
-    "prepublish": "yarn test; ./node_modules/.bin/jsdoc src -d docs",
+    "prepublish": "./node_modules/.bin/jsdoc src -d docs",
     "pretest": "yarn run build",
     "scss": "./node_modules/.bin/node-sass stylesheets/main.scss -o . --watch",
     "start": "node server.js",
@@ -37,7 +37,9 @@
     "monitoring",
     "dual storage"
   ],
-  "engine": "node ^= 0.6",
+  "engines": {
+    "node": ">=9.8.0"
+  },
   "license": "https://github.com/nebulousdog/terrarium/blob/master/readme.md#license",
   "devDependencies": {
     "babel-core": "^6.26.0",
