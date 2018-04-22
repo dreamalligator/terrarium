@@ -8,7 +8,7 @@ const defaultConfig = {
   name: 'terrarium',
   output: {
     file: './bundle.js',
-    format: 'umd',
+    format: 'es',
   },
   plugins: [
     babel({
