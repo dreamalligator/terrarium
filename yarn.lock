@@ -1819,9 +1819,9 @@ klaw@~2.0.0:
   dependencies:
     graceful-fs "^4.1.9"
 
-knockout@^3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/knockout/-/knockout-3.4.2.tgz#e87958de77ad1e936f7ce645bab8b5d7c456d937"
+knockout@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/knockout/-/knockout-3.5.0.tgz#6d3e19bf53b1dc4d8de81c97a5ba9672443dc292"
 
 lcid@^1.0.0:
   version "1.0.0"
