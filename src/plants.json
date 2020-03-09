@@ -756,5 +756,170 @@
       }
     ],
     "alive": false
+  },
+  {
+    "id": "",
+    "taxon": "Byblis guehoi",
+    "notes": [
+      {
+        "date": "2020-02-09",
+        "source": "ICPS Seed Bank, shipped 2/9/2020",
+        "notes": "Byblis guehoi, Kimberley, AU, tropical annual"
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "seeding day."
+      }
+    ]
+  },
+  {
+    "id": "",
+    "taxon": "Byblis aquatica",
+    "notes": [
+      {
+        "date": "2020-02-09",
+        "source": "ICPS Seed Bank, shipped 2/9/2020",
+        "notes": "Byblis aquatica, 'Robust Form', Summer annual"
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "seeding day."
+      }
+    ]
+  },
+  {
+    "id": "DRBU3_20_0",
+    "taxon": "Drosera burmannii",
+    "notes": [
+      {
+        "date": "2020-02-09",
+        "source": "ICPS Seed Bank, shipped 2/9/2020",
+        "notes": "Drosera burmannii 'red tentacles'"
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "Seeding day. Same seed mix as did with DRBU3_16_0 in 2016. Sprinkled seeds on top of a 30% peat to 70% sand mix."
+      }
+    ]
+  },
+  {
+    "id": "DRCA2_20_1",
+    "taxon": "Drosera capillaris",
+    "notes": [
+      {
+        "date": "2020-02-09",
+        "source": "ICPS Seed Bank, shipped 2/9/2020",
+        "notes": "Drosera capillaris, warm temperate"
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "seeding day."
+      }
+    ]
+  },
+  {
+    "id": "",
+    "taxon": "Drosera tokaiensis",
+    "notes": [
+      {
+        "date": "2020-02-09",
+        "source": "ICPS Seed Bank, shipped 2/9/2020",
+        "notes": "Drosera tokaiensis, warm temperate, beginner"
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "seeding day. Sprinkled seeds on top of a 50:50 peat:sand mix."
+      }
+    ]
+  },
+  {
+    "id": "",
+    "taxon": "Drosera nidiformis",
+    "notes": [
+      {
+        "date": "2020-02-22",
+        "source": "Predatory Plants",
+        "notes": "arrived wrapped in sphagnum. product description - Drosera nidiformis is a tropical sundew found in South Africa. They are easy to grow and remain relatively small, making them ideal candidates for windowsill or terrarium growing. Drosera nidiformis are perennial, which means they can survive for many years, however they will often perish after being allowed to flower and set seed."
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "potting day."
+      }
+    ]
+  },
+  {
+    "id": "DRCA14_20_1",
+    "taxon": "Drosera capensis 'butterball'",
+    "notes": [
+      {
+        "date": "2020-02-22",
+        "source": "Predatory Plants",
+        "notes": "arrived wrapped in sphagnum. description - Drosera capensis is a highly-variable species, and we've been working on collecting and propagating a large variety of clones. D. capensis \"Butterball\" is a clone that was bred and selected by David Flocken for its extra-fat leaves and somewhat pale color. A unique clone, these are exclusively propagated by leaf and root cuttings. An exceptional clone for sundew collectors!"
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "potting day."
+      }
+    ]
+  },
+  {
+    "id": "",
+    "taxon": "Utricularia bisquamata",
+    "notes": [
+      {
+        "date": "2020-02-22",
+        "source": "Predatory Plants",
+        "notes": "arrived wrapped in sphagnum. description - Utricularia bisquamata is a small and pretty terrestrial bladderwort. It produces a mat of tiny green leaves and its flowers look like tiny yellow and purple aprons."
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "potting day."
+      }
+    ]
+  },
+  {
+    "id": "",
+    "taxon": "Utricularia sandersonii",
+    "notes": [
+      {
+        "date": "2020-02-22",
+        "source": "Predatory Plants",
+        "notes": "arrived wrapped in sphagnum. Utricularia sandersonii is perhaps the most easily identifiable terrestrial bladderwort when in flower. Its charming little flowers resemble clusters of white rabbits suspended in midair."
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "potting day."
+      }
+    ]
+  },
+  {
+    "id": "",
+    "taxon": "Utricularia microcalyx",
+    "notes": [
+      {
+        "date": "2020-02-22",
+        "source": "Predatory Plants",
+        "notes": "arrived wrapped in sphagnum. description - Utricularia microcalyx is a terrestrial bladderwort native to central Africa. This lovely, quick-growing plant blooms freely during the first half of the year and sports a patterned white and purple flower."
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "potting day."
+      }
+    ]
+  }
+  {
+    "id": "512524_20_0",
+    "taxon": "Drosera tracyi",
+    "notes": [
+      {
+        "date": "2020-02-22",
+        "source": "Predatory Plants",
+        "notes": "arrived wrapped in sphagnum."
+      },
+      {
+        "date": "2020-03-08",
+        "notes": "potting day."
+      }
+    ]
   }
 ]

@@ -37,7 +37,8 @@ const rawTaxonomy = [
         link: "http://www.sarracenia.com/faq/faq3440.html",
       }
     ],
-  }, {
+  },
+  {
     taxon: "Byblis liniflora",
     commonName: "Rainbow Plant",
     environment: {
@@ -50,7 +51,8 @@ const rawTaxonomy = [
       {
         text: "Brian Barnes, <i>Growing Byblis successfully</i>, International Carnivorous Plant Society",
         link: "http://www.carnivorousplants.org/howto/GrowingGuides/Byblis.php",
-      }, {
+      },
+      {
         text: "Peter D'Amato, <i>The Savage Garden: Cultivating Carnivorous Plants</i>, p184-185, 1998",
         link: "ISBN: 0-89815-915-6",
       }
@@ -58,7 +60,8 @@ const rawTaxonomy = [
     databases: {
       eol: 6359448,
     },
-  }, {
+  },
+  {
     taxon: "Darlingtonia californica",
     commonName: "Cobra Lily",
     environment: {
@@ -176,6 +179,7 @@ const rawTaxonomy = [
       temperature: [[45, 90]],
       humidity: [50, null],
       luminosity: ["will turn red with 16hr photoperiod"],
+      soil: 'any typical media. 1:1 peat:sand, pure long-fibered sphagnum (LFS), 1:1 LFS:perlite.',
     },
     sources: [
       {
@@ -662,6 +666,10 @@ const rawTaxonomy = [
     databases: {
       eol: 5471262,
     },
+    sources: [
+      // TODO: reading
+      // - Brittnacher, John, Growing the Drosera spatulata species complex, International Carnivorous Plant Society (ICPS), retrieved 2017-06-23
+    ]
   }, {
     taxon: "Sarracenia jonesii",
     databases: {
@@ -713,6 +721,170 @@ const rawTaxonomy = [
       }, {
         text: "John Brittnacher, <i>Growing Subtropical Drosera</i>",
         link: "http://www.carnivorousplants.org/howto/GrowingGuides/D_subtropical.php",
+      }
+    ],
+  },
+  {
+    taxon: 'Drosera nidiformis',
+    databases: {
+
+    },
+    environment: {
+      general: 'Not picky at all, can likely give any typical media like D. capensis.'
+    },
+    sources: [
+      {
+        text: 'Aaron May, <i>Drosera nidiformis</i>',
+        link: 'http://www.growsundews.com/sundews/Drosera_nidiformis.html',
+      },
+      {
+        text: 'Barry Rice (revised 2018), <i>African and Madagascan Drosera species</i>, The Carnivorous Plant FAQ v. 12',
+        link: 'http://www.sarracenia.com/faq/faq5243.html',
+      }
+      // TODO: need to read
+      // - Snyder, Ivan (2000) Colchicine Treatment on Sterile Hybrid sundews. Carniv. Pl. Newslett. 29(1):4-10
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv29n1p4_10.pdf
+      // - Schlauer, Jan (2003) Literature reviews. Carniv. Pl. Newslett. 32(4):122-124
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv32n4p122_124.pdf
+      // - Rivadavia, Fernando (2009) Drosera x fontinalis (Droseraceae), the first natural sundew hybrid from South America. Carniv. Pl. Newslett. 38(4):121-125
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv38n4p121_125.pdf
+      // - Rice, Barry A. (2011) The thread-leaf sundews Drosera filiformis and Drosera tracyi. Carniv. Pl. Newslett. 40(1):4-16
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv40n1p4_16.pdf
+      // - Andreas Fleischmann (2017) The correct name for Drosera longiscapa and the mystery of D. madagascariensis from South Africa. Carniv. Pl. Newslett. 46(1):5-12
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv46n1p5_12.pdf
+      // - Jan Schlauer and Thomas Carow and Andreas Fleischmann (2019) Quinones from 'Gondwanan' sundews. Carniv. Pl. Newslett. 48(1):13-17
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv48n1p13_17.pdf
+      {
+        text: '',
+        link: '',
+      }
+    ],
+  },
+  {
+    taxon: 'Byblis guehoi',
+    databases: {
+      eol: 11590302,
+      ncbi: 717967,
+    },
+    environment: {
+    },
+    sources: [
+      // {
+      //   text: 'Lowrie, A., and Conran, J.G. (2008). "Byblis guehoi (Byblidaceae), a new species from the Kimberley, Western Australia". Telopea 12(1): 23–29.',
+      //   issn: 'ISSN0312-9764',
+      //   link: 'https://web.archive.org/web/20080801215902/http://www.rbgsyd.nsw.gov.au/__data/assets/pdf_file/91873/Tel121023Low.pdf',
+      // },
+      // {
+      //   text: 'Carlton, H. (2019) An amateur\'s experiences with Byblis germination. Carniv. Pl. Newslett. 48(2): 93-95',
+      //   link: 'https://legacy.carnivorousplants.org/cpn/articles/CPNv48n2p93_95.pdf',
+      // },
+      // {
+      //   text: 'Thilo Krueger (2019) Field observations of Byblis in Australia. Carniv. Pl. Newslett. 48(2):44-50',
+      //   link: 'https://legacy.carnivorousplants.org/cpn/articles/CPNv48n2p44_50.pdf'
+      // },
+      // {
+      //   text: 'Gregory Allan (2019) Evidence of motile traps in Byblis. Carniv. Pl. Newslett. 48(2):51-63',
+      //   link: 'https://legacy.carnivorousplants.org/cpn/articles/CPNv48n2p51_63.pdf',
+      // },
+      // {
+      //   text: 'Gregory Allan and Cindy Chiang (2019) Byblis in cultivation in the tropics and in temperate climates. Carniv. Pl. Newslett. 48(2):79-88',
+      //   link: 'https://legacy.carnivorousplants.org/cpn/articles/CPNv48n2p79_88.pdf',
+      // },
+      //       {
+      //   text: 'Hartmeyer, Irmgard and Siegfried R.H. Hartmeyer (2011) Comparison of Byblis ‘Goliath’ (B. filifolia), Byblis ‘David’ (B. liniflora), and their putative fertile hybrid. Carniv. Pl. Newslett. 40(4): 129-135',
+      //   link: 'https://legacy.carnivorousplants.org/cpn/articles/CPNv40n4p129_135.pdf',
+      // }
+    ],
+  },
+  {
+    taxon: 'Byblis aquatica',
+    databases: {
+    },
+    environment: {
+
+    },
+    sources: [
+      // TODO: reading
+      // - Rice, Barry and Jan Schlauer (1998) Literature reviews. Carniv. Pl. Newslett. 27(3):73-77
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv27n3p73_77.pdf
+      // - Schlauer, Jan (2003) Literature reviews. Carniv. Pl. Newslett. 32(2):61-62
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv32n2p61_62.pdf
+      // - Pelto, Matthew C. and Jon T. Lindstrom (2003) In Vitro Propagation of Byblis filifolia (Byblidaceae). Carniv. Pl. Newslett. 32(3):74-77
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv32n3p74_77.pdf
+      // - Wyman, Travis H. and Brian Barnes and David P. Evans (2009) New cultivars. Carniv. Pl. Newslett. 38(1):12-22
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv38n1p12_22.pdf
+      // - Marcel van den Broek (2015) Field tripping with the ICPS a visit to far northern Queensland. Carniv. Pl. Newslett. 44(1):27-31
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv44n1p27_31.pdf
+      // - Thilo Krueger (2019) Field observations of Byblis in Australia. Carniv. Pl. Newslett. 48(2):44-50
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv48n2p44_50.pdf
+      // - Gregory Allan (2019) Evidence of motile traps in Byblis. Carniv. Pl. Newslett. 48(2):51-63
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv48n2p51_63.pdf
+      // - Siegfried R. H. Hartmeyer and Irmgard Hartmeyer (2019) Observations and tests on cultivated tropical Byblis. Carniv. Pl. Newslett. 48(2):74-78
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv48n2p74_78.pdf
+      // - Gregory Allan and Cindy Chiang (2019) Byblis in cultivation in the tropics and in temperate climates. Carniv. Pl. Newslett. 48(2):79-88
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv48n2p79_88.pdf
+      // - Hawken Carlton (2019) An amateur's experiences with Byblis germination. Carniv. Pl. Newslett. 48(2):93-95
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv48n2p93_95.pdf
+      {
+        text: '',
+        link: '',
+      }
+    ],
+  },
+  {
+    taxon: 'Utricularia bisquamata',
+    databases: {},
+    environment: {
+
+    },
+    sources: [
+      {
+        text: 'Barry Rice (revised 2018), <i>About Utricularia subgenus Bivalvaria section Calpidisca</i>, The Carnivorous Plant FAQ v. 12',
+        link: 'http://www.sarracenia.com/faq/faq5618.html',
+      }
+      // TODO: reading
+      // - Rutishauser, Rolf and Jeannette Brugger and Lorenz Butschi (1992) Structural and developmental diversity of Utricularia traps. Carniv. Pl. Newslett. 21(3):68-74
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv21n3p68_74.pdf
+      // - D'Amato, Peter (1999) The Savage Garden. Carniv. Pl. Newslett. 28(2):55-56
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv28n2p55_56.pdf
+      // - Rivadavia, Fernando (2000) Endless Carnivorous Plants in Cape Town, South Africa. Carniv. Pl. Newslett. 29(2):42-45
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv29n2p42_45.pdf
+      // - Gibson, Robert (2000) Drosera slackii - A living jewel from South Africa. Carniv. Pl. Newslett. 29(4):107-109
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv29n4p107_109.pdf
+      // - Gibson, Robert (2002) Drosera cuneifolia and D. admirabilis: Two rosetted sundews from The Cape Province, South Africa. Carniv. Pl. Newslett. 31(4):100-107
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv31n4p100_107.pdf
+      // - Catalano, Marcello (2002) Growing Carnivorous Plants in the UK. Carniv. Pl. Newslett. 31(4):120-125
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv31n4p120_125.pdf
+      // - Gibson, Robert (2004) A large-flowered form of U. bisquamata from near Hermanus, South Africa. Carniv. Pl. Newslett. 33(3):77-79
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv33n3p77_79.pdf
+      // - Schlosser, Eric (2005) Notes on some little known carnivorous plants from Madagascar. Carniv. Pl. Newslett. 34(4):100-105
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv34n4p100_105.pdf
+      // - Cahill, Thomas M. (2007) Utricularia Containment: Trying to Prevent the Great Escape. Carniv. Pl. Newslett. 36(2):46-48
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv36n2p46_48.pdf
+      // - Sardesai, M. M. and S. R. Yadav (2008) Floral dimorphism in Utricularia janarthanamii. Carniv. Pl. Newslett. 37(1):12-14
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv37n1p12_14_FC.pdf
+      // - Andreas Fleischmann (2015) Taxonomic Utricularia news. Carniv. Pl. Newslett. 44(1):13-16
+      //   https://legacy.carnivorousplants.org/cpn/articles/CPNv44n1p13_16.pdf
+      {
+        text: '',
+        link: '',
+      }
+    ],
+  },
+  {
+    taxon: 'Utricularia microcalyx',
+    databases: {},
+    environment: {
+
+    },
+    // TODO: reading
+    // - (1973) Recent literature. Carniv. Pl. Newslett. 2(4):72-74
+    //   https://legacy.carnivorousplants.org/cpn/articles/CPNv02n4p72_74.pdf
+    //   - NOTE: havent found pdf of The Genus Utricularia: A Taxonomic Monograph (https://en.wikipedia.org/wiki/The_Genus_Utricularia:_A_Taxonomic_Monograph) but a good pairing article is https://legacy.carnivorousplants.org/cpn/articles/CPNv41n2p67_76.pdf, Fleischmann, A. 2012. The new Utricularia species described since Peter Taylor's monograph. Carnivorous Plant Newsletter 41(2): 67–76.
+    sources: [
+      {
+        text: 'Taylor, Peter. (1989). The genus Utricularia - a taxonomic monograph. Kew Bulletin Additional Series XIV: London.',
+        link: '',
       }
     ],
   }
